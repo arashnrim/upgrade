@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED</key>
+	<true/>
+	<key>CLIENT_ID</key>
+	<string>83630029421-g4eiapg61rgo7crd1vjuivv7hntitut9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.83630029421-g4eiapg61rgo7crd1vjuivv7hntitut9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBk8O51bxs53aVboccd2helmkznvHThaRI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>83630029421</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.discipuli.Upgrade</string>
+	<key>PROJECT_ID</key>
+	<string>upgrade-disci</string>
+	<key>STORAGE_BUCKET</key>
+	<string>upgrade-disci.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:83630029421:ios:dd6db4aba9e51f0e</string>
+	<key>DATABASE_URL</key>
+	<string>https://upgrade-disci.firebaseio.com</string>
+</dict>
+</plist>

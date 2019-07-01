@@ -1,0 +1,15 @@
+platform :ios, '9.0'
+
+target 'Upgrade' do
+  use_frameworks!
+
+  # Ignores all warnings in Xcode
+  inhibit_all_warnings!
+
+  # Pods for Upgrade
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Hero'
+
+end
