@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4968B55222C8B25A00F457EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4968B55122C8B25A00F457EB /* GoogleService-Info.plist */; };
 		49CCAE6022C861DB00E8E2D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CCAE5F22C861DB00E8E2D5 /* AppDelegate.swift */; };
 		49CCAE6222C861DB00E8E2D5 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CCAE6122C861DB00E8E2D5 /* InitialViewController.swift */; };
 		49CCAE6522C861DB00E8E2D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CCAE6322C861DB00E8E2D5 /* Main.storyboard */; };
 		49CCAE6722C861DC00E8E2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49CCAE6622C861DC00E8E2D5 /* Assets.xcassets */; };
 		49CCAE6A22C861DC00E8E2D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CCAE6822C861DC00E8E2D5 /* LaunchScreen.storyboard */; };
+		A903D97F42144ECB41187B5A /* Pods_Upgrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB03CBDED11B82AF4D91059A /* Pods_Upgrade.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16B9200B74A61685075EB25B /* Pods-Upgrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upgrade.release.xcconfig"; path = "Target Support Files/Pods-Upgrade/Pods-Upgrade.release.xcconfig"; sourceTree = "<group>"; };
+		4968B55122C8B25A00F457EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49CCAE5C22C861DB00E8E2D5 /* Upgrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Upgrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CCAE5F22C861DB00E8E2D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49CCAE6122C861DB00E8E2D5 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		49CCAE6622C861DC00E8E2D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49CCAE6922C861DC00E8E2D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49CCAE6B22C861DC00E8E2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB03CBDED11B82AF4D91059A /* Pods_Upgrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Upgrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB3076FD8D66F36AF8CCECC /* Pods-Upgrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upgrade.debug.xcconfig"; path = "Target Support Files/Pods-Upgrade/Pods-Upgrade.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A903D97F42144ECB41187B5A /* Pods_Upgrade.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CD49B9B3ED5C5FADE437A0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBB3076FD8D66F36AF8CCECC /* Pods-Upgrade.debug.xcconfig */,
+				16B9200B74A61685075EB25B /* Pods-Upgrade.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		49CCAE5322C861DB00E8E2D5 = {
 			isa = PBXGroup;
 			children = (
 				49CCAE5E22C861DB00E8E2D5 /* Upgrade */,
 				49CCAE5D22C861DB00E8E2D5 /* Products */,
+				2CD49B9B3ED5C5FADE437A0F /* Pods */,
+				928B1868FF2C49C8099CBE2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,12 +107,21 @@
 		49CCAE7422C8642300E8E2D5 /* Core Support */ = {
 			isa = PBXGroup;
 			children = (
+				4968B55122C8B25A00F457EB /* GoogleService-Info.plist */,
 				49CCAE5F22C861DB00E8E2D5 /* AppDelegate.swift */,
 				49CCAE6822C861DC00E8E2D5 /* LaunchScreen.storyboard */,
 				49CCAE6B22C861DC00E8E2D5 /* Info.plist */,
 				49CCAE6622C861DC00E8E2D5 /* Assets.xcassets */,
 			);
 			name = "Core Support";
+			sourceTree = "<group>";
+		};
+		928B1868FF2C49C8099CBE2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB03CBDED11B82AF4D91059A /* Pods_Upgrade.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49CCAE6E22C861DC00E8E2D5 /* Build configuration list for PBXNativeTarget "Upgrade" */;
 			buildPhases = (
+				DE1178708E2BEDE2A48F2DD8 /* [CP] Check Pods Manifest.lock */,
 				49CCAE5822C861DB00E8E2D5 /* Sources */,
 				49CCAE5922C861DB00E8E2D5 /* Frameworks */,
 				49CCAE5A22C861DB00E8E2D5 /* Resources */,
+				0E80EDDB9C7F519C4141852C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,12 +185,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				49CCAE6A22C861DC00E8E2D5 /* LaunchScreen.storyboard in Resources */,
+				4968B55222C8B25A00F457EB /* GoogleService-Info.plist in Resources */,
 				49CCAE6722C861DC00E8E2D5 /* Assets.xcassets in Resources */,
 				49CCAE6522C861DB00E8E2D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E80EDDB9C7F519C4141852C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Upgrade/Pods-Upgrade-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Upgrade/Pods-Upgrade-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Upgrade/Pods-Upgrade-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE1178708E2BEDE2A48F2DD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Upgrade-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49CCAE5822C861DB00E8E2D5 /* Sources */ = {
@@ -312,6 +385,7 @@
 		};
 		49CCAE6F22C861DC00E8E2D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBB3076FD8D66F36AF8CCECC /* Pods-Upgrade.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,6 +404,7 @@
 		};
 		49CCAE7022C861DC00E8E2D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16B9200B74A61685075EB25B /* Pods-Upgrade.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
