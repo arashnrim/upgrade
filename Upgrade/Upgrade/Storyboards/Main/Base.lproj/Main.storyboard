@@ -1,24 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Initial View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="InitialViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InitialViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Top Splash" translatesAutoresizingMaskIntoConstraints="NO" id="vnI-F9-F6m">
+                                <rect key="frame" x="-76" y="-67" width="566" height="404"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="404" id="x76-WX-JFw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bottom Splash" translatesAutoresizingMaskIntoConstraints="NO" id="FCI-sq-jxM">
+                                <rect key="frame" x="-76" y="563" width="566" height="404"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="404" id="NhD-av-dBy"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uaj-QX-4VW">
+                                <rect key="frame" x="20" y="406.5" width="374" height="83"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="maK-Bl-u7d">
+                                        <rect key="frame" x="177" y="0.0" width="20" height="20"/>
+                                        <color key="color" name="UP Blue"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give us a sec," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8r-FU-4M6">
+                                        <rect key="frame" x="105" y="25" width="164.5" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="kdP-x5-QLv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="we're working on it..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvU-Qe-nF7">
+                                        <rect key="frame" x="63.5" y="58" width="247.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="jny-tQ-W2E"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vnI-F9-F6m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-76" id="05f-LA-TBG"/>
+                            <constraint firstItem="uaj-QX-4VW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J1Y-jW-8zv"/>
+                            <constraint firstAttribute="bottom" secondItem="FCI-sq-jxM" secondAttribute="bottom" constant="-71" id="NuW-wJ-Fcd"/>
+                            <constraint firstItem="uaj-QX-4VW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="P1e-ZB-z3l"/>
+                            <constraint firstAttribute="trailing" secondItem="FCI-sq-jxM" secondAttribute="trailing" constant="-76" id="Psb-Qb-jwC"/>
+                            <constraint firstItem="FCI-sq-jxM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-76" id="RW2-mR-MYh"/>
+                            <constraint firstAttribute="trailing" secondItem="vnI-F9-F6m" secondAttribute="trailing" constant="-76" id="Uih-Jo-4Xg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uaj-QX-4VW" secondAttribute="trailing" constant="20" id="fDW-gb-RFl"/>
+                            <constraint firstItem="vnI-F9-F6m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-67" id="kdR-g7-ToG"/>
+                            <constraint firstItem="uaj-QX-4VW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="njj-6a-kFR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bottom Splash" width="564" height="440.5"/>
+        <image name="Top Splash" width="564" height="440.5"/>
+        <namedColor name="UP Blue">
+            <color red="0.36500000953674316" green="0.47499999403953552" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
