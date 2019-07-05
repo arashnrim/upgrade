@@ -26,6 +26,9 @@
 		49C9EDAA22CF78DD00605D6F /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49C9ED9822CF78D900605D6F /* Metropolis-Bold.otf */; };
 		49C9EDAB22CF78DD00605D6F /* Metropolis-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49C9ED9922CF78DB00605D6F /* Metropolis-ExtraLight.otf */; };
 		49C9EDAC22CF78DD00605D6F /* Metropolis-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49C9ED9A22CF78DD00605D6F /* Metropolis-RegularItalic.otf */; };
+		49C9EDB022CF8A2E00605D6F /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C9EDAF22CF8A2E00605D6F /* Auth.storyboard */; };
+		49C9EDB222CF8A4200605D6F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9EDB122CF8A4200605D6F /* WelcomeViewController.swift */; };
+		49C9EDB522CF8D0E00605D6F /* UIButton+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9EDB422CF8D0E00605D6F /* UIButton+Design.swift */; };
 		49CCAE6022C861DB00E8E2D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CCAE5F22C861DB00E8E2D5 /* AppDelegate.swift */; };
 		49CCAE6222C861DB00E8E2D5 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CCAE6122C861DB00E8E2D5 /* InitialViewController.swift */; };
 		49CCAE6522C861DB00E8E2D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CCAE6322C861DB00E8E2D5 /* Main.storyboard */; };
@@ -55,6 +58,9 @@
 		49C9ED9822CF78D900605D6F /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
 		49C9ED9922CF78DB00605D6F /* Metropolis-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-ExtraLight.otf"; sourceTree = "<group>"; };
 		49C9ED9A22CF78DD00605D6F /* Metropolis-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-RegularItalic.otf"; sourceTree = "<group>"; };
+		49C9EDAF22CF8A2E00605D6F /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		49C9EDB122CF8A4200605D6F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		49C9EDB422CF8D0E00605D6F /* UIButton+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Design.swift"; sourceTree = "<group>"; };
 		49CCAE5C22C861DB00E8E2D5 /* Upgrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Upgrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CCAE5F22C861DB00E8E2D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49CCAE6122C861DB00E8E2D5 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +127,31 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		49C9EDAD22CF8A1600605D6F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				49C9EDAF22CF8A2E00605D6F /* Auth.storyboard */,
+				49C9EDAE22CF8A2100605D6F /* Welcome */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		49C9EDAE22CF8A2100605D6F /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				49C9EDB122CF8A4200605D6F /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		49C9EDB322CF8CFB00605D6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				49C9EDB422CF8D0E00605D6F /* UIButton+Design.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		49CCAE5322C861DB00E8E2D5 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				49CCAE7122C8627900E8E2D5 /* Storyboards */,
+				49C9EDB322CF8CFB00605D6F /* Extensions */,
 				49CCAE7422C8642300E8E2D5 /* Core Support */,
 			);
 			path = Upgrade;
@@ -152,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				49CCAE7222C8628200E8E2D5 /* Main */,
+				49C9EDAD22CF8A1600605D6F /* Auth */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -272,6 +305,7 @@
 				49C9EDA922CF78DD00605D6F /* Metropolis-SemiBold.otf in Resources */,
 				49CCAE6522C861DB00E8E2D5 /* Main.storyboard in Resources */,
 				49C9ED9F22CF78DD00605D6F /* Metropolis-ExtraBold.otf in Resources */,
+				49C9EDB022CF8A2E00605D6F /* Auth.storyboard in Resources */,
 				49C9EDA122CF78DD00605D6F /* Metropolis-BoldItalic.otf in Resources */,
 				49C9EDA422CF78DD00605D6F /* Metropolis-ThinItalic.otf in Resources */,
 				49C9EDA222CF78DD00605D6F /* Metropolis-ExtraLightItalic.otf in Resources */,
@@ -327,8 +361,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C9EDB222CF8A4200605D6F /* WelcomeViewController.swift in Sources */,
 				49CCAE6222C861DB00E8E2D5 /* InitialViewController.swift in Sources */,
 				49CCAE6022C861DB00E8E2D5 /* AppDelegate.swift in Sources */,
+				49C9EDB522CF8D0E00605D6F /* UIButton+Design.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
