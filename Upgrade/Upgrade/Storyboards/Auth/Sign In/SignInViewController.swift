@@ -42,6 +42,15 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        /// Configures Hero transitions for segues signedIn and signedOut
+        if segue.identifier == "signedIn" {
+            let destination = segue.destination
+            destination.hero.modalAnimationType = .zoomOut
+        }
+        
+    }
+    
     // MARK: - Functions
     /// This function executes when the textField is highlighted and editing begins
     /// The code changes the value of currentTextField to the current highlighted textField, and requests that viewCredentials bring the currentTextField to the front
@@ -118,6 +127,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: - Firebase
+    /// This function force-retrieves a value from the textFields and uses it to authenticate the user using Firebase
+    /// If errors are found, the execution stops with an alert showing the user an error; they can try to perform a solution from this
     func signIn() {
         guard let email = fieldEmail.text else { return }
         guard let password = fieldPassword.text else { return }
@@ -145,6 +156,10 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Actions
     @IBAction func buttonSignIn(_ sender: UIButton) {
         signIn()
+    }
+    
+    @IBAction func buttonCancel(_ sender: UIButton) {
+        self.hero.dismissViewController()
     }
     
 }

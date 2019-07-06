@@ -49,6 +49,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give us a sec," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8r-FU-4M6">
                                         <rect key="frame" x="105" y="25" width="164.5" height="28"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="N7M-em-fCg"/>
                                             <constraint firstAttribute="height" constant="28" id="kdP-x5-QLv"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="25"/>
@@ -63,6 +64,7 @@
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="o8r-FU-4M6" firstAttribute="top" secondItem="maK-Bl-u7d" secondAttribute="bottom" constant="5" id="RpJ-bH-aBP"/>
                                     <constraint firstAttribute="height" constant="83" id="jny-tQ-W2E"/>
                                 </constraints>
                             </stackView>
