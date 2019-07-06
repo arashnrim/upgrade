@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		496280F322D035E3004A5E72 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496280F222D035E3004A5E72 /* SignInViewController.swift */; };
+		496280F522D037C7004A5E72 /* UITextField+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496280F422D037C7004A5E72 /* UITextField+Design.swift */; };
 		4968B55222C8B25A00F457EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4968B55122C8B25A00F457EB /* GoogleService-Info.plist */; };
 		49C9ED9B22CF78DD00605D6F /* Metropolis-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49C9ED8922CF78B700605D6F /* Metropolis-Thin.otf */; };
 		49C9ED9C22CF78DD00605D6F /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49C9ED8A22CF78B900605D6F /* Metropolis-Medium.otf */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		16B9200B74A61685075EB25B /* Pods-Upgrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upgrade.release.xcconfig"; path = "Target Support Files/Pods-Upgrade/Pods-Upgrade.release.xcconfig"; sourceTree = "<group>"; };
+		496280F222D035E3004A5E72 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		496280F422D037C7004A5E72 /* UITextField+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Design.swift"; sourceTree = "<group>"; };
 		4968B55122C8B25A00F457EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49C9ED8922CF78B700605D6F /* Metropolis-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Thin.otf"; sourceTree = "<group>"; };
 		49C9ED8A22CF78B900605D6F /* Metropolis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Medium.otf"; sourceTree = "<group>"; };
@@ -93,6 +97,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		496280F122D035C8004A5E72 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				496280F222D035E3004A5E72 /* SignInViewController.swift */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
 		49C9ED8722CF788600605D6F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +144,7 @@
 			children = (
 				49C9EDAF22CF8A2E00605D6F /* Auth.storyboard */,
 				49C9EDAE22CF8A2100605D6F /* Welcome */,
+				496280F122D035C8004A5E72 /* Sign In */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -148,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				49C9EDB422CF8D0E00605D6F /* UIButton+Design.swift */,
+				496280F422D037C7004A5E72 /* UITextField+Design.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -362,8 +376,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C9EDB222CF8A4200605D6F /* WelcomeViewController.swift in Sources */,
+				496280F522D037C7004A5E72 /* UITextField+Design.swift in Sources */,
 				49CCAE6222C861DB00E8E2D5 /* InitialViewController.swift in Sources */,
 				49CCAE6022C861DB00E8E2D5 /* AppDelegate.swift in Sources */,
+				496280F322D035E3004A5E72 /* SignInViewController.swift in Sources */,
 				49C9EDB522CF8D0E00605D6F /* UIButton+Design.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
