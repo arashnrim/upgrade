@@ -17,6 +17,9 @@
         <array key="Metropolis-Regular.otf">
             <string>Metropolis-Regular</string>
         </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Initial View Controller-->
@@ -89,6 +92,7 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="mmL-NU-AvK" kind="show" identifier="signedOut" id="7dT-Hm-NyM"/>
+                        <segue destination="w96-w4-DH8" kind="show" identifier="signedIn" id="EwM-Yp-3Y0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -103,9 +107,107 @@
             </objects>
             <point key="canvasLocation" x="701" y="-22"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="dxu-gu-aft">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" title="Home View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w96-w4-DH8" customClass="HomeViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gI3-i2-ky5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Tzt-x0-xOm">
+                                <rect key="frame" x="20" y="328" width="374" height="240"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Smile" translatesAutoresizingMaskIntoConstraints="NO" id="2qI-QM-2Fk">
+                                        <rect key="frame" x="137" y="0.0" width="100" height="100"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yj-Y8-C9J">
+                                        <rect key="frame" x="0.0" y="115" width="374" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="CU5-Ps-23v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8e-cK-3Ed">
+                                        <rect key="frame" x="0.0" y="205" width="374" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="fPV-vp-F9a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5yj-Y8-C9J" secondAttribute="trailing" id="7JP-eF-w2z"/>
+                                    <constraint firstItem="5yj-Y8-C9J" firstAttribute="leading" secondItem="Tzt-x0-xOm" secondAttribute="leading" id="bHK-sk-ehL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q8e-cK-3Ed" secondAttribute="trailing" id="c3t-KL-sx7"/>
+                                    <constraint firstItem="Q8e-cK-3Ed" firstAttribute="leading" secondItem="Tzt-x0-xOm" secondAttribute="leading" id="gEL-gZ-jCV"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qcw-Xv-Wym">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M2L-Yv-RVX">
+                                        <rect key="frame" x="165" y="8" width="85" height="5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="06n-1i-dZg">
+                                <rect key="frame" x="20" y="70" width="241" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu" translatesAutoresizingMaskIntoConstraints="NO" id="asC-TD-0Ho">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5C4-OQ-RW5">
+                                        <rect key="frame" x="140" y="0.0" width="101" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="P0c-gd-rDM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Blue"/>
+                        <constraints>
+                            <constraint firstItem="Tzt-x0-xOm" firstAttribute="leading" secondItem="eTS-eD-KpT" secondAttribute="leading" constant="20" id="2da-a7-jWP"/>
+                            <constraint firstItem="eTS-eD-KpT" firstAttribute="trailing" secondItem="06n-1i-dZg" secondAttribute="trailing" constant="153" id="5tN-9A-kxL"/>
+                            <constraint firstItem="eTS-eD-KpT" firstAttribute="trailing" secondItem="Tzt-x0-xOm" secondAttribute="trailing" constant="20" id="7gC-yL-EYx"/>
+                            <constraint firstItem="Tzt-x0-xOm" firstAttribute="centerX" secondItem="gI3-i2-ky5" secondAttribute="centerX" id="YJe-uh-6h5"/>
+                            <constraint firstItem="06n-1i-dZg" firstAttribute="leading" secondItem="eTS-eD-KpT" secondAttribute="leading" constant="20" id="f1J-uP-GZI"/>
+                            <constraint firstItem="Tzt-x0-xOm" firstAttribute="centerY" secondItem="gI3-i2-ky5" secondAttribute="centerY" id="ffP-HZ-L8f"/>
+                            <constraint firstItem="06n-1i-dZg" firstAttribute="top" secondItem="eTS-eD-KpT" secondAttribute="top" constant="26" id="tB9-cg-PYL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eTS-eD-KpT"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="labelAuthor" destination="Q8e-cK-3Ed" id="BJo-Cs-VMb"/>
+                        <outlet property="labelQuote" destination="5yj-Y8-C9J" id="Rjr-Jp-jfr"/>
+                        <outlet property="viewBar" destination="M2L-Yv-RVX" id="sfD-yi-Ims"/>
+                        <outlet property="viewMain" destination="Qcw-Xv-Wym" id="f8u-xK-DWN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qwF-cG-BMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228.985507246377" y="20.758928571428569"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Bottom Splash" width="564" height="440.5"/>
+        <image name="Menu" width="40" height="40"/>
+        <image name="Smile" width="100" height="100"/>
         <image name="Top Splash" width="564" height="440.5"/>
         <namedColor name="UP Blue">
             <color red="0.36500000953674316" green="0.47499999403953552" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

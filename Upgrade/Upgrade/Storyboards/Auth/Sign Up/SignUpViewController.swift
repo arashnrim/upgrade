@@ -205,6 +205,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         databaseFormat(subject: integratedHumanities)
         databaseFormat(subject: appliedSubject)
         
+        print("upgradeconsoleDATABASE: Database creation successfully completed.")
         updateName()
         
     }

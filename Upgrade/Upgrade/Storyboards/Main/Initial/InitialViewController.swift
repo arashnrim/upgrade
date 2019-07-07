@@ -11,8 +11,6 @@ class InitialViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        /// Prints out line to command for better debug purposes
-        print("upgradeconsoleSTART: Console line started.")
         
         /// Calls forward Firebase Auth to verify currentUser state.
         /// If:
@@ -24,7 +22,7 @@ class InitialViewController: UIViewController {
         // Code has been commented to prevent crashes; please remove this when implementation is done.
         if user != nil {
             print("upgradeconsoleAUTH: User is signed in, redirecting to HomeViewController...")
-            // performSegue(withIdentifier: "signedIn", sender: nil)
+            performSegue(withIdentifier: "signedIn", sender: nil)
         } else {
             print("upgradeconsoleAUTH: User is not signed in, redirecting to WelcomeViewController...")
             performSegue(withIdentifier: "signedOut", sender: nil)

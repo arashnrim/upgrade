@@ -10,6 +10,9 @@
 		496280F322D035E3004A5E72 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496280F222D035E3004A5E72 /* SignInViewController.swift */; };
 		496280F522D037C7004A5E72 /* UITextField+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496280F422D037C7004A5E72 /* UITextField+Design.swift */; };
 		4968B55222C8B25A00F457EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4968B55122C8B25A00F457EB /* GoogleService-Info.plist */; };
+		49B936E622D0F2840034329A /* UIView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B936E522D0F2840034329A /* UIView+Design.swift */; };
+		49B936E922D0F3330034329A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B936E822D0F3330034329A /* HomeViewController.swift */; };
+		49B936EB22D0F7830034329A /* Quotes+Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B936EA22D0F7830034329A /* Quotes+Logic.swift */; };
 		49C9ED9B22CF78DD00605D6F /* Metropolis-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49C9ED8922CF78B700605D6F /* Metropolis-Thin.otf */; };
 		49C9ED9C22CF78DD00605D6F /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49C9ED8A22CF78B900605D6F /* Metropolis-Medium.otf */; };
 		49C9ED9D22CF78DD00605D6F /* Metropolis-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49C9ED8B22CF78BB00605D6F /* Metropolis-BlackItalic.otf */; };
@@ -45,6 +48,9 @@
 		496280F222D035E3004A5E72 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		496280F422D037C7004A5E72 /* UITextField+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Design.swift"; sourceTree = "<group>"; };
 		4968B55122C8B25A00F457EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49B936E522D0F2840034329A /* UIView+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Design.swift"; sourceTree = "<group>"; };
+		49B936E822D0F3330034329A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		49B936EA22D0F7830034329A /* Quotes+Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quotes+Logic.swift"; sourceTree = "<group>"; };
 		49C9ED8922CF78B700605D6F /* Metropolis-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Thin.otf"; sourceTree = "<group>"; };
 		49C9ED8A22CF78B900605D6F /* Metropolis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Medium.otf"; sourceTree = "<group>"; };
 		49C9ED8B22CF78BB00605D6F /* Metropolis-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-BlackItalic.otf"; sourceTree = "<group>"; };
@@ -107,6 +113,14 @@
 			path = "Sign In";
 			sourceTree = "<group>";
 		};
+		49B936E722D0F32A0034329A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				49B936E822D0F3330034329A /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		49C9ED8722CF788600605D6F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +179,8 @@
 			children = (
 				49C9EDB422CF8D0E00605D6F /* UIButton+Design.swift */,
 				496280F422D037C7004A5E72 /* UITextField+Design.swift */,
+				49B936E522D0F2840034329A /* UIView+Design.swift */,
+				49B936EA22D0F7830034329A /* Quotes+Logic.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,6 +227,7 @@
 			children = (
 				49CCAE6322C861DB00E8E2D5 /* Main.storyboard */,
 				49CCAE7322C8639D00E8E2D5 /* Initial */,
+				49B936E722D0F32A0034329A /* Home */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -388,9 +405,12 @@
 			files = (
 				49C9EDB222CF8A4200605D6F /* WelcomeViewController.swift in Sources */,
 				49F1C0C522D058B70028E16C /* SignUpViewController.swift in Sources */,
+				49B936E622D0F2840034329A /* UIView+Design.swift in Sources */,
 				496280F522D037C7004A5E72 /* UITextField+Design.swift in Sources */,
 				49CCAE6222C861DB00E8E2D5 /* InitialViewController.swift in Sources */,
+				49B936E922D0F3330034329A /* HomeViewController.swift in Sources */,
 				49CCAE6022C861DB00E8E2D5 /* AppDelegate.swift in Sources */,
+				49B936EB22D0F7830034329A /* Quotes+Logic.swift in Sources */,
 				496280F322D035E3004A5E72 /* SignInViewController.swift in Sources */,
 				49C9EDB522CF8D0E00605D6F /* UIButton+Design.swift in Sources */,
 			);
