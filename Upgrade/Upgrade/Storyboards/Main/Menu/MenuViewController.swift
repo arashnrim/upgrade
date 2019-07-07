@@ -1,30 +1,34 @@
-//
-//  MenuViewController.swift
-//  Upgrade
-//
-//  Created by Arash Nur Iman on 07/07/2019.
-//  Copyright © 2019 discipuli. All rights reserved.
-//
-
 import UIKit
 
 class MenuViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    // MARK: - Overrides
+    /// Configures status bar color; changes color from black (default) to white for better readability
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        /// Prints out line to command for better debug purposes
+        print("upgradeconsoleREDIRECT: Redirection to MenuViewController executed.")
+        
+        /// Calls extension function (see UIView+Design.swift) to configure background gradient color for HomeViewController
+        self.view.configureViewController(color1: "UP Purple", color2: "UP Blue")
+        
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        /// Configures Hero transitions for segues signedIn and signedOut
+        if segue.identifier == "dismiss" {
+            let destination = segue.destination
+            destination.hero.modalAnimationType = .uncover(direction: .left)
+        }
+        
+    }
 
+    @IBAction func buttonCancel(_ sender: UIButton) {
+        self.hero.dismissViewController()
+    }
+    
 }

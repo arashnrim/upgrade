@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
         <array key="Metropolis-Medium.otf">
             <string>Metropolis-Medium</string>
         </array>
@@ -162,9 +165,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="06n-1i-dZg">
                                 <rect key="frame" x="20" y="70" width="241" height="40"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu" translatesAutoresizingMaskIntoConstraints="NO" id="asC-TD-0Ho">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mR1-Qz-aFL">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                    </imageView>
+                                        <state key="normal" image="Menu"/>
+                                        <connections>
+                                            <segue destination="VLl-Bx-6Oo" kind="show" identifier="menu" id="IYC-9j-bbQ"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5C4-OQ-RW5">
                                         <rect key="frame" x="140" y="0.0" width="101" height="40"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
@@ -203,9 +210,98 @@
             </objects>
             <point key="canvasLocation" x="1228.985507246377" y="20.758928571428569"/>
         </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="FCF-F5-9L7">
+            <objects>
+                <viewController id="VLl-Bx-6Oo" customClass="MenuViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XDc-CV-x0U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="STA-hT-8vt">
+                                <rect key="frame" x="20" y="70" width="233.5" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGd-0a-Qq8">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <state key="normal" image="Cancel"/>
+                                        <connections>
+                                            <action selector="buttonCancel:" destination="VLl-Bx-6Oo" eventType="touchUpInside" id="CJL-xY-CPd"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kt1-IW-csO">
+                                        <rect key="frame" x="140" y="0.0" width="93.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="u9x-ge-zNg"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="3Sc-jw-yLp">
+                                <rect key="frame" x="20" y="182" width="374" height="269"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XN-Sd-NcY">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="47"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="35"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="w96-w4-DH8" kind="show" identifier="dismiss" id="mbL-Rd-fam"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZg-9D-teq">
+                                        <rect key="frame" x="0.0" y="74" width="374" height="47"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="35"/>
+                                        <state key="normal" title="Subjects">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZQ-6Z-ApL">
+                                        <rect key="frame" x="0.0" y="148" width="374" height="47"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="35"/>
+                                        <state key="normal" title="Calculator">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fX-7A-k2M">
+                                        <rect key="frame" x="0.0" y="222" width="374" height="47"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="35"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="269" id="sCz-GU-Z53"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Blue"/>
+                        <constraints>
+                            <constraint firstItem="3Sc-jw-yLp" firstAttribute="top" secondItem="STA-hT-8vt" secondAttribute="bottom" constant="72" id="3aJ-Wm-r6Z"/>
+                            <constraint firstItem="STA-hT-8vt" firstAttribute="leading" secondItem="Ams-1H-Yq2" secondAttribute="leading" constant="20" id="H0x-5E-R1c"/>
+                            <constraint firstItem="Ams-1H-Yq2" firstAttribute="trailing" secondItem="3Sc-jw-yLp" secondAttribute="trailing" constant="20" id="RiN-KX-2at"/>
+                            <constraint firstItem="Ams-1H-Yq2" firstAttribute="trailing" secondItem="STA-hT-8vt" secondAttribute="trailing" constant="160.5" id="kkr-hN-vIg"/>
+                            <constraint firstItem="STA-hT-8vt" firstAttribute="top" secondItem="Ams-1H-Yq2" secondAttribute="top" constant="26" id="nTj-oC-eTO"/>
+                            <constraint firstItem="3Sc-jw-yLp" firstAttribute="leading" secondItem="Ams-1H-Yq2" secondAttribute="leading" constant="20" id="onW-83-KvS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ams-1H-Yq2"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkf-yS-TFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2111.594202898551" y="20.758928571428569"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Bottom Splash" width="564" height="440.5"/>
+        <image name="Cancel" width="40" height="40"/>
         <image name="Menu" width="40" height="40"/>
         <image name="Smile" width="100" height="100"/>
         <image name="Top Splash" width="564" height="440.5"/>
@@ -213,4 +309,7 @@
             <color red="0.36500000953674316" green="0.47499999403953552" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mbL-Rd-fam"/>
+    </inferredMetricsTieBreakers>
 </document>
