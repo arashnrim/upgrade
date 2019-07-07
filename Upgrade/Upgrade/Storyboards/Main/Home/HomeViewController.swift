@@ -1,4 +1,5 @@
 import UIKit
+import Hero
 
 class HomeViewController: UIViewController {
     
@@ -45,6 +46,15 @@ class HomeViewController: UIViewController {
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestures(gesture:)))
         swipeUp.direction = UISwipeGestureRecognizer.Direction.up
         viewMain.addGestureRecognizer(swipeUp)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        /// Configures Hero transitions for segues signedIn and signedOut
+        if segue.identifier == "menu" {
+            let destination = segue.destination
+            destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .right), dismissing: .uncover(direction: .left))
+        }
         
     }
     
