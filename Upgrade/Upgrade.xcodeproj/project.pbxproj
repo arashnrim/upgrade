@@ -14,6 +14,7 @@
 		49B936E922D0F3330034329A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B936E822D0F3330034329A /* HomeViewController.swift */; };
 		49B936EB22D0F7830034329A /* Quotes+Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B936EA22D0F7830034329A /* Quotes+Logic.swift */; };
 		49C5046522D18453003C52A9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5046422D18453003C52A9 /* MenuViewController.swift */; };
+		49C5046822D19D26003C52A9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5046722D19D26003C52A9 /* SettingsViewController.swift */; };
 		49C9ED9B22CF78DD00605D6F /* Metropolis-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49C9ED8922CF78B700605D6F /* Metropolis-Thin.otf */; };
 		49C9ED9C22CF78DD00605D6F /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49C9ED8A22CF78B900605D6F /* Metropolis-Medium.otf */; };
 		49C9ED9D22CF78DD00605D6F /* Metropolis-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49C9ED8B22CF78BB00605D6F /* Metropolis-BlackItalic.otf */; };
@@ -53,6 +54,7 @@
 		49B936E822D0F3330034329A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		49B936EA22D0F7830034329A /* Quotes+Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quotes+Logic.swift"; sourceTree = "<group>"; };
 		49C5046422D18453003C52A9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		49C5046722D19D26003C52A9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		49C9ED8922CF78B700605D6F /* Metropolis-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Thin.otf"; sourceTree = "<group>"; };
 		49C9ED8A22CF78B900605D6F /* Metropolis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Medium.otf"; sourceTree = "<group>"; };
 		49C9ED8B22CF78BB00605D6F /* Metropolis-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-BlackItalic.otf"; sourceTree = "<group>"; };
@@ -129,6 +131,14 @@
 				49C5046422D18453003C52A9 /* MenuViewController.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		49C5046622D19D16003C52A9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				49C5046722D19D26003C52A9 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		49C9ED8722CF788600605D6F /* Resources */ = {
@@ -239,6 +249,7 @@
 				49CCAE7322C8639D00E8E2D5 /* Initial */,
 				49B936E722D0F32A0034329A /* Home */,
 				49C5046322D18447003C52A9 /* Menu */,
+				49C5046622D19D16003C52A9 /* Settings */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -425,6 +436,7 @@
 				49B936EB22D0F7830034329A /* Quotes+Logic.swift in Sources */,
 				496280F322D035E3004A5E72 /* SignInViewController.swift in Sources */,
 				49C9EDB522CF8D0E00605D6F /* UIButton+Design.swift in Sources */,
+				49C5046822D19D26003C52A9 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -272,6 +272,9 @@
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="xgw-ly-QA0" kind="show" identifier="dismiss" id="K3Z-xy-P8f"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -298,6 +301,232 @@
             </objects>
             <point key="canvasLocation" x="2111.594202898551" y="20.758928571428569"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="orN-Mw-D5i">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" title="Settings View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xgw-ly-QA0" customClass="SettingsViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="syA-tQ-Bv9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSG-6s-olK">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xfd-X1-jE3">
+                                        <rect key="frame" x="20" y="39" width="374" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwZ-oO-Rcz">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Snu-Ov-tsb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="there!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpK-Fp-qcR">
+                                                <rect key="frame" x="0.0" y="40" width="374" height="40"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="G2E-jd-G2h"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Jyy-gU-CcI">
+                                        <rect key="frame" x="8" y="158" width="398" height="386"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNi-4j-g8p">
+                                                <rect key="frame" x="0.0" y="0.0" width="398" height="120"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4V-kA-j2S">
+                                                        <rect key="frame" x="12" y="19" width="374" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Nyh-Fn-qFS"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage your account details, data, and information." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk9-Qo-y9R">
+                                                        <rect key="frame" x="12" y="57" width="374" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="AdT-4I-x7E"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMp-ch-PCV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="120"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="Mk9-Qo-y9R" firstAttribute="leading" secondItem="oNi-4j-g8p" secondAttribute="leading" constant="12" id="1pq-Ow-qlQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Mk9-Qo-y9R" secondAttribute="trailing" constant="12" id="AHS-aK-lmv"/>
+                                                    <constraint firstAttribute="height" constant="120" id="F8X-Ce-8P5"/>
+                                                    <constraint firstItem="G4V-kA-j2S" firstAttribute="leading" secondItem="oNi-4j-g8p" secondAttribute="leading" constant="12" id="K5I-xu-OaK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="G4V-kA-j2S" secondAttribute="trailing" constant="12" id="NKB-nO-ygj"/>
+                                                    <constraint firstItem="G4V-kA-j2S" firstAttribute="top" secondItem="oNi-4j-g8p" secondAttribute="top" constant="19" id="elq-L7-yic"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Mk9-Qo-y9R" secondAttribute="bottom" constant="18" id="p0Z-8n-a1f"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x1C-85-ZSb">
+                                                <rect key="frame" x="0.0" y="133" width="398" height="120"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyZ-r1-Rm9">
+                                                        <rect key="frame" x="12" y="19" width="374" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="txY-gb-LaA"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn more about the application and the developers." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bg-Tu-M5z">
+                                                        <rect key="frame" x="12" y="57" width="374" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="0pU-Ms-qte"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAW-mg-kws">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="120"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="oyZ-r1-Rm9" firstAttribute="top" secondItem="x1C-85-ZSb" secondAttribute="top" constant="19" id="8hz-Hf-6yI"/>
+                                                    <constraint firstItem="oyZ-r1-Rm9" firstAttribute="leading" secondItem="x1C-85-ZSb" secondAttribute="leading" constant="12" id="NGy-tS-V43"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2bg-Tu-M5z" secondAttribute="trailing" constant="12" id="cJD-Kn-yxj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oyZ-r1-Rm9" secondAttribute="trailing" constant="12" id="dWF-5n-iPF"/>
+                                                    <constraint firstItem="2bg-Tu-M5z" firstAttribute="leading" secondItem="x1C-85-ZSb" secondAttribute="leading" constant="12" id="hGj-3W-LK5"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2bg-Tu-M5z" secondAttribute="bottom" constant="18" id="uFW-YZ-8wv"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uEz-mx-qiv">
+                                                <rect key="frame" x="0.0" y="266" width="398" height="120"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnI-dH-Pso">
+                                                        <rect key="frame" x="12" y="19" width="374" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="l9o-1u-yJp"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="28"/>
+                                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign out of Upgrade." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b2-it-LcM">
+                                                        <rect key="frame" x="12" y="57" width="374" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="2wC-qv-6qM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a05-g0-cgR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="120"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <connections>
+                                                            <action selector="buttonSignOut:" destination="xgw-ly-QA0" eventType="touchUpInside" id="Ntp-AU-wwO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="6b2-it-LcM" secondAttribute="trailing" constant="12" id="GtB-sw-BRw"/>
+                                                    <constraint firstItem="vnI-dH-Pso" firstAttribute="top" secondItem="uEz-mx-qiv" secondAttribute="top" constant="19" id="JSs-1v-mVF"/>
+                                                    <constraint firstItem="vnI-dH-Pso" firstAttribute="leading" secondItem="uEz-mx-qiv" secondAttribute="leading" constant="12" id="SEg-d4-MKC"/>
+                                                    <constraint firstAttribute="height" constant="120" id="VtY-eN-jh9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vnI-dH-Pso" secondAttribute="trailing" constant="12" id="mE5-E9-4de"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6b2-it-LcM" secondAttribute="bottom" constant="18" id="n8X-f0-FEf"/>
+                                                    <constraint firstItem="6b2-it-LcM" firstAttribute="leading" secondItem="uEz-mx-qiv" secondAttribute="leading" constant="12" id="oo0-IY-ox4"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="uEz-mx-qiv" firstAttribute="leading" secondItem="Jyy-gU-CcI" secondAttribute="leading" id="Dwb-Cm-RT8"/>
+                                            <constraint firstAttribute="height" constant="386" id="QF8-eD-jg3"/>
+                                            <constraint firstAttribute="trailing" secondItem="oNi-4j-g8p" secondAttribute="trailing" id="TJq-zG-h1F"/>
+                                            <constraint firstItem="oNi-4j-g8p" firstAttribute="leading" secondItem="Jyy-gU-CcI" secondAttribute="leading" id="Usr-KM-TfX"/>
+                                            <constraint firstAttribute="bottom" secondItem="uEz-mx-qiv" secondAttribute="bottom" id="bNC-L9-3aj"/>
+                                            <constraint firstAttribute="trailing" secondItem="uEz-mx-qiv" secondAttribute="trailing" id="eid-Xw-UAb"/>
+                                            <constraint firstItem="oNi-4j-g8p" firstAttribute="top" secondItem="Jyy-gU-CcI" secondAttribute="top" id="jPY-Zt-Wnm"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Jyy-gU-CcI" firstAttribute="leading" secondItem="MSG-6s-olK" secondAttribute="leading" constant="8" id="PVE-f0-aiK"/>
+                                    <constraint firstAttribute="height" constant="756" id="Us1-us-DpM"/>
+                                    <constraint firstItem="xfd-X1-jE3" firstAttribute="top" secondItem="MSG-6s-olK" secondAttribute="top" constant="39" id="Wni-BP-fr7"/>
+                                    <constraint firstItem="Jyy-gU-CcI" firstAttribute="top" secondItem="xfd-X1-jE3" secondAttribute="bottom" constant="39" id="lCs-Bd-cj7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jyy-gU-CcI" secondAttribute="trailing" constant="8" id="qBe-4a-wkU"/>
+                                    <constraint firstItem="xfd-X1-jE3" firstAttribute="leading" secondItem="MSG-6s-olK" secondAttribute="leading" constant="20" id="qHr-A4-xxH"/>
+                                    <constraint firstAttribute="trailing" secondItem="xfd-X1-jE3" secondAttribute="trailing" constant="20" id="qhc-yJ-m0d"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="AOU-RU-vU1">
+                                <rect key="frame" x="20" y="70" width="264.5" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybf-OE-QTC">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="dGa-U7-dbu"/>
+                                        </constraints>
+                                        <state key="normal" image="Menu"/>
+                                        <connections>
+                                            <segue destination="VLl-Bx-6Oo" kind="show" identifier="menu" id="fwx-h3-Uav"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceY-3E-WHg">
+                                        <rect key="frame" x="124" y="0.0" width="140.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264.5" id="Raq-Lm-E1L"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Blue"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MSG-6s-olK" secondAttribute="bottom" id="4o4-hI-qhc"/>
+                            <constraint firstItem="MSG-6s-olK" firstAttribute="trailing" secondItem="dJH-Y1-GU3" secondAttribute="trailing" id="BcO-1o-zJb"/>
+                            <constraint firstItem="MSG-6s-olK" firstAttribute="top" secondItem="AOU-RU-vU1" secondAttribute="bottom" constant="30" id="DSN-Xd-NM0"/>
+                            <constraint firstItem="AOU-RU-vU1" firstAttribute="leading" secondItem="dJH-Y1-GU3" secondAttribute="leading" constant="20" id="Ic8-SN-Fzn"/>
+                            <constraint firstItem="AOU-RU-vU1" firstAttribute="top" secondItem="dJH-Y1-GU3" secondAttribute="top" constant="26" id="ase-Qe-Dlb"/>
+                            <constraint firstItem="MSG-6s-olK" firstAttribute="leading" secondItem="dJH-Y1-GU3" secondAttribute="leading" id="cbj-4b-KlA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dJH-Y1-GU3"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="labelGreet1" destination="kwZ-oO-Rcz" id="Kwi-H4-0LP"/>
+                        <outlet property="labelGreet2" destination="EpK-Fp-qcR" id="UhE-ye-fdJ"/>
+                        <outlet property="viewAbout" destination="x1C-85-ZSb" id="nR3-yL-0Cr"/>
+                        <outlet property="viewAccount" destination="oNi-4j-g8p" id="xMT-pY-yOa"/>
+                        <outlet property="viewMain" destination="MSG-6s-olK" id="ri7-2h-KLZ"/>
+                        <outlet property="viewSignOut" destination="uEz-mx-qiv" id="0lb-tV-bqb"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="signOut" id="sXD-8b-PCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6B1-jd-mjo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2947.826086956522" y="20.758928571428569"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Bottom Splash" width="564" height="440.5"/>
@@ -310,6 +539,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mbL-Rd-fam"/>
+        <segue reference="fwx-h3-Uav"/>
+        <segue reference="EwM-Yp-3Y0"/>
     </inferredMetricsTieBreakers>
 </document>

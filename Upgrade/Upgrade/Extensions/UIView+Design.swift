@@ -3,7 +3,7 @@ import UIKit
 extension UIView {
     
     /// Configures UIViewControlller to add a gradient layer with a variable gradient.
-    func configureViewController(color1: String, color2: String) {
+    func configureView(color1: String, color2: String) {
         let gradient = CAGradientLayer()
         gradient.frame = self.bounds
         gradient.colors = [UIColor(named: color1)!.cgColor, UIColor(named: color2)!.cgColor]
