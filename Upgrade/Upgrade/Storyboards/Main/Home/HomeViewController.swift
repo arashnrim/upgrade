@@ -24,8 +24,8 @@ class HomeViewController: UIViewController {
         /// Prints out line to command for better debug purposes
         print("upgradeconsoleREDIRECT: Redirection to WelcomeViewController executed.")
 
-        /// Calls extension function (see UIView+Design.swift) to configure background gradient color for HomeViewController
-        self.view.configureViewController(color1: "UP Purple", color2: "UP Blue")
+        /// Calls extension function configureView() (see UIView+Design.swift) to configure background gradient color for HomeViewController
+        self.view.configureView(color1: "UP Purple", color2: "UP Blue")
         
         /// Calls struct Quotes to assign a random quote
         labelQuote.text = quotes.quote[count]
@@ -50,9 +50,10 @@ class HomeViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        /// Configures Hero transitions for segues signedIn and signedOut
+        let destination = segue.destination
+        
+        /// Configures Hero transitions for segue menu
         if segue.identifier == "menu" {
-            let destination = segue.destination
             destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .right), dismissing: .uncover(direction: .left))
         }
         

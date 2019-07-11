@@ -13,15 +13,16 @@ class MenuViewController: UIViewController {
         /// Prints out line to command for better debug purposes
         print("upgradeconsoleREDIRECT: Redirection to MenuViewController executed.")
         
-        /// Calls extension function (see UIView+Design.swift) to configure background gradient color for HomeViewController
-        self.view.configureViewController(color1: "UP Purple", color2: "UP Blue")
+        /// Calls extension function configureView() (see UIView+Design.swift) to configure background gradient color for MenuViewController
+        self.view.configureView(color1: "UP Purple", color2: "UP Blue")
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        /// Configures Hero transitions for segues signedIn and signedOut
+        let destination = segue.destination
+        
+        /// Configures Hero transitions for segue menu
         if segue.identifier == "dismiss" {
-            let destination = segue.destination
             destination.hero.modalAnimationType = .uncover(direction: .left)
         }
         
