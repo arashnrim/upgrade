@@ -44,6 +44,7 @@
 		49CCAE6522C861DB00E8E2D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CCAE6322C861DB00E8E2D5 /* Main.storyboard */; };
 		49CCAE6722C861DC00E8E2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49CCAE6622C861DC00E8E2D5 /* Assets.xcassets */; };
 		49CCAE6A22C861DC00E8E2D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CCAE6822C861DC00E8E2D5 /* LaunchScreen.storyboard */; };
+		49CDC37322E987EF003DF2C1 /* ReauthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDC37222E987EF003DF2C1 /* ReauthenticationViewController.swift */; };
 		49F1C0C522D058B70028E16C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F1C0C422D058B70028E16C /* SignUpViewController.swift */; };
 		A903D97F42144ECB41187B5A /* Pods_Upgrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB03CBDED11B82AF4D91059A /* Pods_Upgrade.framework */; };
 /* End PBXBuildFile section */
@@ -89,6 +90,7 @@
 		49CCAE6622C861DC00E8E2D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49CCAE6922C861DC00E8E2D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49CCAE6B22C861DC00E8E2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49CDC37222E987EF003DF2C1 /* ReauthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReauthenticationViewController.swift; sourceTree = "<group>"; };
 		49F1C0C422D058B70028E16C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CB03CBDED11B82AF4D91059A /* Pods_Upgrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Upgrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB3076FD8D66F36AF8CCECC /* Pods-Upgrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upgrade.debug.xcconfig"; path = "Target Support Files/Pods-Upgrade/Pods-Upgrade.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				49C5046622D19D16003C52A9 /* Settings */,
 				4970827F22DAFD6100C47353 /* Account */,
 				49C19C8D22E96BCE004D0536 /* Delete */,
+				49CDC37122E987DE003DF2C1 /* Reauthentication */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -307,6 +310,14 @@
 			name = "Core Support";
 			sourceTree = "<group>";
 		};
+		49CDC37122E987DE003DF2C1 /* Reauthentication */ = {
+			isa = PBXGroup;
+			children = (
+				49CDC37222E987EF003DF2C1 /* ReauthenticationViewController.swift */,
+			);
+			path = Reauthentication;
+			sourceTree = "<group>";
+		};
 		49F1C0C322D0589E0028E16C /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,6 +476,7 @@
 				49B936E622D0F2840034329A /* UIView+Design.swift in Sources */,
 				496280F522D037C7004A5E72 /* UITextField+Design.swift in Sources */,
 				49C5046522D18453003C52A9 /* MenuViewController.swift in Sources */,
+				49CDC37322E987EF003DF2C1 /* ReauthenticationViewController.swift in Sources */,
 				49CCAE6222C861DB00E8E2D5 /* InitialViewController.swift in Sources */,
 				49B936E922D0F3330034329A /* HomeViewController.swift in Sources */,
 				49CCAE6022C861DB00E8E2D5 /* AppDelegate.swift in Sources */,

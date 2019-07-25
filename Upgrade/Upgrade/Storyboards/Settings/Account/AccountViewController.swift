@@ -193,11 +193,8 @@ class AccountViewController: UIViewController, UITextFieldDelegate {
         guard let currentUser = Auth.auth().currentUser else { return }
         
         currentUser.updateEmail(to: email) { (error) in
-            if let error = error {
-                 let alert = UIAlertController(title: NSLocalizedString("Something went wrong.", comment: "Distress title"), message: NSLocalizedString(error.localizedDescription, comment: "Error localized string"), preferredStyle: .alert)
-                alert.addTextField(configurationHandler: { (textField) in
-                    textField.placeholder = "Email"
-                })
+            if error != nil {
+                 self.performSegue(withIdentifier: "reauthenticate", sender: nil)
             } else {
                 self.createAlert(title: "Done!", message: "Your account details have been updated. You may have to refresh some pages to update the changes.")
             }
