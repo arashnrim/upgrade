@@ -211,18 +211,28 @@ class DeleteViewController: UIViewController, UITextFieldDelegate {
     func deleteAccount() {
         status(enabled: false)
         print("upgradeconsoleDATABASE: Account deletion started.")
-        buttonDeleteAccount.setTitle("Deleting account...", for: .disabled)
+        buttonDeleteAccount.setTitle("Deleting database...", for: .disabled)
         buttonDeleteData.setTitle("", for: .disabled)
         
         guard let user = Auth.auth().currentUser else { return }
         
-        user.delete { error in
+        reference = Firestore.firestore().document("users/\(user.uid)")
+        reference.delete { (error) in
             if let error = error {
-                self.performSegue(withIdentifier: "reauthenticate", sender: nil)
+                self.createAlert(title: "Something went wrong.", message: error.localizedDescription)
             } else {
-                self.performSegue(withIdentifier: "deleteAccount", sender: nil)
+                self.buttonDeleteAccount.setTitle("Deleting account...", for: .disabled)
+                user.delete { error in
+                    if error != nil {
+                        self.performSegue(withIdentifier: "reauthenticate", sender: nil)
+                        self.status(enabled: true)
+                    } else {
+                        self.performSegue(withIdentifier: "deleteAccount", sender: nil)
+                    }
+                }
             }
         }
+
     }
     
     // MARK: - Actions

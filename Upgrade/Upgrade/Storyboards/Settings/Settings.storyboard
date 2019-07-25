@@ -313,9 +313,6 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="fieldPassword"/>
-                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XU8-fh-t9z">
                                                 <rect key="frame" x="0.0" y="61" width="374" height="43"/>
@@ -323,9 +320,6 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="fieldPassword"/>
-                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ri3-PV-dnU">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
@@ -333,9 +327,6 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="fieldEmail"/>
-                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -412,6 +403,7 @@
                         <outlet property="fieldUID" destination="QaP-88-Uov" id="yuj-Jv-fpf"/>
                         <outlet property="viewCredentials" destination="Y04-aj-oaW" id="i0y-Ad-CTN"/>
                         <outlet property="viewMain" destination="Lyh-JI-2is" id="soi-w2-aVZ"/>
+                        <segue destination="4jv-AN-KCH" kind="show" identifier="reauthenticate" id="dbP-Cq-zBg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="opO-L1-5ZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -455,9 +447,6 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="fieldPassword"/>
-                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5t-jD-ebp">
                                         <rect key="frame" x="20" y="342" width="374" height="50"/>
@@ -476,7 +465,6 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
                                                 <color key="value" name="UP Purple"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="buttonContinue"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="buttonDeleteData:" destination="hah-Hm-5HF" eventType="touchUpInside" id="gWZ-u7-dxA"/>
@@ -500,7 +488,6 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
                                                 <color key="value" name="UP Purple"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="buttonContinue"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="buttonDeleteAccount:" destination="hah-Hm-5HF" eventType="touchUpInside" id="InP-Hz-8PB"/>
@@ -575,6 +562,7 @@
                         <outlet property="labelEmail" destination="Gue-QA-5Fu" id="1lF-nw-FK5"/>
                         <outlet property="viewMain" destination="g9e-g5-dlF" id="d4S-67-SyA"/>
                         <segue destination="sYV-5t-Juz" kind="show" identifier="deleteAccount" id="Bn8-Zt-wpD"/>
+                        <segue destination="4jv-AN-KCH" kind="show" identifier="reauthenticate" id="5g2-W2-RyF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5v-0f-wd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -588,6 +576,130 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ZM-zA-CvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5133" y="21"/>
+        </scene>
+        <!--Reauthentication View Controller-->
+        <scene sceneID="B7m-LQ-rZG">
+            <objects>
+                <viewController id="4jv-AN-KCH" customClass="ReauthenticationViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1XZ-2M-R0f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="liH-yJ-nga">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For your safety, we require you to enter your credentials once again as the process you were trying to perform was sensitive." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTt-pJ-JL7">
+                                        <rect key="frame" x="20" y="35" width="374" height="116"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="116" id="6xA-y2-UZy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may try again after reauthentication." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74x-fT-CTE">
+                                        <rect key="frame" x="20" y="159" width="374" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="XFe-ee-HwU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pt5-eU-4O3">
+                                        <rect key="frame" x="20" y="394" width="374" height="50"/>
+                                        <color key="backgroundColor" name="UP Orange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="v5L-7h-wwt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                        <state key="normal" title="Reauthenticate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" name="UP Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" name="UP Purple"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonReauthenticate:" destination="4jv-AN-KCH" eventType="touchUpInside" id="HCI-Wq-Pky"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h63-kw-aQZ">
+                                        <rect key="frame" x="20" y="240" width="374" height="104"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cMW-PS-ZZO">
+                                                <rect key="frame" x="0.0" y="61" width="374" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0Sa-Ue-tUQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="104" id="xlF-gW-TN1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="QTt-pJ-JL7" secondAttribute="trailing" constant="20" id="01r-AG-eQk"/>
+                                    <constraint firstItem="QTt-pJ-JL7" firstAttribute="leading" secondItem="liH-yJ-nga" secondAttribute="leading" constant="20" id="Bm2-52-dPQ"/>
+                                    <constraint firstItem="h63-kw-aQZ" firstAttribute="top" secondItem="74x-fT-CTE" secondAttribute="bottom" constant="36" id="DnN-l4-DGf"/>
+                                    <constraint firstAttribute="trailing" secondItem="h63-kw-aQZ" secondAttribute="trailing" constant="20" id="H9T-xU-F7D"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pt5-eU-4O3" secondAttribute="trailing" constant="20" id="OH5-j7-7G2"/>
+                                    <constraint firstItem="74x-fT-CTE" firstAttribute="leading" secondItem="liH-yJ-nga" secondAttribute="leading" constant="20" id="VAv-pP-K7r"/>
+                                    <constraint firstItem="Pt5-eU-4O3" firstAttribute="leading" secondItem="liH-yJ-nga" secondAttribute="leading" constant="20" id="cZh-cm-5uz"/>
+                                    <constraint firstItem="h63-kw-aQZ" firstAttribute="leading" secondItem="liH-yJ-nga" secondAttribute="leading" constant="20" id="ebi-3d-Syj"/>
+                                    <constraint firstItem="74x-fT-CTE" firstAttribute="top" secondItem="QTt-pJ-JL7" secondAttribute="bottom" constant="8" id="iAa-Zb-Unb"/>
+                                    <constraint firstAttribute="trailing" secondItem="74x-fT-CTE" secondAttribute="trailing" constant="20" id="kHP-bq-GSJ"/>
+                                    <constraint firstAttribute="height" constant="756" id="otN-6y-9z0"/>
+                                    <constraint firstItem="Pt5-eU-4O3" firstAttribute="top" secondItem="h63-kw-aQZ" secondAttribute="bottom" constant="50" id="p8v-tr-xJc"/>
+                                    <constraint firstItem="QTt-pJ-JL7" firstAttribute="top" secondItem="liH-yJ-nga" secondAttribute="top" constant="35" id="q1I-h7-N6d"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reauthentication" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obM-1y-YGH">
+                                <rect key="frame" x="20" y="70" width="374" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="LRG-sL-Qac"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Orange"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="liH-yJ-nga" secondAttribute="bottom" id="1bo-gX-ZXl"/>
+                            <constraint firstItem="FNu-FT-ygG" firstAttribute="trailing" secondItem="obM-1y-YGH" secondAttribute="trailing" constant="20" id="AFb-pc-4iW"/>
+                            <constraint firstItem="liH-yJ-nga" firstAttribute="trailing" secondItem="FNu-FT-ygG" secondAttribute="trailing" id="aeM-Qp-xYd"/>
+                            <constraint firstItem="obM-1y-YGH" firstAttribute="leading" secondItem="FNu-FT-ygG" secondAttribute="leading" constant="20" id="eu0-cd-F2v"/>
+                            <constraint firstItem="liH-yJ-nga" firstAttribute="leading" secondItem="FNu-FT-ygG" secondAttribute="leading" id="lYg-QW-JXQ"/>
+                            <constraint firstItem="obM-1y-YGH" firstAttribute="top" secondItem="FNu-FT-ygG" secondAttribute="top" constant="26" id="vrT-lO-7fZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FNu-FT-ygG"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonReauthenticate" destination="Pt5-eU-4O3" id="Sx0-ya-n3U"/>
+                        <outlet property="fieldEmail" destination="0Sa-Ue-tUQ" id="pJP-El-ems"/>
+                        <outlet property="fieldPassword" destination="cMW-PS-ZZO" id="fQv-pM-Aq7"/>
+                        <outlet property="viewCredentials" destination="h63-kw-aQZ" id="Xip-Gj-qQ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bnf-Fb-Zy4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5603" y="21"/>
         </scene>
     </scenes>
     <resources>
@@ -603,4 +715,7 @@
             <color red="0.55699998140335083" green="0.32899999618530273" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5g2-W2-RyF"/>
+    </inferredMetricsTieBreakers>
 </document>
