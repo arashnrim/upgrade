@@ -24,9 +24,9 @@ class AccountViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         /// Prints out line to command for better debug purposes
-        print("upgradeconsoleREDIRECT: Redirection to SettingsViewController executed.")
+        print("upgradeconsoleREDIRECT: Redirection to AccountViewController executed.")
         
-        /// Calls extension function configureView() (see UIView+Design.swift) to configure background gradient color for SettingsViewController
+        /// Calls extension function configureView() (see UIView+Design.swift) to configure background gradient color for AccountViewController
         self.view.configureView(color1: "UP Purple", color2: "UP Blue")
         
         /// Assigns the delegates to the textFields to manage keyboard first responders.
@@ -50,7 +50,7 @@ class AccountViewController: UIViewController, UITextFieldDelegate {
         fieldUID.setIcon(#imageLiteral(resourceName: "Password"))
         
         /// Calls extension function configureButton() (see UIButton+Design.swift) to configure the overall design for buttonContinue.
-        buttonUpdate.configureButton()
+        buttonUpdate.configureButton(color1: "UP Purple", color2: "UP Blue")
         
         /// Configures viewMain to have cornerRadius of 20; some corners are then masked to retain original rectangle shape
         viewMain.layer.cornerRadius = 20
@@ -66,10 +66,12 @@ class AccountViewController: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination
-        
-        /// Configures Hero transitions for segue menu
+        /// Overrides segues and adds additional information onto the segue.
+        /* In this instance, the Hero framework is used to configure the transition type for each segue.
+         This is done by retrieving the end destination of the segue, and then configuring the segue using the Hero framework.
+         */
         if segue.identifier == "delete" {
-            destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .up), dismissing: .uncover(direction: .down))
+            destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .left), dismissing: .uncover(direction: .right))
         }
         
     }

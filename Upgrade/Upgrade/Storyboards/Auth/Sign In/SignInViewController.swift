@@ -42,7 +42,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         fieldPassword.setIcon(#imageLiteral(resourceName: "Password"))
         
         /// Calls extension function configureButton() (see UIButton+Design.swift) to configure the overall design for buttonContinue.
-        buttonSignIn.configureButton()
+        buttonSignIn.configureButton(color1: "UP Purple", color2: "UP Blue")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
