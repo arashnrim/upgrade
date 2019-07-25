@@ -10,6 +10,8 @@
 		496280F322D035E3004A5E72 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496280F222D035E3004A5E72 /* SignInViewController.swift */; };
 		496280F522D037C7004A5E72 /* UITextField+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496280F422D037C7004A5E72 /* UITextField+Design.swift */; };
 		4968B55222C8B25A00F457EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4968B55122C8B25A00F457EB /* GoogleService-Info.plist */; };
+		4970827E22DAFC2200C47353 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4970827D22DAFC2200C47353 /* Settings.storyboard */; };
+		4970828122DAFD7900C47353 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970828022DAFD7900C47353 /* AccountViewController.swift */; };
 		49B936E622D0F2840034329A /* UIView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B936E522D0F2840034329A /* UIView+Design.swift */; };
 		49B936E922D0F3330034329A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B936E822D0F3330034329A /* HomeViewController.swift */; };
 		49B936EB22D0F7830034329A /* Quotes+Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B936EA22D0F7830034329A /* Quotes+Logic.swift */; };
@@ -50,6 +52,8 @@
 		496280F222D035E3004A5E72 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		496280F422D037C7004A5E72 /* UITextField+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Design.swift"; sourceTree = "<group>"; };
 		4968B55122C8B25A00F457EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4970827D22DAFC2200C47353 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		4970828022DAFD7900C47353 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		49B936E522D0F2840034329A /* UIView+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Design.swift"; sourceTree = "<group>"; };
 		49B936E822D0F3330034329A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		49B936EA22D0F7830034329A /* Quotes+Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quotes+Logic.swift"; sourceTree = "<group>"; };
@@ -115,6 +119,24 @@
 				496280F222D035E3004A5E72 /* SignInViewController.swift */,
 			);
 			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		4970827C22DAFBF200C47353 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4970827D22DAFC2200C47353 /* Settings.storyboard */,
+				49C5046622D19D16003C52A9 /* Settings */,
+				4970827F22DAFD6100C47353 /* Account */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4970827F22DAFD6100C47353 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				4970828022DAFD7900C47353 /* AccountViewController.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 		49B936E722D0F32A0034329A /* Home */ = {
@@ -238,6 +260,7 @@
 			children = (
 				49CCAE7222C8628200E8E2D5 /* Main */,
 				49C9EDAD22CF8A1600605D6F /* Auth */,
+				4970827C22DAFBF200C47353 /* Settings */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -249,7 +272,6 @@
 				49CCAE7322C8639D00E8E2D5 /* Initial */,
 				49B936E722D0F32A0034329A /* Home */,
 				49C5046322D18447003C52A9 /* Menu */,
-				49C5046622D19D16003C52A9 /* Settings */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -353,6 +375,7 @@
 				49C9ED9B22CF78DD00605D6F /* Metropolis-Thin.otf in Resources */,
 				49CCAE6A22C861DC00E8E2D5 /* LaunchScreen.storyboard in Resources */,
 				49C9EDA022CF78DD00605D6F /* Metropolis-SemiBoldItalic.otf in Resources */,
+				4970827E22DAFC2200C47353 /* Settings.storyboard in Resources */,
 				49C9EDA722CF78DD00605D6F /* Metropolis-LightItalic.otf in Resources */,
 				49C9EDA322CF78DD00605D6F /* Metropolis-Light.otf in Resources */,
 				4968B55222C8B25A00F457EB /* GoogleService-Info.plist in Resources */,
@@ -427,6 +450,7 @@
 			files = (
 				49C9EDB222CF8A4200605D6F /* WelcomeViewController.swift in Sources */,
 				49F1C0C522D058B70028E16C /* SignUpViewController.swift in Sources */,
+				4970828122DAFD7900C47353 /* AccountViewController.swift in Sources */,
 				49B936E622D0F2840034329A /* UIView+Design.swift in Sources */,
 				496280F522D037C7004A5E72 /* UITextField+Design.swift in Sources */,
 				49C5046522D18453003C52A9 /* MenuViewController.swift in Sources */,

@@ -6,19 +6,18 @@ class WelcomeViewController: UIViewController {
     @IBOutlet var buttonContinue: UIButton!
     
     // MARK: - Overrides
-    /// Configures status bar color; changes color from black (default) to white for better readability
+    /// Overrides preferred status bar style (color) from black (default) to white.
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /// Prints out line to command for better debug purposes
+        /// Prints out a custom line to the application console for debugging purposes.
         print("upgradeconsoleREDIRECT: Redirection to WelcomeViewController executed.")
         
-        /// Calls extension function configureButton (see UIButton+Design.swift) to configure overall design for buttonContinue
+        /// Calls extension function configureButton() (see UIButton+Design.swift) to configure the overall design for buttonContinue.
         buttonContinue.configureButton()
-        
     }
     
 }
