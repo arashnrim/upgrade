@@ -47,8 +47,10 @@ class SettingsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination
-        
-        /// Configures Hero transitions for segue menu
+        /// Overrides segues and adds additional information onto the segue.
+        /* In this instance, the Hero framework is used to configure the transition type for each segue.
+         This is done by retrieving the end destination of the segue, and then configuring the segue using the Hero framework.
+         */
         if segue.identifier == "menu" {
             destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .right), dismissing: .uncover(direction: .left))
         } else if segue.identifier == "account" {

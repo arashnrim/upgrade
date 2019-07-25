@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
         print("upgradeconsoleREDIRECT: Redirection to WelcomeViewController executed.")
         
         /// Calls extension function configureButton() (see UIButton+Design.swift) to configure the overall design for buttonContinue.
-        buttonContinue.configureButton()
+        buttonContinue.configureButton(color1: "UP Purple", color2: "UP Blue")
     }
     
 }

@@ -56,7 +56,7 @@
                                         <color key="color" name="UP Blue"/>
                                     </activityIndicatorView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give us a sec," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8r-FU-4M6">
-                                        <rect key="frame" x="108.5" y="25" width="157.5" height="28"/>
+                                        <rect key="frame" x="105" y="25" width="164.5" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="N7M-em-fCg"/>
                                             <constraint firstAttribute="height" constant="28" id="kdP-x5-QLv"/>
@@ -66,7 +66,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="we're working on it..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvU-Qe-nF7">
-                                        <rect key="frame" x="71" y="58" width="232.5" height="25"/>
+                                        <rect key="frame" x="63.5" y="58" width="247.5" height="25"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -226,9 +226,9 @@
                                 <rect key="frame" x="20" y="70" width="233.5" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGd-0a-Qq8">
-                                        <rect key="frame" x="0.0" y="0.0" width="16" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="16" id="1q4-dV-0ZP"/>
+                                            <constraint firstAttribute="width" constant="40" id="1q4-dV-0ZP"/>
                                         </constraints>
                                         <state key="normal" image="Cancel"/>
                                         <connections>
@@ -340,6 +340,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="IYC-9j-bbQ"/>
         <segue reference="mbL-Rd-fam"/>
         <segue reference="aKG-8t-LLp"/>
     </inferredMetricsTieBreakers>

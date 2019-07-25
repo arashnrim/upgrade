@@ -350,6 +350,9 @@
                                         <state key="normal" title="Delete your Account or Data">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="hah-Hm-5HF" kind="show" identifier="delete" id="dji-3r-PCB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -415,12 +418,186 @@
             </objects>
             <point key="canvasLocation" x="3784" y="21"/>
         </scene>
+        <!--Delete View Controller-->
+        <scene sceneID="vFT-ci-er7">
+            <objects>
+                <viewController storyboardIdentifier="DeleteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hah-Hm-5HF" customClass="DeleteViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i6X-HP-3e7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9e-g5-dlF">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To verify, please enter your email once again and select the following options." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gk3-8H-vk9">
+                                        <rect key="frame" x="20" y="35" width="374" height="116"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="116" id="j4D-PG-DW5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gue-QA-5Fu">
+                                        <rect key="frame" x="20" y="159" width="374" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="JNE-Xd-jvT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Verify" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Msv-cC-N4K">
+                                        <rect key="frame" x="20" y="242" width="374" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="mLj-td-lwp"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="fieldPassword"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5t-jD-ebp">
+                                        <rect key="frame" x="20" y="342" width="374" height="50"/>
+                                        <color key="backgroundColor" name="UP Orange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cwe-Ds-QmJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                        <state key="normal" title="Delete Data">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" name="UP Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" name="UP Purple"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="buttonContinue"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonDeleteData:" destination="hah-Hm-5HF" eventType="touchUpInside" id="gWZ-u7-dxA"/>
+                                            <action selector="buttonUpdate:" destination="MLn-Lb-Irg" eventType="touchUpInside" id="Sbk-NP-9Qb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJz-Tv-rjZ">
+                                        <rect key="frame" x="20" y="400" width="374" height="50"/>
+                                        <color key="backgroundColor" name="UP Orange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="PeJ-8N-ZtC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                        <state key="normal" title="Delete Account">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" name="UP Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" name="UP Purple"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="buttonContinue"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonDeleteAccount:" destination="hah-Hm-5HF" eventType="touchUpInside" id="InP-Hz-8PB"/>
+                                            <action selector="buttonUpdate:" destination="MLn-Lb-Irg" eventType="touchUpInside" id="X0B-tf-gOm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Msv-cC-N4K" firstAttribute="leading" secondItem="g9e-g5-dlF" secondAttribute="leading" constant="20" id="9h7-iZ-g50"/>
+                                    <constraint firstItem="Gue-QA-5Fu" firstAttribute="top" secondItem="Gk3-8H-vk9" secondAttribute="bottom" constant="8" id="AOc-pW-EH1"/>
+                                    <constraint firstAttribute="height" constant="756" id="BAQ-Sy-x4j"/>
+                                    <constraint firstItem="H5t-jD-ebp" firstAttribute="leading" secondItem="g9e-g5-dlF" secondAttribute="leading" constant="20" id="CFi-ZI-Zts"/>
+                                    <constraint firstItem="gJz-Tv-rjZ" firstAttribute="top" secondItem="H5t-jD-ebp" secondAttribute="bottom" constant="8" id="J9C-jD-MOv"/>
+                                    <constraint firstAttribute="trailing" secondItem="H5t-jD-ebp" secondAttribute="trailing" constant="20" id="JIl-c0-K0M"/>
+                                    <constraint firstAttribute="trailing" secondItem="Msv-cC-N4K" secondAttribute="trailing" constant="20" id="KZe-E8-CYf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gue-QA-5Fu" secondAttribute="trailing" constant="20" id="KiQ-gh-L3O"/>
+                                    <constraint firstAttribute="trailing" secondItem="gJz-Tv-rjZ" secondAttribute="trailing" constant="20" id="cle-SV-47J"/>
+                                    <constraint firstItem="Msv-cC-N4K" firstAttribute="top" secondItem="Gue-QA-5Fu" secondAttribute="bottom" constant="8" id="dfB-PE-KmP"/>
+                                    <constraint firstItem="Gue-QA-5Fu" firstAttribute="leading" secondItem="g9e-g5-dlF" secondAttribute="leading" constant="20" id="gDG-ny-Dzt"/>
+                                    <constraint firstItem="Gk3-8H-vk9" firstAttribute="top" secondItem="g9e-g5-dlF" secondAttribute="top" constant="35" id="gMO-qq-TUt"/>
+                                    <constraint firstItem="Gk3-8H-vk9" firstAttribute="leading" secondItem="g9e-g5-dlF" secondAttribute="leading" constant="20" id="ivw-dk-ZKu"/>
+                                    <constraint firstItem="H5t-jD-ebp" firstAttribute="top" secondItem="Msv-cC-N4K" secondAttribute="bottom" constant="57" id="pF8-Fa-bVC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gk3-8H-vk9" secondAttribute="trailing" constant="20" id="rtI-8B-I16"/>
+                                    <constraint firstItem="gJz-Tv-rjZ" firstAttribute="leading" secondItem="g9e-g5-dlF" secondAttribute="leading" constant="20" id="uoO-zP-D5q"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="JJc-OU-TId">
+                                <rect key="frame" x="20" y="70" width="266.5" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="un3-xY-g5g">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="6DO-fT-Mhm"/>
+                                        </constraints>
+                                        <state key="normal" image="Back"/>
+                                        <connections>
+                                            <action selector="buttonBack:" destination="hah-Hm-5HF" eventType="touchUpInside" id="2PR-iu-Rfz"/>
+                                            <action selector="buttonBack:" destination="MLn-Lb-Irg" eventType="touchUpInside" id="Eio-sQ-Z9y"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZV-eY-zff">
+                                        <rect key="frame" x="124" y="0.0" width="142.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266.5" id="ik3-ND-FCw"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Orange"/>
+                        <constraints>
+                            <constraint firstItem="g9e-g5-dlF" firstAttribute="trailing" secondItem="amc-fO-EtV" secondAttribute="trailing" id="1Gh-ZZ-0cW"/>
+                            <constraint firstItem="g9e-g5-dlF" firstAttribute="top" secondItem="JJc-OU-TId" secondAttribute="bottom" constant="30" id="EZs-hx-9VC"/>
+                            <constraint firstAttribute="bottom" secondItem="g9e-g5-dlF" secondAttribute="bottom" id="FmL-x5-V13"/>
+                            <constraint firstItem="g9e-g5-dlF" firstAttribute="leading" secondItem="amc-fO-EtV" secondAttribute="leading" id="JS8-Lh-BzF"/>
+                            <constraint firstItem="JJc-OU-TId" firstAttribute="top" secondItem="amc-fO-EtV" secondAttribute="top" constant="26" id="KF2-f2-esq"/>
+                            <constraint firstItem="JJc-OU-TId" firstAttribute="leading" secondItem="amc-fO-EtV" secondAttribute="leading" constant="20" id="Oxw-do-2JQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="amc-fO-EtV"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="buttonDeleteAccount" destination="gJz-Tv-rjZ" id="XfT-Wh-8d7"/>
+                        <outlet property="buttonDeleteData" destination="H5t-jD-ebp" id="1XJ-ju-pR0"/>
+                        <outlet property="fieldVerify" destination="Msv-cC-N4K" id="7aa-Sc-aXZ"/>
+                        <outlet property="labelEmail" destination="Gue-QA-5Fu" id="1lF-nw-FK5"/>
+                        <outlet property="viewMain" destination="g9e-g5-dlF" id="d4S-67-SyA"/>
+                        <segue destination="sYV-5t-Juz" kind="show" identifier="deleteAccount" id="Bn8-Zt-wpD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b5v-0f-wd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4618.840579710145" y="20.758928571428569"/>
+        </scene>
+        <!--InitialViewController-->
+        <scene sceneID="TbU-pj-U9n">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="InitialViewController" id="sYV-5t-Juz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ZM-zA-CvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5133" y="21"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Back" width="40" height="40"/>
         <image name="Menu" width="40" height="40"/>
         <namedColor name="UP Blue">
             <color red="0.36500000953674316" green="0.47499999403953552" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UP Orange">
+            <color red="0.9570000171661377" green="0.66699999570846558" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="UP Purple">
             <color red="0.55699998140335083" green="0.32899999618530273" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
