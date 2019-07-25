@@ -30,17 +30,19 @@ class SettingsViewController: UIViewController {
         viewMain.layer.cornerRadius = 20
         viewMain.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         /// Retrieves the user display name; if present, it will be displayed to the user
         guard let userName = Auth.auth().currentUser?.displayName else { return }
         
         if userName != "" {
-            labelGreet1.text = "Hey there,"
+            labelGreet1.text = "Hi there,"
             labelGreet2.text = "\(userName)!"
         } else {
             labelGreet1.text = "Hello"
             labelGreet2.text = "there!"
         }
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

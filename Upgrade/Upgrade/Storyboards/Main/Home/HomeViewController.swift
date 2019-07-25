@@ -1,5 +1,6 @@
 import UIKit
 import Hero
+import Firebase
 
 class HomeViewController: UIViewController {
     
@@ -11,7 +12,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - Properties
     let quotes = Quotes()
-    var count = Int.random(in: 1...8)
+    var count = Int.random(in: 1..<8)
     
     // MARK: - Overrides
     /// Configures status bar color; changes color from black (default) to white for better readability
@@ -51,10 +52,14 @@ class HomeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination
-        
-        /// Configures Hero transitions for segue menu
+        /// Overrides segues and adds additional information onto the segue.
+        /* In this instance, the Hero framework is used to configure the transition type for each segue.
+         This is done by retrieving the end destination of the segue, and then configuring the segue using the Hero framework.
+         */
         if segue.identifier == "menu" {
             destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .right), dismissing: .uncover(direction: .left))
+        } else if segue.identifier == "signedOut" {
+            destination.hero.modalAnimationType = .zoomOut
         }
         
     }

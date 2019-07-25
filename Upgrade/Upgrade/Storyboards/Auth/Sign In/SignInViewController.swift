@@ -13,68 +13,78 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     var currentTextField = UITextField()
     
     // MARK: - Overrides
-    /// Configures status bar color; changes color from black (default) to white for better readability
+    /// Overrides preferred status bar style (color) from black (default) to white.
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /// Prints out line to command for better debug purposes
+        /// Prints out a custom line to the application console for debugging purposes.
         print("upgradeconsoleREDIRECT: Redirection to SignInViewController executed.")
         
-        /// Assigns textFieldDelegates to the textFields for management of keyboard first responders
+        /// Assigns the delegates to the textFields to manage keyboard first responders.
+        /* A delegate is an object that acts on behalf of, or in coordination with, another object when that object encounters an event in a program.
+           In this instance, the delegates for the textFields are assigned to SignInViewController; from this, SignInViewController acts as the delegate for the UITextField, and therefore protocol functions in SignInViewController can be useable.
+           This notice will only appear once.
+        */
         fieldEmail.delegate = self
         fieldPassword.delegate = self
         
-        /// Calls extension function configureTextField (see UITextField+Design.swift) to configure overall design for textFields
+        /// Calls extension function configureTextField() (see UITextField+Design.swift) to configure the overall design for the textFields.
         fieldEmail.configureTextField()
         fieldPassword.configureTextField()
         
-        /// Embeds icons into the textFields for better user readability
+        /// Embeds icons into the textFields for better user readability (see UITextField+Design.swift).
         fieldEmail.tintColor = .gray
         fieldPassword.tintColor = .gray
         fieldEmail.setIcon(#imageLiteral(resourceName: "User"))
         fieldPassword.setIcon(#imageLiteral(resourceName: "Password"))
         
-        /// Calls extension function configureButton (see UIButton+Design.swift) to configure overall design for buttonContinue
+        /// Calls extension function configureButton() (see UIButton+Design.swift) to configure the overall design for buttonContinue.
         buttonSignIn.configureButton()
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        /// Configures Hero transitions for segues signedIn and signedOut
+        /// Overrides segues and adds additional information onto the segue.
+        /* In this instance, the Hero framework is used to configure the transition type for each segue.
+         This is done by retrieving the end destination of the segue, and then configuring the segue using the Hero framework.
+        */
         if segue.identifier == "signedIn" {
             let destination = segue.destination
             destination.hero.modalAnimationType = .zoomOut
         }
-        
     }
     
     // MARK: - Functions
-    /// This function executes when the textField is highlighted and editing begins
-    /// The code changes the value of currentTextField to the current highlighted textField, and requests that viewCredentials bring the currentTextField to the front
+    // This function is a protocol for UITextFieldDelegate; it is executed when the textField is being interacted with and highlighted.
+    /// Retrieves the current, highlighted textField (that is being interacted with) and brings it to the front in viewCredentials.
     func textFieldDidBeginEditing(_ textField: UITextField) {
         currentTextField = textField
         viewCredentials.bringSubviewToFront(currentTextField)
     }
     
-    /// This function executes when the return key in the current textField is pressed
-    /// The code evaluates the current active text field; if the current textField is fieldEmail, the keyboard will be resigned and the focus is switched over to fieldPassword
-    /// If the current textField is fieldPassword, the keyboard will be resigned
+    // This function is a protocol for UITextFieldDelegate; it is executed when the return key of the keyboard is pressed.
+    /// Evaluates the current active text field.
+    /* If the current textField is fieldEmail, the keyboard will be resigned and the focus is switched over to fieldPassword.
+       Else, if the current textField is fieldPassword, the keyboard will be resigned.
+    */
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == fieldEmail {
+        switch textField {
+        case fieldEmail:
             fieldEmail.resignFirstResponder()
             fieldPassword.becomeFirstResponder()
-        } else {
+        default:
             fieldPassword.resignFirstResponder()
         }
         return true
     }
     
-    /// This function executes when the textField is done editing and proceeds to the next textField
-    /// The code evaluates the text in the fields; if the text is not empty (""), then the shadow is removed, prompting to the user design-wise that their input is no longer needed
-    /// If the above mentioned is not true, then the opacity will be restored back to the default value (0.2)
+    // This function is a protocol for UITextField Delegate; it is executed when the textField is done editing and proceeds to the next textField.
+    /// Evaluates the text in the fields.
+    /* If the text is not empty (""), then the shadow is removed, prompting to the user design-wise that their input is no longer needed.
+       Else, if the text is empty, the opacity will be restored back to the default value (0.2), prompting to the user design-wise that their input is required.
+    */
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
         if currentTextField.text != "" {
             UIView.animate(withDuration: 1) {
@@ -87,12 +97,13 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    /// Evaluates the current condition and manages the UITextFields and UIButtons states
-    /// The following is changed:
-    /// a. enabled status
-    /// b. shadows (if applicable)
-    /// c. alphas
-    /// d. titles or text
+    /// Evaluates the current condition and manages the UITextFields and UIButtons states.
+    /* The following is changed:
+       a. enabled status
+       b. shadows (if applicable)
+       c. alphas
+       d. titles or text
+    */
     func status(enabled: Bool) {
         if enabled == true {
             fieldEmail.isEnabled = true
@@ -119,7 +130,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    /// Creates a UIAlertController with a customised message for the user
+    /// Creates a UIAlertController with a single UIAlertAction for presentation to the user.
     func createAlert(title: String, message: String) {
         let alert = UIAlertController(title: NSLocalizedString(title, comment: message), message: NSLocalizedString(message, comment: message), preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
@@ -127,8 +138,10 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: - Firebase
-    /// This function force-retrieves a value from the textFields and uses it to authenticate the user using Firebase
-    /// If errors are found, the execution stops with an alert showing the user an error; they can try to perform a solution from this
+    /// Retrieves values from textFields and attempts to sign the user in.
+    /* This function force-retrieves a value from the textFields and uses it to authenticate the user using Firebase.
+       If errors are found, the execution stops with an alert showing the user an error; they can try to perform a solution from this.
+    */
     func signIn() {
         guard let email = fieldEmail.text else { return }
         guard let password = fieldPassword.text else { return }
