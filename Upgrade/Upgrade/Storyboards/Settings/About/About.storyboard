@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j2q-8D-91B">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About View Controller-->
+        <scene sceneID="DAI-F5-lLZ">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" id="j2q-8D-91B" customClass="AboutViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Wg-Eb-fx8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="920"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whr-A0-GwZ">
+                                <rect key="frame" x="0.0" y="164" width="414" height="756"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDs-cL-NWW">
+                                        <rect key="frame" x="0.0" y="8" width="414" height="748"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPX-2P-HQ7" userLabel="Content View">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="748"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Upgrade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0o3-t7-fXL">
+                                                        <rect key="frame" x="20" y="18" width="374" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="fCv-7Z-1y1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rU9-q6-enB">
+                                                        <rect key="frame" x="20" y="51" width="374" height="130"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="130" id="xSe-Pn-0AR"/>
+                                                        </constraints>
+                                                        <string key="text">Upgrade is a grade-tracking application built for students to better understand their academic achievements through helpful information.</string>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Ora" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUV-cq-j5S">
+                                                        <rect key="frame" x="20" y="239" width="374" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="6hC-BF-wgx"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqJ-BG-AiI">
+                                                        <rect key="frame" x="20" y="272" width="374" height="130"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="130" id="KHw-It-SbB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special Thanks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xta-kB-5dh">
+                                                        <rect key="frame" x="20" y="460" width="374" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="7eb-hm-ldm"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s60-pr-g3I">
+                                                        <rect key="frame" x="20" y="493" width="374" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="FFr-n6-61Y"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="20"/>
+                                                        <state key="normal" title="Firebase by Google">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4R-D1-i5n">
+                                                        <rect key="frame" x="20" y="536" width="374" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="4V0-NM-o0c"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="20"/>
+                                                        <state key="normal" title="Hero by Luke Zhao">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6h-nY-HnR">
+                                                        <rect key="frame" x="20" y="579" width="374" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="Str-b5-wB0"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="20"/>
+                                                        <state key="normal" title="icons8">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eat-Dj-GKF">
+                                                        <rect key="frame" x="20" y="622" width="374" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="bpG-2u-mPc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="20"/>
+                                                        <state key="normal" title="You, our wonderful user">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Xta-kB-5dh" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="43P-mM-H7i"/>
+                                                    <constraint firstItem="rU9-q6-enB" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="CLX-cY-ut2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="rU9-q6-enB" secondAttribute="trailing" constant="20" id="EJc-Tx-N17"/>
+                                                    <constraint firstItem="s60-pr-g3I" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="FRe-eC-Rah"/>
+                                                    <constraint firstItem="eat-Dj-GKF" firstAttribute="top" secondItem="d6h-nY-HnR" secondAttribute="bottom" constant="8" id="JI5-cS-T8W"/>
+                                                    <constraint firstItem="d6h-nY-HnR" firstAttribute="top" secondItem="s4R-D1-i5n" secondAttribute="bottom" constant="8" id="KXa-UY-1vb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="s4R-D1-i5n" secondAttribute="trailing" constant="20" id="Mmg-ls-OgC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eat-Dj-GKF" secondAttribute="trailing" constant="20" id="Mt4-y4-UR7"/>
+                                                    <constraint firstItem="s4R-D1-i5n" firstAttribute="top" secondItem="s60-pr-g3I" secondAttribute="bottom" constant="8" id="RZV-l0-BQJ"/>
+                                                    <constraint firstItem="Xta-kB-5dh" firstAttribute="top" secondItem="vqJ-BG-AiI" secondAttribute="bottom" constant="58" id="SVY-Xo-B5F"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Xta-kB-5dh" secondAttribute="trailing" constant="20" id="UD8-Gi-tnL"/>
+                                                    <constraint firstItem="s60-pr-g3I" firstAttribute="top" secondItem="Xta-kB-5dh" secondAttribute="bottom" constant="8" id="WVu-cW-VcD"/>
+                                                    <constraint firstItem="0o3-t7-fXL" firstAttribute="top" secondItem="rPX-2P-HQ7" secondAttribute="top" constant="18" id="WWf-rX-wfH"/>
+                                                    <constraint firstItem="rU9-q6-enB" firstAttribute="top" secondItem="0o3-t7-fXL" secondAttribute="bottom" constant="8" id="a9g-9b-RXY"/>
+                                                    <constraint firstItem="d6h-nY-HnR" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="e5f-nu-997"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OUV-cq-j5S" secondAttribute="trailing" constant="20" id="eWU-XW-tIA"/>
+                                                    <constraint firstItem="OUV-cq-j5S" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="f0Z-iv-SrW"/>
+                                                    <constraint firstItem="vqJ-BG-AiI" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="hhr-dw-RTU"/>
+                                                    <constraint firstItem="eat-Dj-GKF" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="hvw-SN-32h"/>
+                                                    <constraint firstItem="s4R-D1-i5n" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="iwW-T8-IUa"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0o3-t7-fXL" secondAttribute="trailing" constant="20" id="ktj-49-MgT"/>
+                                                    <constraint firstItem="vqJ-BG-AiI" firstAttribute="top" secondItem="OUV-cq-j5S" secondAttribute="bottom" constant="8" id="m2n-hR-u3M"/>
+                                                    <constraint firstItem="0o3-t7-fXL" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="oD7-Bl-JVX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="d6h-nY-HnR" secondAttribute="trailing" constant="20" id="tHc-Lz-a6T"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vqJ-BG-AiI" secondAttribute="trailing" constant="20" id="tdY-ZG-fGx"/>
+                                                    <constraint firstItem="OUV-cq-j5S" firstAttribute="top" secondItem="rU9-q6-enB" secondAttribute="bottom" constant="58" id="wCo-TF-4Vc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="s60-pr-g3I" secondAttribute="trailing" constant="20" id="xwY-S8-hal"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="rPX-2P-HQ7" firstAttribute="top" secondItem="JDs-cL-NWW" secondAttribute="top" id="A6O-lT-Gw8"/>
+                                            <constraint firstItem="rPX-2P-HQ7" firstAttribute="leading" secondItem="JDs-cL-NWW" secondAttribute="leading" id="OMK-xW-VAE"/>
+                                            <constraint firstAttribute="trailing" secondItem="rPX-2P-HQ7" secondAttribute="trailing" id="Rne-tv-XsA"/>
+                                            <constraint firstItem="rPX-2P-HQ7" firstAttribute="height" secondItem="JDs-cL-NWW" secondAttribute="height" priority="250" id="bAD-ci-sAq"/>
+                                            <constraint firstItem="rPX-2P-HQ7" firstAttribute="width" secondItem="JDs-cL-NWW" secondAttribute="width" id="t0U-5b-zP6"/>
+                                            <constraint firstAttribute="bottom" secondItem="rPX-2P-HQ7" secondAttribute="bottom" id="zLF-Jk-k1D"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="JDs-cL-NWW" firstAttribute="leading" secondItem="whr-A0-GwZ" secondAttribute="leading" id="IEd-5q-tB8"/>
+                                    <constraint firstAttribute="bottom" secondItem="JDs-cL-NWW" secondAttribute="bottom" id="YTE-IU-nvc"/>
+                                    <constraint firstItem="JDs-cL-NWW" firstAttribute="top" secondItem="whr-A0-GwZ" secondAttribute="top" constant="8" id="Zo4-3N-4II"/>
+                                    <constraint firstAttribute="trailing" secondItem="JDs-cL-NWW" secondAttribute="trailing" id="dr8-87-lI8"/>
+                                    <constraint firstAttribute="height" constant="756" id="lyF-fd-ztk"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="zRj-Ar-0Y8">
+                                <rect key="frame" x="20" y="70" width="266.5" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUX-0u-qz2">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="ryx-jm-Ifm"/>
+                                        </constraints>
+                                        <state key="normal" image="Back"/>
+                                        <connections>
+                                            <action selector="buttonBack:" destination="j2q-8D-91B" eventType="touchUpInside" id="Fuj-GO-j0m"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkf-FL-Czg">
+                                        <rect key="frame" x="124" y="0.0" width="142.5" height="64"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266.5" id="aaf-6v-JwX"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Blue"/>
+                        <constraints>
+                            <constraint firstItem="whr-A0-GwZ" firstAttribute="trailing" secondItem="BG3-xW-zb7" secondAttribute="trailing" id="7dR-wI-sgk"/>
+                            <constraint firstAttribute="bottom" secondItem="whr-A0-GwZ" secondAttribute="bottom" id="9p3-uc-GIN"/>
+                            <constraint firstItem="whr-A0-GwZ" firstAttribute="top" secondItem="zRj-Ar-0Y8" secondAttribute="bottom" constant="30" id="BdA-ov-f9c"/>
+                            <constraint firstItem="zRj-Ar-0Y8" firstAttribute="top" secondItem="BG3-xW-zb7" secondAttribute="top" constant="26" id="Ijp-u8-kb5"/>
+                            <constraint firstItem="zRj-Ar-0Y8" firstAttribute="leading" secondItem="BG3-xW-zb7" secondAttribute="leading" constant="20" id="Kqs-Gm-KzY"/>
+                            <constraint firstItem="whr-A0-GwZ" firstAttribute="leading" secondItem="BG3-xW-zb7" secondAttribute="leading" id="jhc-OE-DeW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BG3-xW-zb7"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="920"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="contentView" destination="JDs-cL-NWW" id="KUU-7J-bnF"/>
+                        <outlet property="viewMain" destination="whr-A0-GwZ" id="1NJ-me-Gmi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwo-No-Imv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3782.608695652174" y="724.55357142857144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Back" width="40" height="40"/>
+        <namedColor name="UP Blue">
+            <color red="0.36500000953674316" green="0.47499999403953552" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

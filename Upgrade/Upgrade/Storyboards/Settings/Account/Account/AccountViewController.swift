@@ -171,7 +171,7 @@ class AccountViewController: UIViewController, UITextFieldDelegate {
         
         let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
         
-        if currentUser.displayName == name {
+        if currentUser.displayName != name {
             changeRequest?.displayName = name
             
             changeRequest?.commitChanges(completion: { (error) in
@@ -210,6 +210,7 @@ class AccountViewController: UIViewController, UITextFieldDelegate {
         if currentUser.displayName == name && currentUser.email == email {
             self.createAlert(title: "Nothing's different.", message: "Nothing has changed, so we intervened the process.")
         } else {
+            buttonUpdate.setTitle("Updating...", for: .disabled)
             status(enabled: false)
             changeName()
         }

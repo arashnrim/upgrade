@@ -113,6 +113,14 @@
             </objects>
             <point key="canvasLocation" x="701" y="-22"/>
         </scene>
+        <!--Setup-->
+        <scene sceneID="kUM-A6-Zbl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Setup" id="XHK-Pa-45t" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPP-WN-Ylb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="-411"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="dxu-gu-aft">
             <objects>
@@ -208,6 +216,7 @@
                         <outlet property="viewBar" destination="M2L-Yv-RVX" id="sfD-yi-Ims"/>
                         <outlet property="viewMain" destination="Qcw-Xv-Wym" id="f8u-xK-DWN"/>
                         <segue destination="mmL-NU-AvK" kind="show" identifier="signedOut" id="aKG-8t-LLp"/>
+                        <segue destination="XHK-Pa-45t" kind="show" identifier="setup" id="QbZ-N9-EiD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwF-cG-BMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -340,8 +349,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IYC-9j-bbQ"/>
-        <segue reference="mbL-Rd-fam"/>
+        <segue reference="EwM-Yp-3Y0"/>
         <segue reference="aKG-8t-LLp"/>
     </inferredMetricsTieBreakers>
 </document>

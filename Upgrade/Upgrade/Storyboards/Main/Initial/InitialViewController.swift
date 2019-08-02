@@ -14,6 +14,8 @@ class InitialViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
         /// Calls Firebase Auth to retrieve currentUser state and use logic to redirect user;
         /* If:
            a. user != nil (user is signed in), redirect to HomeViewController

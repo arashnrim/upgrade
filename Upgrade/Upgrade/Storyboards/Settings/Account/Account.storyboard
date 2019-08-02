@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ctg-vW-bfl">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Account View Controller-->
+        <scene sceneID="Emj-gZ-m63">
+            <objects>
+                <viewController storyboardIdentifier="AccountViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ctg-vW-bfl" customClass="AccountViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Gv-Bc-tL1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Voh-Eu-zyr">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKL-TM-hDf">
+                                        <rect key="frame" x="20" y="265" width="374" height="50"/>
+                                        <color key="backgroundColor" name="UP Blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="B5X-5O-uAv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                        <state key="normal" title="Update">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" name="UP Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" name="UP Purple"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="buttonContinue"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonUpdate:" destination="ctg-vW-bfl" eventType="touchUpInside" id="Cyb-xG-rWB"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qoy-uw-6yQ">
+                                        <rect key="frame" x="20" y="50" width="374" height="165"/>
+                                        <subviews>
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User ID" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Hyd-k3-apO">
+                                                <rect key="frame" x="0.0" y="122" width="374" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CmR-Ag-8Rn">
+                                                <rect key="frame" x="0.0" y="61" width="374" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DVP-TN-wmj">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="165" id="yHU-YM-HOJ"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9R3-Ub-pzk">
+                                        <rect key="frame" x="20" y="482" width="374" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="18"/>
+                                        <state key="normal" title="Delete your Account or Data">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="27b-Ny-IvT" kind="show" identifier="delete" id="Fgt-ce-vwB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="qKL-TM-hDf" firstAttribute="top" secondItem="Qoy-uw-6yQ" secondAttribute="bottom" constant="50" id="KTy-sy-R3x"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qoy-uw-6yQ" secondAttribute="trailing" constant="20" id="RZ5-Tg-2jI"/>
+                                    <constraint firstAttribute="height" constant="756" id="VHA-re-95o"/>
+                                    <constraint firstItem="Qoy-uw-6yQ" firstAttribute="leading" secondItem="Voh-Eu-zyr" secondAttribute="leading" constant="20" id="Wf6-gc-dQh"/>
+                                    <constraint firstItem="Qoy-uw-6yQ" firstAttribute="top" secondItem="Voh-Eu-zyr" secondAttribute="top" constant="50" id="X28-Gb-Gpr"/>
+                                    <constraint firstItem="qKL-TM-hDf" firstAttribute="leading" secondItem="Voh-Eu-zyr" secondAttribute="leading" constant="20" id="doZ-Bh-tTM"/>
+                                    <constraint firstAttribute="trailing" secondItem="qKL-TM-hDf" secondAttribute="trailing" constant="20" id="k0L-a7-cig"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="KTb-AW-UuY">
+                                <rect key="frame" x="20" y="70" width="266.5" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSr-7L-5B8">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="fFd-1B-fie"/>
+                                        </constraints>
+                                        <state key="normal" image="Back"/>
+                                        <connections>
+                                            <action selector="buttonBack:" destination="ctg-vW-bfl" eventType="touchUpInside" id="woN-PS-kW8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiU-2q-vD4">
+                                        <rect key="frame" x="124" y="0.0" width="142.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266.5" id="nMt-t6-Pw5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Blue"/>
+                        <constraints>
+                            <constraint firstItem="Voh-Eu-zyr" firstAttribute="trailing" secondItem="0Eb-YW-1VA" secondAttribute="trailing" id="IPS-Pv-JVI"/>
+                            <constraint firstAttribute="bottom" secondItem="Voh-Eu-zyr" secondAttribute="bottom" id="IuH-Oq-wxD"/>
+                            <constraint firstItem="KTb-AW-UuY" firstAttribute="leading" secondItem="0Eb-YW-1VA" secondAttribute="leading" constant="20" id="ZcU-Us-6cI"/>
+                            <constraint firstItem="KTb-AW-UuY" firstAttribute="top" secondItem="0Eb-YW-1VA" secondAttribute="top" constant="26" id="Zey-w5-LSA"/>
+                            <constraint firstItem="Voh-Eu-zyr" firstAttribute="top" secondItem="KTb-AW-UuY" secondAttribute="bottom" constant="30" id="guR-AO-fkC"/>
+                            <constraint firstItem="Voh-Eu-zyr" firstAttribute="leading" secondItem="0Eb-YW-1VA" secondAttribute="leading" id="xYm-w8-AQt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Eb-YW-1VA"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="buttonUpdate" destination="qKL-TM-hDf" id="aV5-wn-c3i"/>
+                        <outlet property="fieldEmail" destination="CmR-Ag-8Rn" id="vKj-zv-19M"/>
+                        <outlet property="fieldName" destination="DVP-TN-wmj" id="EWi-P1-ivW"/>
+                        <outlet property="fieldUID" destination="Hyd-k3-apO" id="dYE-bB-vMB"/>
+                        <outlet property="viewCredentials" destination="Qoy-uw-6yQ" id="maE-bL-aJG"/>
+                        <outlet property="viewMain" destination="Voh-Eu-zyr" id="wvQ-Oq-hGY"/>
+                        <segue destination="u7s-RC-ehb" kind="show" identifier="reauthenticate" id="Fer-vV-8dG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTz-eb-TZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3784" y="21"/>
+        </scene>
+        <!--Delete View Controller-->
+        <scene sceneID="BIi-FB-nNn">
+            <objects>
+                <viewController storyboardIdentifier="DeleteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="27b-Ny-IvT" customClass="DeleteViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kus-39-Vm5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tH-ND-ClP">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To verify, please enter your email once again and select the following options." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8f-Hm-p4u">
+                                        <rect key="frame" x="20" y="35" width="374" height="116"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="116" id="662-Po-Wse"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpv-23-b03">
+                                        <rect key="frame" x="20" y="159" width="374" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="JGu-rf-9We"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Verify" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yda-PT-Kqw">
+                                        <rect key="frame" x="20" y="242" width="374" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="kTC-zA-QHa"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNO-V9-e3U">
+                                        <rect key="frame" x="20" y="342" width="374" height="50"/>
+                                        <color key="backgroundColor" name="UP Orange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Cqe-Sc-ktp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                        <state key="normal" title="Delete Data">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" name="UP Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" name="UP Purple"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonDeleteData:" destination="27b-Ny-IvT" eventType="touchUpInside" id="mc4-Ue-Qub"/>
+                                            <action selector="buttonUpdate:" destination="ctg-vW-bfl" eventType="touchUpInside" id="JEx-oY-CcZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sat-u2-4OA">
+                                        <rect key="frame" x="20" y="400" width="374" height="50"/>
+                                        <color key="backgroundColor" name="UP Orange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4XD-W0-hsV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                        <state key="normal" title="Delete Account">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" name="UP Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" name="UP Purple"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonDeleteAccount:" destination="27b-Ny-IvT" eventType="touchUpInside" id="OJG-ak-ULD"/>
+                                            <action selector="buttonUpdate:" destination="ctg-vW-bfl" eventType="touchUpInside" id="GaQ-28-JIB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sat-u2-4OA" secondAttribute="trailing" constant="20" id="0Dx-Xc-rFF"/>
+                                    <constraint firstItem="JNO-V9-e3U" firstAttribute="top" secondItem="yda-PT-Kqw" secondAttribute="bottom" constant="57" id="1mW-OT-LfU"/>
+                                    <constraint firstAttribute="trailing" secondItem="i8f-Hm-p4u" secondAttribute="trailing" constant="20" id="8bZ-D1-ngO"/>
+                                    <constraint firstItem="Lpv-23-b03" firstAttribute="leading" secondItem="2tH-ND-ClP" secondAttribute="leading" constant="20" id="AYD-jy-1LM"/>
+                                    <constraint firstAttribute="trailing" secondItem="yda-PT-Kqw" secondAttribute="trailing" constant="20" id="CVM-la-iaU"/>
+                                    <constraint firstItem="sat-u2-4OA" firstAttribute="leading" secondItem="2tH-ND-ClP" secondAttribute="leading" constant="20" id="DMD-b4-Smn"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lpv-23-b03" secondAttribute="trailing" constant="20" id="PfK-nl-QOs"/>
+                                    <constraint firstItem="yda-PT-Kqw" firstAttribute="leading" secondItem="2tH-ND-ClP" secondAttribute="leading" constant="20" id="XIk-bI-4DZ"/>
+                                    <constraint firstItem="i8f-Hm-p4u" firstAttribute="top" secondItem="2tH-ND-ClP" secondAttribute="top" constant="35" id="aKU-a5-67k"/>
+                                    <constraint firstAttribute="height" constant="756" id="aSx-rj-3IJ"/>
+                                    <constraint firstItem="Lpv-23-b03" firstAttribute="top" secondItem="i8f-Hm-p4u" secondAttribute="bottom" constant="8" id="b7u-dE-LdP"/>
+                                    <constraint firstItem="sat-u2-4OA" firstAttribute="top" secondItem="JNO-V9-e3U" secondAttribute="bottom" constant="8" id="c3f-eI-cZe"/>
+                                    <constraint firstItem="yda-PT-Kqw" firstAttribute="top" secondItem="Lpv-23-b03" secondAttribute="bottom" constant="8" id="dje-RO-kOR"/>
+                                    <constraint firstItem="JNO-V9-e3U" firstAttribute="leading" secondItem="2tH-ND-ClP" secondAttribute="leading" constant="20" id="ll5-wu-mQE"/>
+                                    <constraint firstItem="i8f-Hm-p4u" firstAttribute="leading" secondItem="2tH-ND-ClP" secondAttribute="leading" constant="20" id="nYq-EZ-qCG"/>
+                                    <constraint firstAttribute="trailing" secondItem="JNO-V9-e3U" secondAttribute="trailing" constant="20" id="vfd-vu-nto"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="apa-zK-35X">
+                                <rect key="frame" x="20" y="70" width="266.5" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFz-IY-18I">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="h3I-zu-yPW"/>
+                                        </constraints>
+                                        <state key="normal" image="Back"/>
+                                        <connections>
+                                            <action selector="buttonBack:" destination="27b-Ny-IvT" eventType="touchUpInside" id="KyV-oT-CSp"/>
+                                            <action selector="buttonBack:" destination="ctg-vW-bfl" eventType="touchUpInside" id="NLR-PT-Dtu"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEh-aE-56k">
+                                        <rect key="frame" x="124" y="0.0" width="142.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266.5" id="dRg-ap-LIq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Orange"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2tH-ND-ClP" secondAttribute="bottom" id="OsW-Jk-Qyo"/>
+                            <constraint firstItem="2tH-ND-ClP" firstAttribute="leading" secondItem="llm-Nc-SfL" secondAttribute="leading" id="PDz-Qc-9Fv"/>
+                            <constraint firstItem="apa-zK-35X" firstAttribute="leading" secondItem="llm-Nc-SfL" secondAttribute="leading" constant="20" id="YKj-a6-g8G"/>
+                            <constraint firstItem="2tH-ND-ClP" firstAttribute="top" secondItem="apa-zK-35X" secondAttribute="bottom" constant="30" id="ijb-Dz-aWS"/>
+                            <constraint firstItem="apa-zK-35X" firstAttribute="top" secondItem="llm-Nc-SfL" secondAttribute="top" constant="26" id="ma0-YL-IcW"/>
+                            <constraint firstItem="2tH-ND-ClP" firstAttribute="trailing" secondItem="llm-Nc-SfL" secondAttribute="trailing" id="tVQ-PF-5Bw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="llm-Nc-SfL"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="buttonDeleteAccount" destination="sat-u2-4OA" id="Lpn-zZ-bdd"/>
+                        <outlet property="buttonDeleteData" destination="JNO-V9-e3U" id="Vxm-hg-Wq4"/>
+                        <outlet property="fieldVerify" destination="yda-PT-Kqw" id="SLg-bR-bEL"/>
+                        <outlet property="labelEmail" destination="Lpv-23-b03" id="kwX-F6-lrO"/>
+                        <outlet property="viewMain" destination="2tH-ND-ClP" id="MJ9-k6-rZD"/>
+                        <segue destination="vur-ME-diC" kind="show" identifier="deleteAccount" id="vF0-js-mNd"/>
+                        <segue destination="u7s-RC-ehb" kind="show" identifier="reauthenticate" id="Git-Dz-py0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpx-VA-rfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4618.840579710145" y="20.758928571428569"/>
+        </scene>
+        <!--InitialViewController-->
+        <scene sceneID="U8c-dA-6XA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="InitialViewController" id="vur-ME-diC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0pp-sZ-s4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5133" y="21"/>
+        </scene>
+        <!--Reauthentication View Controller-->
+        <scene sceneID="f6M-wO-odF">
+            <objects>
+                <viewController id="u7s-RC-ehb" customClass="ReauthenticationViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cXR-7p-uWZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKM-8d-o95">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For your safety, we require you to enter your credentials once again as the process you were trying to perform was sensitive." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dek-Gt-hBn">
+                                        <rect key="frame" x="20" y="35" width="374" height="116"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="116" id="eB2-hz-sMu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may try again after reauthentication." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLQ-Mw-Ywn">
+                                        <rect key="frame" x="20" y="159" width="374" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="hwU-jP-ZTF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwz-Jp-Wjc">
+                                        <rect key="frame" x="20" y="394" width="374" height="50"/>
+                                        <color key="backgroundColor" name="UP Orange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Gpx-2X-YlY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                        <state key="normal" title="Reauthenticate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" name="UP Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" name="UP Purple"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonReauthenticate:" destination="u7s-RC-ehb" eventType="touchUpInside" id="Qqk-Wq-goM"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roG-jK-p9m">
+                                        <rect key="frame" x="20" y="240" width="374" height="104"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UIh-uY-jm2">
+                                                <rect key="frame" x="0.0" y="61" width="374" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oc0-xO-Gov">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="104" id="zJi-nF-VDv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="qwz-Jp-Wjc" firstAttribute="leading" secondItem="IKM-8d-o95" secondAttribute="leading" constant="20" id="1no-GQ-Oja"/>
+                                    <constraint firstAttribute="height" constant="756" id="32Z-og-m2J"/>
+                                    <constraint firstItem="roG-jK-p9m" firstAttribute="top" secondItem="LLQ-Mw-Ywn" secondAttribute="bottom" constant="36" id="4zG-XV-eZK"/>
+                                    <constraint firstAttribute="trailing" secondItem="dek-Gt-hBn" secondAttribute="trailing" constant="20" id="Esd-Sp-3QA"/>
+                                    <constraint firstItem="dek-Gt-hBn" firstAttribute="top" secondItem="IKM-8d-o95" secondAttribute="top" constant="35" id="Ggm-b9-i9o"/>
+                                    <constraint firstAttribute="trailing" secondItem="qwz-Jp-Wjc" secondAttribute="trailing" constant="20" id="IWP-bF-6b6"/>
+                                    <constraint firstItem="roG-jK-p9m" firstAttribute="leading" secondItem="IKM-8d-o95" secondAttribute="leading" constant="20" id="If7-xU-0gx"/>
+                                    <constraint firstAttribute="trailing" secondItem="LLQ-Mw-Ywn" secondAttribute="trailing" constant="20" id="MK8-Yc-vgi"/>
+                                    <constraint firstItem="LLQ-Mw-Ywn" firstAttribute="leading" secondItem="IKM-8d-o95" secondAttribute="leading" constant="20" id="bJx-Eg-GMk"/>
+                                    <constraint firstAttribute="trailing" secondItem="roG-jK-p9m" secondAttribute="trailing" constant="20" id="hqf-25-xSp"/>
+                                    <constraint firstItem="LLQ-Mw-Ywn" firstAttribute="top" secondItem="dek-Gt-hBn" secondAttribute="bottom" constant="8" id="lXJ-Jt-Ggb"/>
+                                    <constraint firstItem="qwz-Jp-Wjc" firstAttribute="top" secondItem="roG-jK-p9m" secondAttribute="bottom" constant="50" id="qoQ-1j-6Ut"/>
+                                    <constraint firstItem="dek-Gt-hBn" firstAttribute="leading" secondItem="IKM-8d-o95" secondAttribute="leading" constant="20" id="yKU-y6-GsD"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reauthentication" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmb-Rn-H1E">
+                                <rect key="frame" x="20" y="70" width="374" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="vek-nf-4gy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Orange"/>
+                        <constraints>
+                            <constraint firstItem="IKM-8d-o95" firstAttribute="trailing" secondItem="rcI-TA-cVm" secondAttribute="trailing" id="LFK-GQ-Fen"/>
+                            <constraint firstItem="cmb-Rn-H1E" firstAttribute="top" secondItem="rcI-TA-cVm" secondAttribute="top" constant="26" id="cgV-Vs-mJm"/>
+                            <constraint firstAttribute="bottom" secondItem="IKM-8d-o95" secondAttribute="bottom" id="fTp-Er-C4O"/>
+                            <constraint firstItem="rcI-TA-cVm" firstAttribute="trailing" secondItem="cmb-Rn-H1E" secondAttribute="trailing" constant="20" id="kMD-9P-dxy"/>
+                            <constraint firstItem="IKM-8d-o95" firstAttribute="leading" secondItem="rcI-TA-cVm" secondAttribute="leading" id="oLG-7r-g4a"/>
+                            <constraint firstItem="cmb-Rn-H1E" firstAttribute="leading" secondItem="rcI-TA-cVm" secondAttribute="leading" constant="20" id="riI-nD-8UR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rcI-TA-cVm"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonReauthenticate" destination="qwz-Jp-Wjc" id="zLV-n3-liC"/>
+                        <outlet property="fieldEmail" destination="oc0-xO-Gov" id="1NF-sR-00W"/>
+                        <outlet property="fieldPassword" destination="UIh-uY-jm2" id="sqq-J9-r04"/>
+                        <outlet property="viewCredentials" destination="roG-jK-p9m" id="8lx-2W-Lrs"/>
+                        <outlet property="viewMain" destination="IKM-8d-o95" id="jJN-Jc-p8T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YCF-i7-K9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5603" y="21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Back" width="40" height="40"/>
+        <namedColor name="UP Blue">
+            <color red="0.36500000953674316" green="0.47499999403953552" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UP Orange">
+            <color red="0.9570000171661377" green="0.66699999570846558" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UP Purple">
+            <color red="0.55699998140335083" green="0.32899999618530273" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Git-Dz-py0"/>
+    </inferredMetricsTieBreakers>
+</document>
