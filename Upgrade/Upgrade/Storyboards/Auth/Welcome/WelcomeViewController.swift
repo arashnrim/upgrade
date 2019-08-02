@@ -13,11 +13,13 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /// Prints out a custom line to the application console for debugging purposes.
+        
+        /// Prints out to command line for better debugging purposes.
         print("upgradeconsoleREDIRECT: Redirection to WelcomeViewController executed.")
         
         /// Calls extension function configureButton() (see UIButton+Design.swift) to configure the overall design for buttonContinue.
         buttonContinue.configureButton(color1: "UP Purple", color2: "UP Blue")
+        
     }
     
 }

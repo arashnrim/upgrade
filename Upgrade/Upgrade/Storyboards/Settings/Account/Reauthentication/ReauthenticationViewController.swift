@@ -4,6 +4,7 @@ import Firebase
 class ReauthenticationViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Outlets
+    @IBOutlet var viewMain: UIView!
     @IBOutlet var viewCredentials: UIView!
     @IBOutlet var fieldEmail: UITextField!
     @IBOutlet var fieldPassword: UITextField!
@@ -42,6 +43,10 @@ class ReauthenticationViewController: UIViewController, UITextFieldDelegate {
         
         /// Calls extension function configureButton() (see UIButton+Design.swift) to configure the overall design for buttonContinue.
         buttonReauthenticate.configureButton(color1: "UP Orange", color2: "UP Red")
+        
+        /// Configures viewMain to have cornerRadius of 20; some corners are then masked to retain original rectangle shape
+        viewMain.layer.cornerRadius = 20
+        viewMain.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
     
     // MARK: - Functions

@@ -15,31 +15,32 @@ class HomeViewController: UIViewController {
     var count = Int.random(in: 1..<8)
     
     // MARK: - Overrides
-    /// Configures status bar color; changes color from black (default) to white for better readability
+    /// Overrides preferred status bar style (color) from black (default) to white.
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        /// Prints out line to command for better debug purposes
+        
+        /// Prints out to command line for better debugging purposes.
         print("upgradeconsoleREDIRECT: Redirection to WelcomeViewController executed.")
 
-        /// Calls extension function configureView() (see UIView+Design.swift) to configure background gradient color for HomeViewController
+        /// Calls extension function configureView() (see UIView+Design.swift) to configure the background gradient color for HomeViewController.
         self.view.configureView(color1: "UP Purple", color2: "UP Blue")
         
-        /// Calls struct Quotes to assign a random quote
+        /// Calls struct Quotes to assign and display a random quote.
         labelQuote.text = quotes.quote[count]
         labelAuthor.text = quotes.author[count]
         
-        /// Configures viewMain to have cornerRadius of 20; some corners are then masked to retain original rectangle shape
+        /// Configures viewMain to have a cornerRadius of 20; some corners are then masked to retain the original rectangle shape.
         viewMain.layer.cornerRadius = 20
         viewMain.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
-        /// Configures viewBar to have round corners
+        /// Configures viewBar to have round corners.
         viewBar.layer.cornerRadius = viewBar.bounds.height/2
         
-        /// Adds gesture recognizers to move viewMain up and down
+        /// Adds gesture recognizers to move viewMain up and down.
         let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestures(gesture:)))
         swipeDown.direction = UISwipeGestureRecognizer.Direction.down
         viewMain.addGestureRecognizer(swipeDown)
@@ -52,6 +53,7 @@ class HomeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination
+        
         /// Overrides segues and adds additional information onto the segue.
         /* In this instance, the Hero framework is used to configure the transition type for each segue.
          This is done by retrieving the end destination of the segue, and then configuring the segue using the Hero framework.

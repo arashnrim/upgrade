@@ -20,6 +20,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         /// Prints out a custom line to the application console for debugging purposes.
         print("upgradeconsoleREDIRECT: Redirection to SignInViewController executed.")
         

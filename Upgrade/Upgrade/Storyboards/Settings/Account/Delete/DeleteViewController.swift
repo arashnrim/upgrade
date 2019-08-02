@@ -15,17 +15,18 @@ class DeleteViewController: UIViewController, UITextFieldDelegate {
     var reference: DocumentReference!
     
     // MARK: - Overrides
-    /// Configures status bar color; changes color from black (default) to white for better readability
+    /// Overrides preferred status bar style (color) from black (default) to white.
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /// Prints out line to command for better debug purposes
+        
+        /// Prints out to command line for better debugging purposes.
         print("upgradeconsoleREDIRECT: Redirection to DeleteViewController executed.")
         
-        /// Calls extension function configureView() (see UIView+Design.swift) to configure background gradient color for DeleteViewController
+        /// Calls extension function configureView() (see UIView+Design.swift) to configure background gradient color for DeleteViewController.
         self.view.configureView(color1: "UP Orange", color2: "UP Red")
         
         /// Assigns the delegates to the textFields to manage keyboard first responders.
@@ -34,7 +35,7 @@ class DeleteViewController: UIViewController, UITextFieldDelegate {
         /// Calls extension function configureTextField() (see UITextField+Design.swift) to configure the overall design for the textFields.
         fieldVerify.configureTextField()
         
-        /// Embeds icons into the textFields for better user readability (see UITextField+Design.swift)
+        /// Embeds icons into the textFields for better user readability (see UITextField+Design.swift).
         fieldVerify.tintColor = .gray
         fieldVerify.setIcon(#imageLiteral(resourceName: "Name"))
         
@@ -42,11 +43,11 @@ class DeleteViewController: UIViewController, UITextFieldDelegate {
         buttonDeleteData.configureButton(color1: "UP Orange", color2: "UP Red")
         buttonDeleteAccount.configureButton(color1: "UP Orange", color2: "UP Red")
         
-        /// Configures viewMain to have cornerRadius of 20; some corners are then masked to retain original rectangle shape
+        /// Configures viewMain to have a cornerRadius of 20; some corners are then masked to retain the original rectangle shape.
         viewMain.layer.cornerRadius = 20
         viewMain.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
-        /// Retrieves the user email and displays it for verification
+        /// Retrieves the user email and displays it for verification.
         guard let user = Auth.auth().currentUser else { return }
         
         labelEmail.text = user.email
@@ -80,7 +81,7 @@ class DeleteViewController: UIViewController, UITextFieldDelegate {
     
     // This function is a protocol for UITextFieldDelegate; it is executed when the return key of the keyboard is pressed.
     /// Evaluates the current active text field.
-    /* If the current textField is fieldVeridy, the keyboard will be resigned.
+    /* If the current textField is fieldVerify, the keyboard will be resigned.
      */
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
@@ -176,6 +177,7 @@ class DeleteViewController: UIViewController, UITextFieldDelegate {
         
         print("upgradeconsoleDATABASE: Database creation successfully completed.")
         createAlert(title: "Data clearance successful.", message: "All your data has been deleted.")
+        status(enabled: true)
     }
     
     /// Provides a structured format for better organisation and readability of code; sub-function for createDatabase().
