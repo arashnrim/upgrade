@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     // MARK: - Properties
     let quotes = Quotes()
     var count = Int.random(in: 1..<8)
+    var reference: DocumentReference!
     
     // MARK: - Overrides
     /// Overrides preferred status bar style (color) from black (default) to white.
@@ -48,6 +49,24 @@ class HomeViewController: UIViewController {
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestures(gesture:)))
         swipeUp.direction = UISwipeGestureRecognizer.Direction.up
         viewMain.addGestureRecognizer(swipeUp)
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        
+        reference = Firestore.firestore().document("users/\(uid)")
+        reference.getDocument { (docSnapshot, error) in
+            if let docSnapshot = docSnapshot {
+                if let data = docSnapshot.data() {
+                    let level = data["level"] as! Int
+                    
+                    if level == 0 {
+                        self.performSegue(withIdentifier: "setup", sender: nil)
+                    }
+                }
+            }
+        }
         
     }
     

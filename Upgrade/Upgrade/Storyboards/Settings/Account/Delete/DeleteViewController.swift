@@ -13,6 +13,7 @@ class DeleteViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Properties
     var currentTextField = UITextField()
     var reference: DocumentReference!
+    var subjects: CollectionReference!
     
     // MARK: - Overrides
     /// Overrides preferred status bar style (color) from black (default) to white.
@@ -157,13 +158,14 @@ class DeleteViewController: UIViewController, UITextFieldDelegate {
         let integratedHumanities: [String: Any] = ["name": "Integrated Humanities"]
         let appliedSubject: [String: Any] = ["name": "Applied Subject"]
         let data: [String: Any] = ["level": 0]
-        guard let userID = Auth.auth().currentUser?.uid else {
+        guard let uid = Auth.auth().currentUser?.uid else {
             print("upgradeconsoleAUTHERROR: No user or uid found: is the user authenticated?")
             createAlert(title: "Something went wrong.", message: "A user error occured. Please contact discipuli for assistance.")
             return
         }
         
-        reference = Firestore.firestore().document("users/\(userID)")
+        reference = Firestore.firestore().document("users/\(uid)")
+        reference.delete()
         reference.setData(data)
         
         // PERSONALISATION: Edit or change subjects here to personalise what is stored in the database
@@ -188,7 +190,7 @@ class DeleteViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        reference = Firestore.firestore().document("users/\(userID)/subjects/\(subject["name"]!))")
+        reference = Firestore.firestore().document("users/\(userID)/subjects/\(subject["name"]!)")
         reference.setData(subject) { (error) in
             if let error = error {
                 print("upgradeconsoleDATABASEERROR: \(error.localizedDescription)")
