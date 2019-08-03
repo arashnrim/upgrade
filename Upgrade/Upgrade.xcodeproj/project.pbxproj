@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		490681BF22EC430D000FA279 /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490681BE22EC430D000FA279 /* Setup.storyboard */; };
 		490681C222EC432A000FA279 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490681C122EC432A000FA279 /* IntroductionViewController.swift */; };
+		49414C7C22F5144A00BD3F60 /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49414C7B22F5144A00BD3F60 /* LevelViewController.swift */; };
+		4947A6D722F5EEA100F577C5 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947A6D622F5EEA100F577C5 /* LanguageViewController.swift */; };
+		4947A6DA22F5F77D00F577C5 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947A6D922F5F77D00F577C5 /* FinishViewController.swift */; };
 		496280F322D035E3004A5E72 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496280F222D035E3004A5E72 /* SignInViewController.swift */; };
 		496280F522D037C7004A5E72 /* UITextField+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496280F422D037C7004A5E72 /* UITextField+Design.swift */; };
 		4968B55222C8B25A00F457EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4968B55122C8B25A00F457EB /* GoogleService-Info.plist */; };
@@ -58,6 +61,9 @@
 		16B9200B74A61685075EB25B /* Pods-Upgrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upgrade.release.xcconfig"; path = "Target Support Files/Pods-Upgrade/Pods-Upgrade.release.xcconfig"; sourceTree = "<group>"; };
 		490681BE22EC430D000FA279 /* Setup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setup.storyboard; sourceTree = "<group>"; };
 		490681C122EC432A000FA279 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
+		49414C7B22F5144A00BD3F60 /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
+		4947A6D622F5EEA100F577C5 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		4947A6D922F5F77D00F577C5 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		496280F222D035E3004A5E72 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		496280F422D037C7004A5E72 /* UITextField+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Design.swift"; sourceTree = "<group>"; };
 		4968B55122C8B25A00F457EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -132,6 +138,9 @@
 			children = (
 				490681BE22EC430D000FA279 /* Setup.storyboard */,
 				490681C022EC4313000FA279 /* Introduction */,
+				49414C7A22F5143500BD3F60 /* Level */,
+				4947A6D522F5EE9100F577C5 /* Language */,
+				4947A6D822F5F76E00F577C5 /* Finish */,
 			);
 			path = Setup;
 			sourceTree = "<group>";
@@ -142,6 +151,30 @@
 				490681C122EC432A000FA279 /* IntroductionViewController.swift */,
 			);
 			path = Introduction;
+			sourceTree = "<group>";
+		};
+		49414C7A22F5143500BD3F60 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				49414C7B22F5144A00BD3F60 /* LevelViewController.swift */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		4947A6D522F5EE9100F577C5 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				4947A6D622F5EEA100F577C5 /* LanguageViewController.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		4947A6D822F5F76E00F577C5 /* Finish */ = {
+			isa = PBXGroup;
+			children = (
+				4947A6D922F5F77D00F577C5 /* FinishViewController.swift */,
+			);
+			path = Finish;
 			sourceTree = "<group>";
 		};
 		496280F122D035C8004A5E72 /* Sign In */ = {
@@ -531,7 +564,9 @@
 				49C9EDB222CF8A4200605D6F /* WelcomeViewController.swift in Sources */,
 				49F1C0C522D058B70028E16C /* SignUpViewController.swift in Sources */,
 				4970828122DAFD7900C47353 /* AccountViewController.swift in Sources */,
+				49414C7C22F5144A00BD3F60 /* LevelViewController.swift in Sources */,
 				49B936E622D0F2840034329A /* UIView+Design.swift in Sources */,
+				4947A6DA22F5F77D00F577C5 /* FinishViewController.swift in Sources */,
 				496280F522D037C7004A5E72 /* UITextField+Design.swift in Sources */,
 				49C5046522D18453003C52A9 /* MenuViewController.swift in Sources */,
 				490681C222EC432A000FA279 /* IntroductionViewController.swift in Sources */,
@@ -544,6 +579,7 @@
 				496280F322D035E3004A5E72 /* SignInViewController.swift in Sources */,
 				49C9EDB522CF8D0E00605D6F /* UIButton+Design.swift in Sources */,
 				498E535422E9BC0900D8D40D /* AboutViewController.swift in Sources */,
+				4947A6D722F5EEA100F577C5 /* LanguageViewController.swift in Sources */,
 				49C5046822D19D26003C52A9 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

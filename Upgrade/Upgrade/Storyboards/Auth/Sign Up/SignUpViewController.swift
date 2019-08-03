@@ -212,7 +212,6 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         databaseFormat(subject: languageArts)
         databaseFormat(subject: mathematics)
         databaseFormat(subject: science)
-        databaseFormat(subject: science)
         databaseFormat(subject: motherTongue)
         databaseFormat(subject: integratedHumanities)
         databaseFormat(subject: appliedSubject)
@@ -229,7 +228,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        reference = Firestore.firestore().document("users/\(userID)/subjects/\(subject["name"]!))")
+        reference = Firestore.firestore().document("users/\(userID)/subjects/\(subject["name"]!)")
         reference.setData(subject) { (error) in
             if let error = error {
                 print("upgradeconsoleDATABASEERROR: \(error.localizedDescription)")
