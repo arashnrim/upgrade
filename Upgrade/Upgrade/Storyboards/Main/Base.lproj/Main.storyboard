@@ -56,7 +56,7 @@
                                         <color key="color" name="UP Blue"/>
                                     </activityIndicatorView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give us a sec," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8r-FU-4M6">
-                                        <rect key="frame" x="105" y="25" width="164.5" height="28"/>
+                                        <rect key="frame" x="108.5" y="25" width="157.5" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="N7M-em-fCg"/>
                                             <constraint firstAttribute="height" constant="28" id="kdP-x5-QLv"/>
@@ -172,6 +172,10 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="NQ9-VM-6Ar" appends="YES" id="g3X-XY-fOW"/>
+                                </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="06n-1i-dZg">
                                 <rect key="frame" x="20" y="70" width="241" height="40"/>
@@ -220,6 +224,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwF-cG-BMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="NQ9-VM-6Ar">
+                    <connections>
+                        <action selector="swipedown:" destination="w96-w4-DH8" id="SAr-vt-FTt"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1228.985507246377" y="20.758928571428569"/>
         </scene>
@@ -258,8 +267,8 @@
                                     <constraint firstAttribute="height" constant="40" id="u9x-ge-zNg"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="3Sc-jw-yLp">
-                                <rect key="frame" x="20" y="182" width="374" height="269"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="3Sc-jw-yLp">
+                                <rect key="frame" x="20" y="182" width="374" height="317"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XN-Sd-NcY">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="53"/>
@@ -275,7 +284,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZg-9D-teq">
-                                        <rect key="frame" x="0.0" y="80" width="374" height="53"/>
+                                        <rect key="frame" x="0.0" y="90" width="374" height="53"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="53" id="kai-U5-H8v"/>
                                         </constraints>
@@ -285,16 +294,19 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZQ-6Z-ApL">
-                                        <rect key="frame" x="0.0" y="160" width="374" height="53"/>
+                                        <rect key="frame" x="0.0" y="180" width="374" height="47"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="35"/>
                                         <state key="normal" title="Calculator">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="FCg-9p-SeE" kind="show" identifier="dismiss" id="t03-U8-9mt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fX-7A-k2M">
-                                        <rect key="frame" x="0.0" y="240" width="374" height="29"/>
+                                        <rect key="frame" x="0.0" y="264" width="374" height="53"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="29" id="0DA-Uv-s5x"/>
+                                            <constraint firstAttribute="height" constant="53" id="0DA-Uv-s5x"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="35"/>
                                         <state key="normal" title="Settings">
@@ -306,18 +318,18 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="269" id="sCz-GU-Z53"/>
+                                    <constraint firstAttribute="height" constant="317" id="7Ee-zy-q4z"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" name="UP Blue"/>
                         <constraints>
-                            <constraint firstItem="3Sc-jw-yLp" firstAttribute="top" secondItem="STA-hT-8vt" secondAttribute="bottom" constant="72" id="3aJ-Wm-r6Z"/>
                             <constraint firstItem="STA-hT-8vt" firstAttribute="leading" secondItem="Ams-1H-Yq2" secondAttribute="leading" constant="20" id="H0x-5E-R1c"/>
-                            <constraint firstItem="Ams-1H-Yq2" firstAttribute="trailing" secondItem="3Sc-jw-yLp" secondAttribute="trailing" constant="20" id="RiN-KX-2at"/>
+                            <constraint firstItem="3Sc-jw-yLp" firstAttribute="top" secondItem="STA-hT-8vt" secondAttribute="bottom" constant="72" id="Ruy-Qk-9aC"/>
+                            <constraint firstItem="3Sc-jw-yLp" firstAttribute="leading" secondItem="Ams-1H-Yq2" secondAttribute="leading" constant="20" id="S6i-eG-HDf"/>
+                            <constraint firstItem="Ams-1H-Yq2" firstAttribute="trailing" secondItem="3Sc-jw-yLp" secondAttribute="trailing" constant="20" id="bs0-3Y-a9Q"/>
                             <constraint firstItem="Ams-1H-Yq2" firstAttribute="trailing" secondItem="STA-hT-8vt" secondAttribute="trailing" constant="160.5" id="kkr-hN-vIg"/>
                             <constraint firstItem="STA-hT-8vt" firstAttribute="top" secondItem="Ams-1H-Yq2" secondAttribute="top" constant="26" id="nTj-oC-eTO"/>
-                            <constraint firstItem="3Sc-jw-yLp" firstAttribute="leading" secondItem="Ams-1H-Yq2" secondAttribute="leading" constant="20" id="onW-83-KvS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ams-1H-Yq2"/>
                     </view>
@@ -337,6 +349,14 @@
             </objects>
             <point key="canvasLocation" x="2662" y="-5"/>
         </scene>
+        <!--GradeViewController-->
+        <scene sceneID="p5B-jC-UfQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Calculator" referencedIdentifier="GradeViewController" id="FCg-9p-SeE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QfL-e3-IIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2661" y="46"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Bottom Splash" width="564" height="440.5"/>
@@ -349,7 +369,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EwM-Yp-3Y0"/>
+        <segue reference="mbL-Rd-fam"/>
         <segue reference="aKG-8t-LLp"/>
     </inferredMetricsTieBreakers>
 </document>

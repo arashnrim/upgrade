@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6GT-cM-ent">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--MenuViewController-->
+        <scene sceneID="bwy-pF-PHc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MenuViewController" id="03c-V1-PAf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yle-Qq-8kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2351" y="-48"/>
+        </scene>
+        <!--Grade View Controller-->
+        <scene sceneID="N0I-pF-mhZ">
+            <objects>
+                <viewController storyboardIdentifier="GradeViewController" title="Grade View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6GT-cM-ent" customClass="GradeViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BAZ-hr-0A0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="qX2-E2-Nm2">
+                                <rect key="frame" x="20" y="70" width="280" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHN-Uf-4lX">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="1mo-Co-2L1"/>
+                                        </constraints>
+                                        <state key="normal" image="Menu"/>
+                                        <connections>
+                                            <segue destination="03c-V1-PAf" kind="show" identifier="menu" id="u7F-wg-HOf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTd-Dy-kXX">
+                                        <rect key="frame" x="107" y="0.0" width="173" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="92j-Bj-ibu"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNZ-yW-gh5">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wEx-aA-bXf">
+                                        <rect key="frame" x="221" y="53" width="137" height="184"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOR-72-bYd">
+                                                <rect key="frame" x="15.5" y="0.0" width="106" height="20"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0.0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4KN-UV-kXr">
+                                                <rect key="frame" x="0.0" y="28" width="137" height="156"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="156" id="Ite-ko-5jI"/>
+                                                    <constraint firstAttribute="width" constant="137" id="YjQ-ow-OX1"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="184" id="8Dd-bC-7bB"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1q-sM-QNw">
+                                        <rect key="frame" x="20" y="664" width="374" height="50"/>
+                                        <color key="backgroundColor" name="UP Blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="N2g-ZF-IA2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                        <state key="normal" title="Grade Checker">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" name="UP Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" name="UP Purple"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonToggle:" destination="6GT-cM-ent" eventType="touchUpInside" id="cN6-zn-gnJ"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="glO-FX-EE8">
+                                        <rect key="frame" x="56" y="53" width="137" height="184"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54i-ld-C3L">
+                                                <rect key="frame" x="18" y="0.0" width="101.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0.0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cjH-dB-8MI">
+                                                <rect key="frame" x="0.0" y="28" width="137" height="156"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="137" id="4Ip-OI-EuG"/>
+                                                    <constraint firstAttribute="height" constant="156" id="ATq-A9-9jT"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="184" id="NKm-wg-JHM"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMv-8p-f5V">
+                                        <rect key="frame" x="20" y="304" width="374" height="210"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh8-kl-sJG">
+                                                <rect key="frame" x="104" y="129" width="166" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="NaF-oB-Yt9"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="TxF-Zh-PC6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGw-Aj-bQX">
+                                                <rect key="frame" x="127" y="51" width="120" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="M5p-cH-Jdn"/>
+                                                    <constraint firstAttribute="height" constant="70" id="Rqt-LF-SPN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="70"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="XGw-Aj-bQX" secondAttribute="trailing" constant="127" id="49Y-Nq-XQb"/>
+                                            <constraint firstItem="XGw-Aj-bQX" firstAttribute="leading" secondItem="IMv-8p-f5V" secondAttribute="leading" constant="127" id="9zo-ys-Pk1"/>
+                                            <constraint firstAttribute="bottom" secondItem="Jh8-kl-sJG" secondAttribute="bottom" constant="51" id="Fnd-bs-g1l"/>
+                                            <constraint firstAttribute="height" constant="210" id="HMq-eM-dye"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jh8-kl-sJG" secondAttribute="trailing" constant="104" id="Wdi-C9-luv"/>
+                                            <constraint firstItem="Jh8-kl-sJG" firstAttribute="leading" secondItem="IMv-8p-f5V" secondAttribute="leading" constant="104" id="gYa-qq-Xwy"/>
+                                            <constraint firstItem="XGw-Aj-bQX" firstAttribute="top" secondItem="IMv-8p-f5V" secondAttribute="top" constant="51" id="vU0-wo-Jab"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3g-Ak-1qs">
+                                        <rect key="frame" x="148" y="259" width="118" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="OmS-2y-DvN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="glO-FX-EE8" firstAttribute="top" secondItem="pNZ-yW-gh5" secondAttribute="top" constant="53" id="Cnl-UT-Oeo"/>
+                                    <constraint firstAttribute="trailing" secondItem="z3g-Ak-1qs" secondAttribute="trailing" constant="148" id="DvL-kT-Gcg"/>
+                                    <constraint firstItem="z3g-Ak-1qs" firstAttribute="top" secondItem="wEx-aA-bXf" secondAttribute="bottom" constant="22" id="L2f-A7-Vcn"/>
+                                    <constraint firstAttribute="trailing" secondItem="S1q-sM-QNw" secondAttribute="trailing" constant="20" id="LgK-0g-RHI"/>
+                                    <constraint firstItem="glO-FX-EE8" firstAttribute="leading" secondItem="pNZ-yW-gh5" secondAttribute="leading" constant="56" id="MKi-0q-vlJ"/>
+                                    <constraint firstAttribute="height" constant="756" id="Q9i-ob-Bbe"/>
+                                    <constraint firstItem="S1q-sM-QNw" firstAttribute="leading" secondItem="pNZ-yW-gh5" secondAttribute="leading" constant="20" id="QWL-rO-Kk8"/>
+                                    <constraint firstAttribute="trailing" secondItem="IMv-8p-f5V" secondAttribute="trailing" constant="20" id="a41-ZK-dUi"/>
+                                    <constraint firstAttribute="bottom" secondItem="S1q-sM-QNw" secondAttribute="bottom" constant="42" id="aMl-d5-8aZ"/>
+                                    <constraint firstItem="wEx-aA-bXf" firstAttribute="top" secondItem="pNZ-yW-gh5" secondAttribute="top" constant="53" id="e5C-0z-qny"/>
+                                    <constraint firstItem="IMv-8p-f5V" firstAttribute="leading" secondItem="pNZ-yW-gh5" secondAttribute="leading" constant="20" id="fs1-Ta-nNU"/>
+                                    <constraint firstAttribute="trailing" secondItem="wEx-aA-bXf" secondAttribute="trailing" constant="56" id="jtu-RX-jk9"/>
+                                    <constraint firstItem="z3g-Ak-1qs" firstAttribute="leading" secondItem="pNZ-yW-gh5" secondAttribute="leading" constant="148" id="nAu-C9-KQd"/>
+                                    <constraint firstItem="IMv-8p-f5V" firstAttribute="top" secondItem="z3g-Ak-1qs" secondAttribute="bottom" constant="25" id="wIm-UE-g38"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="T6l-Xh-QDO" appends="YES" id="wcm-ng-wZE"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Blue"/>
+                        <constraints>
+                            <constraint firstItem="pNZ-yW-gh5" firstAttribute="leading" secondItem="PvH-w7-bJz" secondAttribute="leading" id="PEy-Aw-g6G"/>
+                            <constraint firstAttribute="bottom" secondItem="pNZ-yW-gh5" secondAttribute="bottom" id="cQD-zI-NUG"/>
+                            <constraint firstItem="qX2-E2-Nm2" firstAttribute="top" secondItem="PvH-w7-bJz" secondAttribute="top" constant="26" id="e0R-fd-z7y"/>
+                            <constraint firstItem="pNZ-yW-gh5" firstAttribute="top" secondItem="qX2-E2-Nm2" secondAttribute="bottom" constant="30" id="g4U-WR-kNa"/>
+                            <constraint firstItem="pNZ-yW-gh5" firstAttribute="trailing" secondItem="PvH-w7-bJz" secondAttribute="trailing" id="thT-Y7-l5a"/>
+                            <constraint firstItem="qX2-E2-Nm2" firstAttribute="leading" secondItem="PvH-w7-bJz" secondAttribute="leading" constant="20" id="vF2-Tm-l9J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PvH-w7-bJz"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="buttonToggle" destination="S1q-sM-QNw" id="ndO-H7-3GI"/>
+                        <outlet property="fieldMaxScore" destination="cjH-dB-8MI" id="2B1-22-1Hp"/>
+                        <outlet property="fieldUserScore" destination="4KN-UV-kXr" id="Q6Z-6o-MS5"/>
+                        <outlet property="labelOutputGrade" destination="XGw-Aj-bQX" id="DWy-hw-lT3"/>
+                        <outlet property="labelOutputScore" destination="Jh8-kl-sJG" id="Sm5-nw-Jvj"/>
+                        <outlet property="viewGrade" destination="IMv-8p-f5V" id="Ce7-Gm-OQp"/>
+                        <outlet property="viewMain" destination="pNZ-yW-gh5" id="cNL-PK-fvz"/>
+                        <segue destination="Sph-FO-k70" kind="show" identifier="l1r5" id="fXS-hF-c06"/>
+                        <segue destination="ZxH-rN-sOF" kind="show" identifier="elr2b2" id="CFi-zd-s83"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOD-tS-vMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="T6l-Xh-QDO">
+                    <connections>
+                        <action selector="tapDismiss:" destination="6GT-cM-ent" id="mKG-Pe-OnN"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2947.826086956522" y="20.758928571428569"/>
+        </scene>
+        <!--L1R5 View Controller-->
+        <scene sceneID="j4H-uR-WVA">
+            <objects>
+                <viewController storyboardIdentifier="L1R5ViewController" title="L1R5 View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sph-FO-k70" customClass="L1R5ViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5di-37-Eda">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="q09-r7-fJj">
+                                <rect key="frame" x="20" y="70" width="280" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg4-Py-GV9">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Yxe-LF-Bkq"/>
+                                        </constraints>
+                                        <state key="normal" image="Menu"/>
+                                        <connections>
+                                            <segue destination="03c-V1-PAf" kind="show" identifier="menu" id="iu3-05-hVQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxU-a8-vIY">
+                                        <rect key="frame" x="107" y="0.0" width="173" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Gl6-nq-Tdd"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8NR-lz-jE6">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hB9-K2-W5O">
+                                        <rect key="frame" x="20" y="664" width="374" height="50"/>
+                                        <color key="backgroundColor" name="UP Blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="klh-wX-K8l"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                        <state key="normal" title="L1R5">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" name="UP Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" name="UP Purple"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonToggle:" destination="Sph-FO-k70" eventType="touchUpInside" id="TFP-6X-PzA"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3nk-Wv-syE">
+                                        <rect key="frame" x="44" y="50" width="92" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bo-P9-O7S">
+                                                <rect key="frame" x="10" y="0.0" width="72.5" height="15"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKz-TO-JU1">
+                                                <rect key="frame" x="0.0" y="16" width="92" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="VFx-xb-dyc"/>
+                                                    <constraint firstAttribute="height" constant="92" id="VSb-DU-K1x"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="108" id="LD8-Z0-J7w"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="73A-b1-Pwc">
+                                        <rect key="frame" x="161" y="50" width="92" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCk-qM-zYF">
+                                                <rect key="frame" x="9" y="0.0" width="74" height="15"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hs3-XO-goR">
+                                                <rect key="frame" x="0.0" y="16" width="92" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="92" id="JUC-O8-s9s"/>
+                                                    <constraint firstAttribute="width" constant="92" id="fiv-6z-Svx"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="108" id="YD4-7d-bxV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="JV0-Y1-nXo">
+                                        <rect key="frame" x="278" y="50" width="92" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6k-8U-Q8c">
+                                                <rect key="frame" x="7.5" y="0.0" width="77" height="15"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PYv-42-vDE">
+                                                <rect key="frame" x="0.0" y="16" width="92" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="92" id="73j-I6-cGh"/>
+                                                    <constraint firstAttribute="width" constant="92" id="e7y-g5-PsC"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="0cV-9W-Aiq"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ofq-h8-Mlh">
+                                        <rect key="frame" x="44" y="183" width="92" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoO-RN-bzv">
+                                                <rect key="frame" x="7.5" y="0.0" width="77" height="15"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zsf-ZX-Xt9">
+                                                <rect key="frame" x="0.0" y="16" width="92" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="92" id="Cyf-s8-OWo"/>
+                                                    <constraint firstAttribute="width" constant="92" id="l7v-Kn-dAX"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="zOb-fX-QSc"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gi9-Bu-3hq">
+                                        <rect key="frame" x="161" y="183" width="92" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkQ-Vs-ueG">
+                                                <rect key="frame" x="7.5" y="0.0" width="77.5" height="15"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhO-Ui-SI1">
+                                                <rect key="frame" x="0.0" y="16" width="92" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="92" id="I04-8g-bGY"/>
+                                                    <constraint firstAttribute="width" constant="92" id="ucq-bS-QMb"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="KWP-Wu-Flg"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="wUu-kp-1IO">
+                                        <rect key="frame" x="278" y="183" width="92" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EID-Ru-dtv">
+                                                <rect key="frame" x="7.5" y="0.0" width="77.5" height="15"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SI1-Zk-Ih7">
+                                                <rect key="frame" x="0.0" y="16" width="92" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="KLI-fB-BkE"/>
+                                                    <constraint firstAttribute="height" constant="92" id="xLk-ua-lZ7"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="M7l-dx-PO7"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CX4-Sd-GGU">
+                                        <rect key="frame" x="20" y="358" width="374" height="118"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGn-x4-EgE">
+                                                <rect key="frame" x="138.5" y="24" width="97.5" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="4Zu-WU-sEN"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="ot1-zx-MZn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="70"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="fGn-x4-EgE" firstAttribute="centerX" secondItem="CX4-Sd-GGU" secondAttribute="centerX" id="XvI-NK-YFv"/>
+                                            <constraint firstItem="fGn-x4-EgE" firstAttribute="centerY" secondItem="CX4-Sd-GGU" secondAttribute="centerY" id="utn-Tj-pU7"/>
+                                            <constraint firstAttribute="height" constant="118" id="z1f-EO-9Ct"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L1R5 Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqm-sh-tUY">
+                                        <rect key="frame" x="148" y="313" width="118" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="GdD-DR-BoP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-K0-y28">
+                                        <rect key="frame" x="20" y="496" width="374" height="148"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="wUu-kp-1IO" firstAttribute="leading" secondItem="Gi9-Bu-3hq" secondAttribute="trailing" constant="25" id="35g-wS-Hn6"/>
+                                    <constraint firstAttribute="bottom" secondItem="hB9-K2-W5O" secondAttribute="bottom" constant="42" id="6IH-VE-aXf"/>
+                                    <constraint firstItem="73A-b1-Pwc" firstAttribute="leading" secondItem="3nk-Wv-syE" secondAttribute="trailing" constant="25" id="6ys-k3-owQ"/>
+                                    <constraint firstItem="hB9-K2-W5O" firstAttribute="top" secondItem="Oxa-K0-y28" secondAttribute="bottom" constant="20" id="8OT-qC-GhS"/>
+                                    <constraint firstItem="JV0-Y1-nXo" firstAttribute="top" secondItem="8NR-lz-jE6" secondAttribute="top" constant="50" id="8lc-2z-md0"/>
+                                    <constraint firstAttribute="height" constant="756" id="BOi-eA-vBL"/>
+                                    <constraint firstItem="Gi9-Bu-3hq" firstAttribute="leading" secondItem="Ofq-h8-Mlh" secondAttribute="trailing" constant="25" id="HZC-Zd-JFF"/>
+                                    <constraint firstItem="73A-b1-Pwc" firstAttribute="top" secondItem="8NR-lz-jE6" secondAttribute="top" constant="50" id="Ppn-CY-YVg"/>
+                                    <constraint firstItem="Oxa-K0-y28" firstAttribute="top" secondItem="CX4-Sd-GGU" secondAttribute="bottom" constant="20" id="SL6-lG-LP0"/>
+                                    <constraint firstItem="hB9-K2-W5O" firstAttribute="leading" secondItem="8NR-lz-jE6" secondAttribute="leading" constant="20" id="XzR-xt-jfM"/>
+                                    <constraint firstItem="Qqm-sh-tUY" firstAttribute="top" secondItem="Gi9-Bu-3hq" secondAttribute="bottom" constant="22" id="Y0T-VI-REL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qqm-sh-tUY" secondAttribute="trailing" constant="148" id="YiF-Gp-AGu"/>
+                                    <constraint firstItem="Gi9-Bu-3hq" firstAttribute="top" secondItem="73A-b1-Pwc" secondAttribute="bottom" constant="25" id="b86-L2-fbY"/>
+                                    <constraint firstAttribute="trailing" secondItem="CX4-Sd-GGU" secondAttribute="trailing" constant="20" id="dfI-yz-lqA"/>
+                                    <constraint firstItem="hB9-K2-W5O" firstAttribute="top" secondItem="JV0-Y1-nXo" secondAttribute="bottom" constant="506" id="fN6-LJ-dX5"/>
+                                    <constraint firstItem="3nk-Wv-syE" firstAttribute="leading" secondItem="8NR-lz-jE6" secondAttribute="leading" constant="44" id="flj-ic-t0d"/>
+                                    <constraint firstItem="hB9-K2-W5O" firstAttribute="top" secondItem="73A-b1-Pwc" secondAttribute="bottom" constant="506" id="hLI-xY-PhJ"/>
+                                    <constraint firstItem="Ofq-h8-Mlh" firstAttribute="top" secondItem="3nk-Wv-syE" secondAttribute="bottom" constant="25" id="huP-07-8v9"/>
+                                    <constraint firstItem="CX4-Sd-GGU" firstAttribute="leading" secondItem="8NR-lz-jE6" secondAttribute="leading" constant="20" id="kLg-ul-ORR"/>
+                                    <constraint firstAttribute="trailing" secondItem="hB9-K2-W5O" secondAttribute="trailing" constant="20" id="rpq-cx-UFe"/>
+                                    <constraint firstItem="Oxa-K0-y28" firstAttribute="leading" secondItem="8NR-lz-jE6" secondAttribute="leading" constant="20" id="thT-0d-nz7"/>
+                                    <constraint firstItem="Ofq-h8-Mlh" firstAttribute="leading" secondItem="8NR-lz-jE6" secondAttribute="leading" constant="44" id="unO-zd-mVn"/>
+                                    <constraint firstItem="CX4-Sd-GGU" firstAttribute="top" secondItem="Qqm-sh-tUY" secondAttribute="bottom" constant="25" id="vGu-8Z-ALP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oxa-K0-y28" secondAttribute="trailing" constant="20" id="wJS-0e-9H1"/>
+                                    <constraint firstItem="3nk-Wv-syE" firstAttribute="top" secondItem="8NR-lz-jE6" secondAttribute="top" constant="50" id="wOq-Jt-ndG"/>
+                                    <constraint firstItem="JV0-Y1-nXo" firstAttribute="leading" secondItem="73A-b1-Pwc" secondAttribute="trailing" constant="25" id="wc0-3J-QPz"/>
+                                    <constraint firstItem="wUu-kp-1IO" firstAttribute="top" secondItem="JV0-Y1-nXo" secondAttribute="bottom" constant="25" id="y0y-p2-PRX"/>
+                                    <constraint firstItem="Qqm-sh-tUY" firstAttribute="leading" secondItem="8NR-lz-jE6" secondAttribute="leading" constant="148" id="zds-7n-Arh"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Sta-V4-9dN" appends="YES" id="4HG-pn-aS6"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Blue"/>
+                        <constraints>
+                            <constraint firstItem="q09-r7-fJj" firstAttribute="leading" secondItem="Mlp-TQ-mP1" secondAttribute="leading" constant="20" id="8bZ-HS-Qsv"/>
+                            <constraint firstAttribute="bottom" secondItem="8NR-lz-jE6" secondAttribute="bottom" id="FFN-0r-Fic"/>
+                            <constraint firstItem="8NR-lz-jE6" firstAttribute="top" secondItem="q09-r7-fJj" secondAttribute="bottom" constant="30" id="OOW-oU-FhY"/>
+                            <constraint firstItem="8NR-lz-jE6" firstAttribute="trailing" secondItem="Mlp-TQ-mP1" secondAttribute="trailing" id="azY-lG-R3h"/>
+                            <constraint firstItem="8NR-lz-jE6" firstAttribute="leading" secondItem="Mlp-TQ-mP1" secondAttribute="leading" id="d7k-L9-03v"/>
+                            <constraint firstItem="q09-r7-fJj" firstAttribute="top" secondItem="Mlp-TQ-mP1" secondAttribute="top" constant="26" id="v1q-07-blp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mlp-TQ-mP1"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="buttonToggle" destination="hB9-K2-W5O" id="KfK-8w-LuK"/>
+                        <outlet property="fieldLanguage" destination="lKz-TO-JU1" id="hZR-t2-Jdm"/>
+                        <outlet property="fieldR1" destination="hs3-XO-goR" id="tVv-sR-ciA"/>
+                        <outlet property="fieldR2" destination="PYv-42-vDE" id="yEz-hf-SDV"/>
+                        <outlet property="fieldR3" destination="Zsf-ZX-Xt9" id="sgu-0P-STM"/>
+                        <outlet property="fieldR4" destination="vhO-Ui-SI1" id="N4b-vl-OSW"/>
+                        <outlet property="fieldR5" destination="SI1-Zk-Ih7" id="bJC-a7-SMR"/>
+                        <outlet property="labelOutput" destination="fGn-x4-EgE" id="04R-7D-P7h"/>
+                        <outlet property="viewGrade" destination="CX4-Sd-GGU" id="6lo-ZN-nzz"/>
+                        <outlet property="viewMain" destination="8NR-lz-jE6" id="lcM-wk-Rd8"/>
+                        <segue destination="6GT-cM-ent" kind="show" identifier="grade" id="aEC-Ld-e7p"/>
+                        <segue destination="ZxH-rN-sOF" kind="show" identifier="elr2b2" id="lMt-aN-SV2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6o8-Wt-XLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Sta-V4-9dN">
+                    <connections>
+                        <action selector="tapDismiss:" destination="Sph-FO-k70" id="RKv-iq-8rf"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3713" y="21"/>
+        </scene>
+        <!--ELR2B2 View Controller-->
+        <scene sceneID="SDI-fk-aR2">
+            <objects>
+                <viewController storyboardIdentifier="ELR2B2ViewController" title="ELR2B2 View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZxH-rN-sOF" customClass="ELR2B2ViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ee-lW-mek">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="0CP-1D-nOn">
+                                <rect key="frame" x="20" y="70" width="280" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTS-5n-mlv">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="v5t-Jo-Kvd"/>
+                                        </constraints>
+                                        <state key="normal" image="Menu"/>
+                                        <connections>
+                                            <segue destination="03c-V1-PAf" kind="show" identifier="menu" id="xu9-bJ-Lks"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2L-9e-9Se">
+                                        <rect key="frame" x="107" y="0.0" width="173" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="9Ps-Ja-Sh9"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxk-yA-fzT">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3p-6g-wdH">
+                                        <rect key="frame" x="20" y="664" width="374" height="50"/>
+                                        <color key="backgroundColor" name="UP Blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Z4V-c3-kcR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                        <state key="normal" title="ELR2B2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" name="UP Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" name="UP Purple"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonToggle:" destination="ZxH-rN-sOF" eventType="touchUpInside" id="cEu-bP-z9S"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gp0-DE-7sr">
+                                        <rect key="frame" x="44" y="50" width="92" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRm-bj-80s">
+                                                <rect key="frame" x="19.5" y="0.0" width="53" height="15"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Adc-hx-1ei">
+                                                <rect key="frame" x="0.0" y="16" width="92" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="92" id="9IN-He-Fve"/>
+                                                    <constraint firstAttribute="width" constant="92" id="dV6-lK-sZu"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="108" id="p2P-D3-91N"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="66q-Zl-WcN">
+                                        <rect key="frame" x="161" y="50" width="92" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTT-jQ-QxI">
+                                                <rect key="frame" x="9" y="0.0" width="74" height="15"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MXG-ZH-bXf">
+                                                <rect key="frame" x="0.0" y="16" width="92" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="DDc-3p-j7H"/>
+                                                    <constraint firstAttribute="height" constant="92" id="d3a-3n-HQP"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="108" id="CdZ-hN-jsy"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3XX-jB-dp8">
+                                        <rect key="frame" x="278" y="50" width="92" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJS-PR-xWc">
+                                                <rect key="frame" x="7.5" y="0.0" width="77" height="15"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DFe-cy-7tl">
+                                                <rect key="frame" x="0.0" y="16" width="92" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="92" id="H21-cJ-hhr"/>
+                                                    <constraint firstAttribute="width" constant="92" id="x8u-0u-STN"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="DOY-4p-pie"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="cHx-Oo-Im5">
+                                        <rect key="frame" x="103" y="183" width="92" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is6-JR-JtF">
+                                                <rect key="frame" x="24.5" y="0.0" width="43" height="15"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wbZ-fx-Cjj">
+                                                <rect key="frame" x="0.0" y="16" width="92" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="92" id="N5D-Fp-5jM"/>
+                                                    <constraint firstAttribute="height" constant="92" id="e2e-zu-vwn"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="i39-gq-jpg"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="xIR-aB-Eb3">
+                                        <rect key="frame" x="220" y="183" width="92" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmM-C0-hBA">
+                                                <rect key="frame" x="23" y="0.0" width="46" height="15"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQu-Pl-ofX">
+                                                <rect key="frame" x="0.0" y="16" width="92" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="92" id="XUy-Tb-ttK"/>
+                                                    <constraint firstAttribute="width" constant="92" id="aTa-3P-Get"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="light" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="exg-Zr-kad"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6K-D4-qvB">
+                                        <rect key="frame" x="20" y="358" width="374" height="118"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgd-Ib-r4l">
+                                                <rect key="frame" x="138.5" y="24" width="97.5" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="8WF-b5-ikB"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="a00-nB-Jci"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="70"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="vgd-Ib-r4l" firstAttribute="centerY" secondItem="k6K-D4-qvB" secondAttribute="centerY" id="nez-B3-Xck"/>
+                                            <constraint firstAttribute="height" constant="118" id="okA-iX-hch"/>
+                                            <constraint firstItem="vgd-Ib-r4l" firstAttribute="centerX" secondItem="k6K-D4-qvB" secondAttribute="centerX" id="sM7-WS-zcT"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELR2B2 Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZ3-9o-gIr">
+                                        <rect key="frame" x="127" y="313" width="160" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="iDL-cc-0fH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="xIR-aB-Eb3" firstAttribute="leading" secondItem="cHx-Oo-Im5" secondAttribute="trailing" constant="25" id="1YU-RP-qYE"/>
+                                    <constraint firstAttribute="trailing" secondItem="s3p-6g-wdH" secondAttribute="trailing" constant="20" id="43P-ID-HYE"/>
+                                    <constraint firstItem="cHx-Oo-Im5" firstAttribute="top" secondItem="Gp0-DE-7sr" secondAttribute="bottom" constant="25" id="47f-JW-4cG"/>
+                                    <constraint firstItem="66q-Zl-WcN" firstAttribute="leading" secondItem="Gp0-DE-7sr" secondAttribute="trailing" constant="25" id="8gj-ZR-yBt"/>
+                                    <constraint firstItem="66q-Zl-WcN" firstAttribute="top" secondItem="sxk-yA-fzT" secondAttribute="top" constant="50" id="9AJ-My-FrZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="s3p-6g-wdH" secondAttribute="bottom" constant="42" id="Dhc-8E-M3Y"/>
+                                    <constraint firstItem="YZ3-9o-gIr" firstAttribute="leading" secondItem="sxk-yA-fzT" secondAttribute="leading" constant="127" id="G7S-UY-cBI"/>
+                                    <constraint firstItem="Gp0-DE-7sr" firstAttribute="leading" secondItem="sxk-yA-fzT" secondAttribute="leading" constant="44" id="OfM-k3-Ln3"/>
+                                    <constraint firstAttribute="height" constant="756" id="PpC-HB-jcx"/>
+                                    <constraint firstItem="3XX-jB-dp8" firstAttribute="leading" secondItem="66q-Zl-WcN" secondAttribute="trailing" constant="25" id="Q3N-3j-IcG"/>
+                                    <constraint firstItem="Gp0-DE-7sr" firstAttribute="top" secondItem="sxk-yA-fzT" secondAttribute="top" constant="50" id="REj-EA-fPh"/>
+                                    <constraint firstItem="YZ3-9o-gIr" firstAttribute="top" secondItem="xIR-aB-Eb3" secondAttribute="bottom" constant="22" id="TIw-ZA-qZd"/>
+                                    <constraint firstItem="s3p-6g-wdH" firstAttribute="top" secondItem="3XX-jB-dp8" secondAttribute="bottom" constant="506" id="W4X-eW-Tlp"/>
+                                    <constraint firstAttribute="trailing" secondItem="YZ3-9o-gIr" secondAttribute="trailing" constant="127" id="Xmu-sd-DPL"/>
+                                    <constraint firstItem="xIR-aB-Eb3" firstAttribute="top" secondItem="66q-Zl-WcN" secondAttribute="bottom" constant="25" id="aSg-Gs-2Nx"/>
+                                    <constraint firstItem="s3p-6g-wdH" firstAttribute="leading" secondItem="sxk-yA-fzT" secondAttribute="leading" constant="20" id="b6d-WX-vca"/>
+                                    <constraint firstAttribute="trailing" secondItem="k6K-D4-qvB" secondAttribute="trailing" constant="20" id="e0X-Wf-HAW"/>
+                                    <constraint firstItem="cHx-Oo-Im5" firstAttribute="leading" secondItem="sxk-yA-fzT" secondAttribute="leading" constant="103" id="ecg-bV-j34"/>
+                                    <constraint firstItem="3XX-jB-dp8" firstAttribute="top" secondItem="sxk-yA-fzT" secondAttribute="top" constant="50" id="vCl-Pa-pQa"/>
+                                    <constraint firstItem="k6K-D4-qvB" firstAttribute="leading" secondItem="sxk-yA-fzT" secondAttribute="leading" constant="20" id="vy9-Nt-tK3"/>
+                                    <constraint firstItem="k6K-D4-qvB" firstAttribute="top" secondItem="YZ3-9o-gIr" secondAttribute="bottom" constant="25" id="wfd-jg-LIY"/>
+                                    <constraint firstItem="s3p-6g-wdH" firstAttribute="top" secondItem="66q-Zl-WcN" secondAttribute="bottom" constant="506" id="yH0-ll-WOB"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ebl-RK-aa7" appends="YES" id="Ioq-rH-gf6"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Blue"/>
+                        <constraints>
+                            <constraint firstItem="0CP-1D-nOn" firstAttribute="top" secondItem="wZf-Wd-DO3" secondAttribute="top" constant="26" id="CCH-fJ-pG8"/>
+                            <constraint firstItem="sxk-yA-fzT" firstAttribute="trailing" secondItem="wZf-Wd-DO3" secondAttribute="trailing" id="FWB-cK-tgZ"/>
+                            <constraint firstItem="sxk-yA-fzT" firstAttribute="top" secondItem="0CP-1D-nOn" secondAttribute="bottom" constant="30" id="Ffz-rO-mW9"/>
+                            <constraint firstItem="0CP-1D-nOn" firstAttribute="leading" secondItem="wZf-Wd-DO3" secondAttribute="leading" constant="20" id="dnd-a6-o9F"/>
+                            <constraint firstItem="sxk-yA-fzT" firstAttribute="leading" secondItem="wZf-Wd-DO3" secondAttribute="leading" id="nhd-Gu-A1W"/>
+                            <constraint firstAttribute="bottom" secondItem="sxk-yA-fzT" secondAttribute="bottom" id="sjV-gJ-Cxy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wZf-Wd-DO3"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="buttonToggle" destination="s3p-6g-wdH" id="2Os-ts-Poh"/>
+                        <outlet property="fieldB1" destination="wbZ-fx-Cjj" id="B4z-Px-Ax9"/>
+                        <outlet property="fieldB2" destination="eQu-Pl-ofX" id="iHW-Jf-0A2"/>
+                        <outlet property="fieldEnglish" destination="Adc-hx-1ei" id="CSf-db-A4X"/>
+                        <outlet property="fieldR1" destination="MXG-ZH-bXf" id="EgD-aJ-y09"/>
+                        <outlet property="fieldR2" destination="DFe-cy-7tl" id="z3B-zd-bZx"/>
+                        <outlet property="labelOutput" destination="vgd-Ib-r4l" id="of6-cc-frm"/>
+                        <outlet property="viewGrade" destination="k6K-D4-qvB" id="0gY-fV-ybt"/>
+                        <outlet property="viewMain" destination="sxk-yA-fzT" id="PyP-t9-aFy"/>
+                        <segue destination="Sph-FO-k70" kind="show" identifier="l1r5" id="8wb-nB-GKZ"/>
+                        <segue destination="6GT-cM-ent" kind="show" identifier="grade" id="D0J-62-nqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C19-CW-aTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ebl-RK-aa7">
+                    <connections>
+                        <action selector="tapDismiss:" destination="ZxH-rN-sOF" id="Caw-5g-jWy"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4515.9420289855079" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Menu" width="40" height="40"/>
+        <namedColor name="UP Blue">
+            <color red="0.36500000953674316" green="0.47499999403953552" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UP Purple">
+            <color red="0.55699998140335083" green="0.32899999618530273" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lMt-aN-SV2"/>
+        <segue reference="8wb-nB-GKZ"/>
+        <segue reference="D0J-62-nqa"/>
+        <segue reference="xu9-bJ-Lks"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -49,7 +49,6 @@ class HomeViewController: UIViewController {
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestures(gesture:)))
         swipeUp.direction = UISwipeGestureRecognizer.Direction.up
         viewMain.addGestureRecognizer(swipeUp)
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
