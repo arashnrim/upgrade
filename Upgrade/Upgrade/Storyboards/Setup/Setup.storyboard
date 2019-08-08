@@ -28,7 +28,7 @@
         <!--Introduction View Controller-->
         <scene sceneID="LDu-hS-is3">
             <objects>
-                <viewController storyboardIdentifier="IntroductionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y43-Kp-VTT" customClass="IntroductionViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroductionViewController" title="Introduction View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y43-Kp-VTT" customClass="IntroductionViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="slZ-Lx-sVf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +122,7 @@
         <!--Level View Controller-->
         <scene sceneID="QaK-b2-HRm">
             <objects>
-                <viewController storyboardIdentifier="LevelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wo1-8X-dfM" customClass="LevelViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LevelViewController" title="Level View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wo1-8X-dfM" customClass="LevelViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bkO-l4-XJA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,14 +274,13 @@
         <!--Language View Controller-->
         <scene sceneID="o1J-Jd-9eC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yHK-Lc-imI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="LanguageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K2U-Kx-22E" customClass="LanguageViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LanguageViewController" title="Language View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K2U-Kx-22E" customClass="LanguageViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uz1-q1-ueP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Language 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYE-pg-Bcm">
-                                <rect key="frame" x="20" y="648" width="374" height="43"/>
+                                <rect key="frame" x="20" y="612" width="374" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="1nz-3o-fFw"/>
                                 </constraints>
@@ -326,9 +325,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZu-Y1-3WG">
-                                <rect key="frame" x="0.0" y="402" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="402" width="414" height="185"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="216" id="j9p-jS-qQ9"/>
+                                    <constraint firstAttribute="height" constant="185" id="j9p-jS-qQ9"/>
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwF-4J-efr">
@@ -406,7 +405,7 @@
                             <constraint firstItem="LZu-Y1-3WG" firstAttribute="trailing" secondItem="MVu-6i-nwR" secondAttribute="trailing" id="I2x-Me-hgg"/>
                             <constraint firstItem="y68-Vb-KN2" firstAttribute="leading" secondItem="MVu-6i-nwR" secondAttribute="leading" id="L54-mN-taE"/>
                             <constraint firstItem="MVu-6i-nwR" firstAttribute="trailing" secondItem="eaV-Jb-u3F" secondAttribute="trailing" constant="20" id="Lc9-SZ-P4w"/>
-                            <constraint firstItem="bYE-pg-Bcm" firstAttribute="top" secondItem="LZu-Y1-3WG" secondAttribute="bottom" constant="30" id="MQj-NJ-JHp"/>
+                            <constraint firstItem="bYE-pg-Bcm" firstAttribute="top" secondItem="LZu-Y1-3WG" secondAttribute="bottom" constant="25" id="MQj-NJ-JHp"/>
                             <constraint firstItem="MVu-6i-nwR" firstAttribute="bottom" secondItem="IwF-4J-efr" secondAttribute="bottom" constant="58" id="V57-Lz-GD0"/>
                             <constraint firstItem="08a-Uc-wVf" firstAttribute="leading" secondItem="MVu-6i-nwR" secondAttribute="leading" id="Vfm-Pz-J0C"/>
                             <constraint firstItem="MVu-6i-nwR" firstAttribute="trailing" secondItem="bYE-pg-Bcm" secondAttribute="trailing" constant="20" id="YIr-IA-3fr"/>
@@ -433,13 +432,14 @@
                         <segue destination="XY7-ck-aXl" kind="show" identifier="finish" id="LVL-PH-xVe"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHK-Lc-imI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1721.7391304347827" y="109.82142857142857"/>
         </scene>
         <!--Finish View Controller-->
         <scene sceneID="zql-mf-vXP">
             <objects>
-                <viewController storyboardIdentifier="FinishViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XY7-ck-aXl" customClass="FinishViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FinishViewController" title="Finish View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XY7-ck-aXl" customClass="FinishViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rke-uq-nIQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -471,15 +471,8 @@
                                     <constraint firstAttribute="height" constant="337" id="8bI-Tj-o8R"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Upgrade!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WN-pD-gqr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thanks!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WN-pD-gqr">
                                 <rect key="frame" x="20" y="329" width="374" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ready to begin?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTT-Qr-MJe">
-                                <rect key="frame" x="20" y="706" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -490,7 +483,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="UP Blue"/>
                                 <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
-                                <state key="normal" title="Continue">
+                                <state key="normal" title="Finish">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -506,7 +499,7 @@
                                     <segue destination="ABB-SE-dRE" kind="show" identifier="home" id="nMS-CZ-YGn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Before you get started, we need some information about you for a moment." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIL-xF-ige">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You're done. Have fun and enjoy exploring Upgrade!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIL-xF-ige">
                                 <rect key="frame" x="20" y="372" width="374" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="22"/>
@@ -522,6 +515,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UjA-Tc-0Xt"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="buttonContinue" destination="kSo-p8-efh" id="sHp-r2-7wd"/>
                     </connections>

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		490681BF22EC430D000FA279 /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490681BE22EC430D000FA279 /* Setup.storyboard */; };
 		490681C222EC432A000FA279 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490681C122EC432A000FA279 /* IntroductionViewController.swift */; };
+		491C598C22F67D6900A769E2 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491C598B22F67D6900A769E2 /* Calculator.storyboard */; };
+		491C598F22F67D8100A769E2 /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491C598E22F67D8100A769E2 /* GradeViewController.swift */; };
+		491C599222F67D9900A769E2 /* L1R5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491C599122F67D9900A769E2 /* L1R5ViewController.swift */; };
 		49414C7C22F5144A00BD3F60 /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49414C7B22F5144A00BD3F60 /* LevelViewController.swift */; };
 		4947A6D722F5EEA100F577C5 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947A6D622F5EEA100F577C5 /* LanguageViewController.swift */; };
 		4947A6DA22F5F77D00F577C5 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947A6D922F5F77D00F577C5 /* FinishViewController.swift */; };
@@ -54,6 +57,7 @@
 		49CDC37622E99540003DF2C1 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CDC37522E99540003DF2C1 /* Account.storyboard */; };
 		49CDC37922E995BE003DF2C1 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CDC37822E995BE003DF2C1 /* About.storyboard */; };
 		49F1C0C522D058B70028E16C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F1C0C422D058B70028E16C /* SignUpViewController.swift */; };
+		49F9025222F6B6EB008AD566 /* ELR2B2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F9025122F6B6EB008AD566 /* ELR2B2ViewController.swift */; };
 		A903D97F42144ECB41187B5A /* Pods_Upgrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB03CBDED11B82AF4D91059A /* Pods_Upgrade.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +65,9 @@
 		16B9200B74A61685075EB25B /* Pods-Upgrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upgrade.release.xcconfig"; path = "Target Support Files/Pods-Upgrade/Pods-Upgrade.release.xcconfig"; sourceTree = "<group>"; };
 		490681BE22EC430D000FA279 /* Setup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setup.storyboard; sourceTree = "<group>"; };
 		490681C122EC432A000FA279 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
+		491C598B22F67D6900A769E2 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
+		491C598E22F67D8100A769E2 /* GradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeViewController.swift; sourceTree = "<group>"; };
+		491C599122F67D9900A769E2 /* L1R5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L1R5ViewController.swift; sourceTree = "<group>"; };
 		49414C7B22F5144A00BD3F60 /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
 		4947A6D622F5EEA100F577C5 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		4947A6D922F5F77D00F577C5 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +115,7 @@
 		49CDC37522E99540003DF2C1 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		49CDC37822E995BE003DF2C1 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		49F1C0C422D058B70028E16C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		49F9025122F6B6EB008AD566 /* ELR2B2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELR2B2ViewController.swift; sourceTree = "<group>"; };
 		CB03CBDED11B82AF4D91059A /* Pods_Upgrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Upgrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB3076FD8D66F36AF8CCECC /* Pods-Upgrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upgrade.debug.xcconfig"; path = "Target Support Files/Pods-Upgrade/Pods-Upgrade.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +159,41 @@
 				490681C122EC432A000FA279 /* IntroductionViewController.swift */,
 			);
 			path = Introduction;
+			sourceTree = "<group>";
+		};
+		491C598A22F67D4A00A769E2 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				491C598B22F67D6900A769E2 /* Calculator.storyboard */,
+				491C598D22F67D7200A769E2 /* Grade */,
+				491C599022F67D8500A769E2 /* L1R5 */,
+				491C599322F67DB500A769E2 /* ELR2B2 */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		491C598D22F67D7200A769E2 /* Grade */ = {
+			isa = PBXGroup;
+			children = (
+				491C598E22F67D8100A769E2 /* GradeViewController.swift */,
+			);
+			path = Grade;
+			sourceTree = "<group>";
+		};
+		491C599022F67D8500A769E2 /* L1R5 */ = {
+			isa = PBXGroup;
+			children = (
+				491C599122F67D9900A769E2 /* L1R5ViewController.swift */,
+			);
+			path = L1R5;
+			sourceTree = "<group>";
+		};
+		491C599322F67DB500A769E2 /* ELR2B2 */ = {
+			isa = PBXGroup;
+			children = (
+				49F9025122F6B6EB008AD566 /* ELR2B2ViewController.swift */,
+			);
+			path = ELR2B2;
 			sourceTree = "<group>";
 		};
 		49414C7A22F5143500BD3F60 /* Level */ = {
@@ -346,6 +389,7 @@
 				49C9EDAD22CF8A1600605D6F /* Auth */,
 				490681BD22EC42F0000FA279 /* Setup */,
 				4970827C22DAFBF200C47353 /* Settings */,
+				491C598A22F67D4A00A769E2 /* Calculator */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -488,6 +532,7 @@
 				490681BF22EC430D000FA279 /* Setup.storyboard in Resources */,
 				4970827E22DAFC2200C47353 /* Settings.storyboard in Resources */,
 				49C9EDA722CF78DD00605D6F /* Metropolis-LightItalic.otf in Resources */,
+				491C598C22F67D6900A769E2 /* Calculator.storyboard in Resources */,
 				49C9EDA322CF78DD00605D6F /* Metropolis-Light.otf in Resources */,
 				4968B55222C8B25A00F457EB /* GoogleService-Info.plist in Resources */,
 				49CDC37622E99540003DF2C1 /* Account.storyboard in Resources */,
@@ -562,6 +607,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C9EDB222CF8A4200605D6F /* WelcomeViewController.swift in Sources */,
+				491C598F22F67D8100A769E2 /* GradeViewController.swift in Sources */,
+				49F9025222F6B6EB008AD566 /* ELR2B2ViewController.swift in Sources */,
 				49F1C0C522D058B70028E16C /* SignUpViewController.swift in Sources */,
 				4970828122DAFD7900C47353 /* AccountViewController.swift in Sources */,
 				49414C7C22F5144A00BD3F60 /* LevelViewController.swift in Sources */,
@@ -570,6 +617,7 @@
 				496280F522D037C7004A5E72 /* UITextField+Design.swift in Sources */,
 				49C5046522D18453003C52A9 /* MenuViewController.swift in Sources */,
 				490681C222EC432A000FA279 /* IntroductionViewController.swift in Sources */,
+				491C599222F67D9900A769E2 /* L1R5ViewController.swift in Sources */,
 				49CDC37322E987EF003DF2C1 /* ReauthenticationViewController.swift in Sources */,
 				49CCAE6222C861DB00E8E2D5 /* InitialViewController.swift in Sources */,
 				49B936E922D0F3330034329A /* HomeViewController.swift in Sources */,

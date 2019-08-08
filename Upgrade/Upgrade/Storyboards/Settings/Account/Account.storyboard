@@ -25,7 +25,7 @@
         <!--Account View Controller-->
         <scene sceneID="Emj-gZ-m63">
             <objects>
-                <viewController storyboardIdentifier="AccountViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ctg-vW-bfl" customClass="AccountViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountViewController" title="Account View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ctg-vW-bfl" customClass="AccountViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Gv-Bc-tL1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +165,7 @@
         <!--Delete View Controller-->
         <scene sceneID="BIi-FB-nNn">
             <objects>
-                <viewController storyboardIdentifier="DeleteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="27b-Ny-IvT" customClass="DeleteViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeleteViewController" title="Delete View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="27b-Ny-IvT" customClass="DeleteViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kus-39-Vm5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -332,7 +332,7 @@
         <!--Reauthentication View Controller-->
         <scene sceneID="f6M-wO-odF">
             <objects>
-                <viewController id="u7s-RC-ehb" customClass="ReauthenticationViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Reauthentication View Controller" id="u7s-RC-ehb" customClass="ReauthenticationViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cXR-7p-uWZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -21,4 +21,12 @@ extension UIView {
         
     }
     
+    /// Configures View to have a background shadow.
+    func viewShadow() {
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 2)
+        self.layer.shadowRadius = 25
+        self.layer.shadowOpacity = 0.1
+    }
+    
 }

@@ -25,7 +25,7 @@
         <!--About View Controller-->
         <scene sceneID="DAI-F5-lLZ">
             <objects>
-                <viewController storyboardIdentifier="AboutViewController" id="j2q-8D-91B" customClass="AboutViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutViewController" title="About View Controller" id="j2q-8D-91B" customClass="AboutViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Wg-Eb-fx8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="920"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
