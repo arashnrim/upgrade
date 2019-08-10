@@ -12,6 +12,7 @@
 		491C598C22F67D6900A769E2 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491C598B22F67D6900A769E2 /* Calculator.storyboard */; };
 		491C598F22F67D8100A769E2 /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491C598E22F67D8100A769E2 /* GradeViewController.swift */; };
 		491C599222F67D9900A769E2 /* L1R5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491C599122F67D9900A769E2 /* L1R5ViewController.swift */; };
+		492F227922FE5BD20075D615 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F227822FE5BD20075D615 /* DetailViewController.swift */; };
 		49414C7C22F5144A00BD3F60 /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49414C7B22F5144A00BD3F60 /* LevelViewController.swift */; };
 		4947A6D722F5EEA100F577C5 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947A6D622F5EEA100F577C5 /* LanguageViewController.swift */; };
 		4947A6DA22F5F77D00F577C5 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947A6D922F5F77D00F577C5 /* FinishViewController.swift */; };
@@ -56,6 +57,8 @@
 		49CDC37322E987EF003DF2C1 /* ReauthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDC37222E987EF003DF2C1 /* ReauthenticationViewController.swift */; };
 		49CDC37622E99540003DF2C1 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CDC37522E99540003DF2C1 /* Account.storyboard */; };
 		49CDC37922E995BE003DF2C1 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CDC37822E995BE003DF2C1 /* About.storyboard */; };
+		49DF85D222FD271D00CD1A84 /* Subjects.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DF85D122FD271D00CD1A84 /* Subjects.storyboard */; };
+		49DF85D522FD299400CD1A84 /* SubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF85D422FD299400CD1A84 /* SubjectsViewController.swift */; };
 		49F1C0C522D058B70028E16C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F1C0C422D058B70028E16C /* SignUpViewController.swift */; };
 		49F9025222F6B6EB008AD566 /* ELR2B2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F9025122F6B6EB008AD566 /* ELR2B2ViewController.swift */; };
 		A903D97F42144ECB41187B5A /* Pods_Upgrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB03CBDED11B82AF4D91059A /* Pods_Upgrade.framework */; };
@@ -68,6 +71,7 @@
 		491C598B22F67D6900A769E2 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		491C598E22F67D8100A769E2 /* GradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeViewController.swift; sourceTree = "<group>"; };
 		491C599122F67D9900A769E2 /* L1R5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L1R5ViewController.swift; sourceTree = "<group>"; };
+		492F227822FE5BD20075D615 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		49414C7B22F5144A00BD3F60 /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
 		4947A6D622F5EEA100F577C5 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		4947A6D922F5F77D00F577C5 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 		49CDC37222E987EF003DF2C1 /* ReauthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReauthenticationViewController.swift; sourceTree = "<group>"; };
 		49CDC37522E99540003DF2C1 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		49CDC37822E995BE003DF2C1 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		49DF85D122FD271D00CD1A84 /* Subjects.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subjects.storyboard; sourceTree = "<group>"; };
+		49DF85D422FD299400CD1A84 /* SubjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsViewController.swift; sourceTree = "<group>"; };
 		49F1C0C422D058B70028E16C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		49F9025122F6B6EB008AD566 /* ELR2B2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELR2B2ViewController.swift; sourceTree = "<group>"; };
 		CB03CBDED11B82AF4D91059A /* Pods_Upgrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Upgrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +200,14 @@
 				49F9025122F6B6EB008AD566 /* ELR2B2ViewController.swift */,
 			);
 			path = ELR2B2;
+			sourceTree = "<group>";
+		};
+		492F227722FE5BC70075D615 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				492F227822FE5BD20075D615 /* DetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		49414C7A22F5143500BD3F60 /* Level */ = {
@@ -388,6 +402,7 @@
 				49CCAE7222C8628200E8E2D5 /* Main */,
 				49C9EDAD22CF8A1600605D6F /* Auth */,
 				490681BD22EC42F0000FA279 /* Setup */,
+				49DF85D022FD270D00CD1A84 /* Subjects */,
 				4970827C22DAFBF200C47353 /* Settings */,
 				491C598A22F67D4A00A769E2 /* Calculator */,
 			);
@@ -448,6 +463,24 @@
 				4970828022DAFD7900C47353 /* AccountViewController.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		49DF85D022FD270D00CD1A84 /* Subjects */ = {
+			isa = PBXGroup;
+			children = (
+				49DF85D122FD271D00CD1A84 /* Subjects.storyboard */,
+				49DF85D322FD297E00CD1A84 /* Subjects */,
+				492F227722FE5BC70075D615 /* Detail */,
+			);
+			path = Subjects;
+			sourceTree = "<group>";
+		};
+		49DF85D322FD297E00CD1A84 /* Subjects */ = {
+			isa = PBXGroup;
+			children = (
+				49DF85D422FD299400CD1A84 /* SubjectsViewController.swift */,
+			);
+			path = Subjects;
 			sourceTree = "<group>";
 		};
 		49F1C0C322D0589E0028E16C /* Sign Up */ = {
@@ -533,6 +566,7 @@
 				4970827E22DAFC2200C47353 /* Settings.storyboard in Resources */,
 				49C9EDA722CF78DD00605D6F /* Metropolis-LightItalic.otf in Resources */,
 				491C598C22F67D6900A769E2 /* Calculator.storyboard in Resources */,
+				49DF85D222FD271D00CD1A84 /* Subjects.storyboard in Resources */,
 				49C9EDA322CF78DD00605D6F /* Metropolis-Light.otf in Resources */,
 				4968B55222C8B25A00F457EB /* GoogleService-Info.plist in Resources */,
 				49CDC37622E99540003DF2C1 /* Account.storyboard in Resources */,
@@ -608,6 +642,7 @@
 			files = (
 				49C9EDB222CF8A4200605D6F /* WelcomeViewController.swift in Sources */,
 				491C598F22F67D8100A769E2 /* GradeViewController.swift in Sources */,
+				492F227922FE5BD20075D615 /* DetailViewController.swift in Sources */,
 				49F9025222F6B6EB008AD566 /* ELR2B2ViewController.swift in Sources */,
 				49F1C0C522D058B70028E16C /* SignUpViewController.swift in Sources */,
 				4970828122DAFD7900C47353 /* AccountViewController.swift in Sources */,
@@ -623,6 +658,7 @@
 				49B936E922D0F3330034329A /* HomeViewController.swift in Sources */,
 				49CCAE6022C861DB00E8E2D5 /* AppDelegate.swift in Sources */,
 				49C19C8F22E96BDD004D0536 /* DeleteViewController.swift in Sources */,
+				49DF85D522FD299400CD1A84 /* SubjectsViewController.swift in Sources */,
 				49B936EB22D0F7830034329A /* Quotes+Logic.swift in Sources */,
 				496280F322D035E3004A5E72 /* SignInViewController.swift in Sources */,
 				49C9EDB522CF8D0E00605D6F /* UIButton+Design.swift in Sources */,

@@ -9,10 +9,15 @@ class HomeViewController: UIViewController {
     @IBOutlet var viewMain: UIView!
     @IBOutlet var labelQuote: UILabel!
     @IBOutlet var labelAuthor: UILabel!
+    @IBOutlet var imageIllustration: UIImageView!
+    @IBOutlet var labelName: UILabel!
+    @IBOutlet var labelGreeting: UILabel!
     
     // MARK: - Properties
     let quotes = Quotes()
-    var count = Int.random(in: 1..<8)
+    var quoteCount = Int.random(in: 1..<8)
+    var imageCount = Int.random(in: 1..<3)
+    let illustrations = ["Bookworm", "Studying", "Learning"]
     var reference: DocumentReference!
     
     // MARK: - Overrides
@@ -31,8 +36,8 @@ class HomeViewController: UIViewController {
         self.view.configureView(color1: "UP Purple", color2: "UP Blue")
         
         /// Calls struct Quotes to assign and display a random quote.
-        labelQuote.text = quotes.quote[count]
-        labelAuthor.text = quotes.author[count]
+        labelQuote.text = quotes.quote[quoteCount]
+        labelAuthor.text = quotes.author[quoteCount]
         
         /// Configures viewMain to have a cornerRadius of 20; some corners are then masked to retain the original rectangle shape.
         viewMain.layer.cornerRadius = 20
@@ -49,6 +54,32 @@ class HomeViewController: UIViewController {
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestures(gesture:)))
         swipeUp.direction = UISwipeGestureRecognizer.Direction.up
         viewMain.addGestureRecognizer(swipeUp)
+        
+        // Retrieves user name and shows it if available.
+        guard let name = Auth.auth().currentUser?.displayName else { return }
+        
+        if name != "" {
+            labelName.text = "Hi \(name),"
+        } else {
+            labelName.text = "Hi there,"
+        }
+        
+        // Retrieves current time and greets based on time.
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        
+        if hour < 12 {
+            labelGreeting.text = "Good morning!"
+        } else if hour >= 12 && hour < 18 {
+            labelGreeting.text = "Good afternoon!"
+        } else {
+            labelGreeting.text = "Good evening!"
+        }
+        
+        // Randomizes the image shown.
+        imageIllustration.image = UIImage(named: illustrations[imageCount])
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

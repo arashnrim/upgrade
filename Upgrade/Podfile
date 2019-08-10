@@ -10,6 +10,7 @@ target 'Upgrade' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
+  pod 'Charts'
   pod 'Hero'
 
 end
