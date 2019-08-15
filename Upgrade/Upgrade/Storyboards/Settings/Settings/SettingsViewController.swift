@@ -69,8 +69,18 @@ class SettingsViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func buttonSignOut(_ sender: UIButton) {
-        // TODO: - Create better sign out model
-        
+        let signOutAlert = UIAlertController(title: "Are you sure?", message: "Your session in Upgrade will end here if you continue.", preferredStyle: .alert)
+        signOutAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
+        }))
+        signOutAlert.addAction(UIAlertAction(title: "Sign Out", style: .destructive, handler: { (_) in
+            do {
+                try Auth.auth().signOut()
+                self.performSegue(withIdentifier: "signOut", sender: nil)
+            } catch let error as NSError {
+                fatalError(error.localizedDescription)
+            }
+        }))
+        present(signOutAlert, animated: true)
     }
     
 }

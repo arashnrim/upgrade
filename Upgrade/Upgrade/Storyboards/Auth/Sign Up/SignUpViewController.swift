@@ -45,6 +45,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
         /// Calls extension function configureButton() (see UIButton+Design.swift) to configure the overall design for buttonContinue.
         buttonSignUp.configureButton(color1: "UP Purple", color2: "UP Blue")
+        
+        self.dismissKeyboardWhenTapped()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -194,8 +194,9 @@
                                     <constraint firstAttribute="height" constant="756" id="UGs-HW-JyO"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="po4-j8-ezS">
-                                <rect key="frame" x="20" y="70" width="266.5" height="40"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="po4-j8-ezS">
+                                <rect key="frame" x="20" y="70" width="365" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGd-yY-l83">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -203,26 +204,30 @@
                                             <constraint firstAttribute="width" constant="40" id="byd-gJ-HiE"/>
                                         </constraints>
                                         <state key="normal" image="Back"/>
+                                        <connections>
+                                            <action selector="buttonBack:" destination="vxl-qb-Uux" eventType="touchUpInside" id="L3W-T7-DGL"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoS-PE-FpB">
-                                        <rect key="frame" x="124" y="0.0" width="142.5" height="40"/>
+                                        <rect key="frame" x="124" y="0.0" width="117" height="40"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDh-yI-3fY">
+                                        <rect key="frame" x="325" y="0.0" width="40" height="40"/>
+                                        <state key="normal" image="Add"/>
+                                        <connections>
+                                            <segue destination="1Jw-U7-Hcj" kind="show" identifier="add" id="NCU-19-tMe"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="266.5" id="QPD-M1-Mib"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" name="UP Blue"/>
                         <constraints>
-                            <constraint firstItem="po4-j8-ezS" firstAttribute="top" secondItem="BzT-H9-V5G" secondAttribute="top" constant="26" id="Gyd-Vb-lAk"/>
                             <constraint firstAttribute="bottom" secondItem="jTD-Ci-Sc6" secondAttribute="bottom" id="Uhb-az-Wv8"/>
-                            <constraint firstItem="po4-j8-ezS" firstAttribute="leading" secondItem="BzT-H9-V5G" secondAttribute="leading" constant="20" id="XxM-bq-lGD"/>
                             <constraint firstItem="jTD-Ci-Sc6" firstAttribute="leading" secondItem="BzT-H9-V5G" secondAttribute="leading" id="eRg-0i-81Y"/>
-                            <constraint firstItem="jTD-Ci-Sc6" firstAttribute="top" secondItem="po4-j8-ezS" secondAttribute="bottom" constant="30" id="gcU-Iz-Dic"/>
                             <constraint firstItem="jTD-Ci-Sc6" firstAttribute="trailing" secondItem="BzT-H9-V5G" secondAttribute="trailing" id="tXh-br-aGb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BzT-H9-V5G"/>
@@ -238,8 +243,17 @@
             </objects>
             <point key="canvasLocation" x="3784" y="21"/>
         </scene>
+        <!--AddViewController-->
+        <scene sceneID="rEK-fE-HRn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Add" referencedIdentifier="AddViewController" id="1Jw-U7-Hcj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H9b-yr-euV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4415" y="21"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Add" width="40" height="40"/>
         <image name="Back" width="40" height="40"/>
         <image name="Menu" width="40" height="40"/>
         <namedColor name="UP Blue">

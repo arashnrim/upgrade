@@ -52,12 +52,11 @@ class LanguageViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     // MARK: - Functions
-    func updateSubjects(subject: String) {
+    func updateSubjects() {
         guard let uid = Auth.auth().currentUser?.uid else { return }
-        let data: [String: Any] = ["name": subject]
         
         reference = Firestore.firestore().document("users/\(uid)/subjects/Mother Tongue")
-        reference.updateData(data)
+        reference.updateData(["name": language2])
     }
     
     
@@ -114,10 +113,11 @@ class LanguageViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             languageAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
             }))
             languageAlert.addAction(UIAlertAction(title: "Skip", style: .destructive, handler: { (_) in
-                self.updateSubjects(subject: "nil")
+                self.language2 = "Mother Tongue"
+                self.updateSubjects()
             }))
         } else {
-            updateSubjects(subject: language2)
+            updateSubjects()
         }
         
         self.performSegue(withIdentifier: "finish", sender: nil)

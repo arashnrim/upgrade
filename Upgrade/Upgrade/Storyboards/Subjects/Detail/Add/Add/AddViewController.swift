@@ -1,13 +1,13 @@
 import UIKit
 
-class DetailViewController: UIViewController {
-    
+class AddViewController: UIViewController {
+
     // MARK: - Outlets
     @IBOutlet var viewMain: UIView!
     
     // MARK: - Properties
     var subject = String()
-
+    
     // MARK: - Overrides
     /// Overrides preferred status bar style (color) from black (default) to white.
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -18,7 +18,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         /// Prints out to command line for better debugging purposes.
-        print("upgradeconsoleREDIRECT: Redirection to SubjectsViewController executed.")
+        print("upgradeconsoleREDIRECT: Redirection to AddViewController executed.")
         
         /// Calls extension function configureView() (see UIView+Design.swift) to configure background gradient color for SettingsViewController.
         self.view.configureView(color1: "UP Purple", color2: "UP Blue")
@@ -30,8 +30,8 @@ class DetailViewController: UIViewController {
     }
     
     // MARK: - Actions
-    @IBAction func buttonBack(_ sender: UIButton) {
-        self.hero.dismissViewController()
+    @IBAction func buttonCancel(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
 }

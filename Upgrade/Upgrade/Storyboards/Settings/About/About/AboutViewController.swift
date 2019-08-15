@@ -1,6 +1,7 @@
 import UIKit
+import SafariServices
 
-class AboutViewController: UIViewController {
+class AboutViewController: UIViewController, SFSafariViewControllerDelegate {
     
     // MARK: - Outlets
     @IBOutlet var viewMain: UIView!
@@ -27,9 +28,34 @@ class AboutViewController: UIViewController {
         contentView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
     
+    // MARK: - Functions
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
     // MARK: - Actions
     @IBAction func buttonBack(_ sender: UIButton) {
         self.hero.dismissViewController()
+    }
+    
+    @IBAction func buttonFirebase(_ sender: UIButton) {
+        let svc = SFSafariViewController(url: URL(string: "https://firebase.google.com")!)
+        self.present(svc, animated: true)
+    }
+    
+    @IBAction func buttonHero(_ sender: UIButton) {
+        let svc = SFSafariViewController(url: URL(string: "https://github.com/HeroTransitions/Hero")!)
+        self.present(svc, animated: true)
+    }
+    
+    @IBAction func buttonIcons8(_ sender: UIButton) {
+        let svc = SFSafariViewController(url: URL(string: "https://icons8.com")!)
+        self.present(svc, animated: true)
+    }
+    
+    @IBAction func buttonUnDraw(_ sender: UIButton) {
+        let svc = SFSafariViewController(url: URL(string: "https://undraw.co")!)
+        self.present(svc, animated: true)
     }
     
 }

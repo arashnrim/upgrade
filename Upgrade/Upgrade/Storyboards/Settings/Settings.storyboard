@@ -207,7 +207,6 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <connections>
                                                             <action selector="buttonSignOut:" destination="LEZ-9t-RF4" eventType="touchUpInside" id="6Cx-Z7-0E8"/>
-                                                            <segue destination="F6j-xO-N9s" kind="show" identifier="signOut" id="Beg-kd-KsK"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -267,6 +266,7 @@
                         <outlet property="viewAccount" destination="BWb-Kd-OL1" id="jcs-ae-LEJ"/>
                         <outlet property="viewMain" destination="rVw-J6-asd" id="wk8-Fa-Xoq"/>
                         <outlet property="viewSignOut" destination="itG-Ej-dgn" id="N67-Ww-AzO"/>
+                        <segue destination="F6j-xO-N9s" kind="show" identifier="signOut" id="hVl-jh-sDT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xn-32-1g9" userLabel="First Responder" sceneMemberID="firstResponder"/>
