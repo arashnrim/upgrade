@@ -67,11 +67,12 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqJ-BG-AiI">
-                                                        <rect key="frame" x="20" y="272" width="374" height="130"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqJ-BG-AiI">
+                                                        <rect key="frame" x="20" y="272" width="374" height="145"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="130" id="KHw-It-SbB"/>
+                                                            <constraint firstAttribute="height" constant="145" id="KHw-It-SbB"/>
                                                         </constraints>
+                                                        <string key="text">We wish to inspire youths everywhere to take action towards self-improvement and actualization, and to become the most used app and solution for educational advancement.</string>
                                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="22"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -94,6 +95,9 @@
                                                         <state key="normal" title="Firebase by Google">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buttonFirebase:" destination="j2q-8D-91B" eventType="touchUpInside" id="D49-ce-AyC"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4R-D1-i5n">
                                                         <rect key="frame" x="20" y="536" width="374" height="35"/>
@@ -104,6 +108,9 @@
                                                         <state key="normal" title="Hero by Luke Zhao">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buttonHero:" destination="j2q-8D-91B" eventType="touchUpInside" id="SF7-Jc-awy"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6h-nY-HnR">
                                                         <rect key="frame" x="20" y="579" width="374" height="35"/>
@@ -114,11 +121,24 @@
                                                         <state key="normal" title="icons8">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buttonIcons8:" destination="j2q-8D-91B" eventType="touchUpInside" id="2xc-zk-0zX"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eat-Dj-GKF">
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRh-Lc-5xK">
                                                         <rect key="frame" x="20" y="622" width="374" height="35"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="35" id="bpG-2u-mPc"/>
+                                                            <constraint firstAttribute="height" constant="35" id="zgM-XQ-X7V"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="20"/>
+                                                        <state key="normal" title="unDraw">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eat-Dj-GKF">
+                                                        <rect key="frame" x="20" y="665" width="374" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="QPi-88-yjF"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="20"/>
                                                         <state key="normal" title="You, our wonderful user">
@@ -129,25 +149,28 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="Xta-kB-5dh" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="43P-mM-H7i"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iRh-Lc-5xK" secondAttribute="trailing" constant="20" id="6hf-jv-kc2"/>
                                                     <constraint firstItem="rU9-q6-enB" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="CLX-cY-ut2"/>
+                                                    <constraint firstItem="iRh-Lc-5xK" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="DLT-TL-JYa"/>
                                                     <constraint firstAttribute="trailing" secondItem="rU9-q6-enB" secondAttribute="trailing" constant="20" id="EJc-Tx-N17"/>
                                                     <constraint firstItem="s60-pr-g3I" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="FRe-eC-Rah"/>
-                                                    <constraint firstItem="eat-Dj-GKF" firstAttribute="top" secondItem="d6h-nY-HnR" secondAttribute="bottom" constant="8" id="JI5-cS-T8W"/>
                                                     <constraint firstItem="d6h-nY-HnR" firstAttribute="top" secondItem="s4R-D1-i5n" secondAttribute="bottom" constant="8" id="KXa-UY-1vb"/>
                                                     <constraint firstAttribute="trailing" secondItem="s4R-D1-i5n" secondAttribute="trailing" constant="20" id="Mmg-ls-OgC"/>
-                                                    <constraint firstAttribute="trailing" secondItem="eat-Dj-GKF" secondAttribute="trailing" constant="20" id="Mt4-y4-UR7"/>
                                                     <constraint firstItem="s4R-D1-i5n" firstAttribute="top" secondItem="s60-pr-g3I" secondAttribute="bottom" constant="8" id="RZV-l0-BQJ"/>
-                                                    <constraint firstItem="Xta-kB-5dh" firstAttribute="top" secondItem="vqJ-BG-AiI" secondAttribute="bottom" constant="58" id="SVY-Xo-B5F"/>
+                                                    <constraint firstItem="Xta-kB-5dh" firstAttribute="top" secondItem="vqJ-BG-AiI" secondAttribute="bottom" constant="43" id="SVY-Xo-B5F"/>
                                                     <constraint firstAttribute="trailing" secondItem="Xta-kB-5dh" secondAttribute="trailing" constant="20" id="UD8-Gi-tnL"/>
                                                     <constraint firstItem="s60-pr-g3I" firstAttribute="top" secondItem="Xta-kB-5dh" secondAttribute="bottom" constant="8" id="WVu-cW-VcD"/>
                                                     <constraint firstItem="0o3-t7-fXL" firstAttribute="top" secondItem="rPX-2P-HQ7" secondAttribute="top" constant="18" id="WWf-rX-wfH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eat-Dj-GKF" secondAttribute="trailing" constant="20" id="WtW-i6-ZIQ"/>
+                                                    <constraint firstItem="eat-Dj-GKF" firstAttribute="top" secondItem="iRh-Lc-5xK" secondAttribute="bottom" constant="8" id="Xrw-Nw-UyM"/>
                                                     <constraint firstItem="rU9-q6-enB" firstAttribute="top" secondItem="0o3-t7-fXL" secondAttribute="bottom" constant="8" id="a9g-9b-RXY"/>
                                                     <constraint firstItem="d6h-nY-HnR" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="e5f-nu-997"/>
                                                     <constraint firstAttribute="trailing" secondItem="OUV-cq-j5S" secondAttribute="trailing" constant="20" id="eWU-XW-tIA"/>
                                                     <constraint firstItem="OUV-cq-j5S" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="f0Z-iv-SrW"/>
                                                     <constraint firstItem="vqJ-BG-AiI" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="hhr-dw-RTU"/>
-                                                    <constraint firstItem="eat-Dj-GKF" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="hvw-SN-32h"/>
                                                     <constraint firstItem="s4R-D1-i5n" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="iwW-T8-IUa"/>
+                                                    <constraint firstItem="eat-Dj-GKF" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="khz-Or-d1r"/>
+                                                    <constraint firstItem="iRh-Lc-5xK" firstAttribute="top" secondItem="d6h-nY-HnR" secondAttribute="bottom" constant="8" id="kqP-aP-XKI"/>
                                                     <constraint firstAttribute="trailing" secondItem="0o3-t7-fXL" secondAttribute="trailing" constant="20" id="ktj-49-MgT"/>
                                                     <constraint firstItem="vqJ-BG-AiI" firstAttribute="top" secondItem="OUV-cq-j5S" secondAttribute="bottom" constant="8" id="m2n-hR-u3M"/>
                                                     <constraint firstItem="0o3-t7-fXL" firstAttribute="leading" secondItem="rPX-2P-HQ7" secondAttribute="leading" constant="20" id="oD7-Bl-JVX"/>

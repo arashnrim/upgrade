@@ -472,7 +472,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-K0-y28">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-K0-y28">
                                         <rect key="frame" x="20" y="496" width="374" height="148"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="22"/>
                                         <nil key="textColor"/>
@@ -539,6 +539,7 @@
                         <outlet property="fieldR4" destination="vhO-Ui-SI1" id="N4b-vl-OSW"/>
                         <outlet property="fieldR5" destination="SI1-Zk-Ih7" id="bJC-a7-SMR"/>
                         <outlet property="labelOutput" destination="fGn-x4-EgE" id="04R-7D-P7h"/>
+                        <outlet property="labelResult" destination="Oxa-K0-y28" id="ejv-77-e4O"/>
                         <outlet property="viewGrade" destination="CX4-Sd-GGU" id="6lo-ZN-nzz"/>
                         <outlet property="viewMain" destination="8NR-lz-jE6" id="lcM-wk-Rd8"/>
                         <segue destination="6GT-cM-ent" kind="show" identifier="grade" id="aEC-Ld-e7p"/>
@@ -837,13 +838,13 @@
             <color red="0.36500000953674316" green="0.47499999403953552" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="UP Purple">
-            <color red="0.55699998140335083" green="0.32899999618530273" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.55686274509803924" green="0.32549019607843138" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lMt-aN-SV2"/>
-        <segue reference="8wb-nB-GKZ"/>
-        <segue reference="D0J-62-nqa"/>
-        <segue reference="xu9-bJ-Lks"/>
+        <segue reference="CFi-zd-s83"/>
+        <segue reference="fXS-hF-c06"/>
+        <segue reference="aEC-Ld-e7p"/>
+        <segue reference="u7F-wg-HOf"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -14,6 +14,7 @@ class L1R5ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var fieldR5: UITextField!
     @IBOutlet var labelOutput: UILabel!
     @IBOutlet var buttonToggle: UIButton!
+    @IBOutlet var labelResult: UILabel!
     
     // MARK: - Properties
     var currentTextField = UITextField()
@@ -87,11 +88,25 @@ class L1R5ViewController: UIViewController, UITextFieldDelegate {
                 self.fieldR4.text = ""
                 self.fieldR5.text = ""
                 self.labelOutput.text = "00"
+                self.totalGrade = 0
             }))
             present(gradeAlert, animated: true)
             self.labelOutput.text = "??"
         } else {
             labelOutput.text = "\(totalGrade)"
+            
+            if totalGrade <= 15 {
+                labelResult.text = "You should be able to apply for Junior Colleges with this score."
+            } else if totalGrade > 15 && totalGrade <= 20 {
+                if fieldR1.text == "1" && fieldR2.text == "1" && fieldR3.text == "1" && fieldR4.text == "1" && fieldR5.text == "1" {
+                    self.labelResult.text = "You should be able to apply for Junior Colleges through Conditional Admission with this score."
+                } else {
+                    self.labelResult.text = "You may be able to apply for Junior Colleges."
+                }
+            } else {
+                labelResult.text = "You should be able to apply for Polytechnics with this score."
+            }
+            
         }
     }
     
