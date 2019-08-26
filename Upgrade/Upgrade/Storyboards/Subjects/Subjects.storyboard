@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
         <array key="Metropolis-Medium.otf">
             <string>Metropolis-Medium</string>
         </array>
@@ -105,18 +108,18 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Zx-B6-402">
-                                                <rect key="frame" x="84" y="314" width="247.5" height="83"/>
+                                                <rect key="frame" x="84" y="314" width="232.5" height="87.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bPT-Gg-OHD">
-                                                        <rect key="frame" x="114" y="0.0" width="20" height="20"/>
+                                                        <rect key="frame" x="106.5" y="0.0" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="bXa-Kf-m4M"/>
                                                         </constraints>
                                                         <color key="color" name="UP Blue"/>
                                                     </activityIndicatorView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give us a sec," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JF5-Ew-Ur4">
-                                                        <rect key="frame" x="41.5" y="25" width="164.5" height="28"/>
+                                                        <rect key="frame" x="34" y="25" width="164.5" height="28"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="28" id="gMc-hW-MdJ"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="odR-4G-Hgy"/>
@@ -126,7 +129,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="we're working on it..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="528-fx-3VM">
-                                                        <rect key="frame" x="0.0" y="58" width="247.5" height="25"/>
+                                                        <rect key="frame" x="0.0" y="58" width="232.5" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="25"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -187,13 +190,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-Ci-Sc6">
-                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="756" id="UGs-HW-JyO"/>
-                                </constraints>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="po4-j8-ezS">
                                 <rect key="frame" x="20" y="70" width="365" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -223,6 +219,117 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-Ci-Sc6">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndw-5L-TQE">
+                                        <rect key="frame" x="0.0" y="8" width="414" height="238"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIK-03-ixH">
+                                                <rect key="frame" x="20" y="20" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="R1U-Zp-tA4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gce-l4-ntV">
+                                                <rect key="frame" x="20" y="78" width="374" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="tqp-rC-Fyd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="75"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="gce-l4-ntV" firstAttribute="top" secondItem="ZIK-03-ixH" secondAttribute="bottom" constant="8" id="Ia8-Kr-dyu"/>
+                                            <constraint firstItem="ZIK-03-ixH" firstAttribute="top" secondItem="ndw-5L-TQE" secondAttribute="top" constant="20" id="NTR-le-0bU"/>
+                                            <constraint firstAttribute="height" constant="238" id="Y4M-HF-KrK"/>
+                                            <constraint firstItem="ZIK-03-ixH" firstAttribute="leading" secondItem="ndw-5L-TQE" secondAttribute="leading" constant="20" id="ewU-fY-Sef"/>
+                                            <constraint firstItem="gce-l4-ntV" firstAttribute="leading" secondItem="ndw-5L-TQE" secondAttribute="leading" constant="20" id="hen-rh-08N"/>
+                                            <constraint firstAttribute="trailing" secondItem="gce-l4-ntV" secondAttribute="trailing" constant="20" id="nTD-kw-u1E"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZIK-03-ixH" secondAttribute="trailing" constant="20" id="xn4-bQ-bxb"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sho-7Z-SGB">
+                                        <rect key="frame" x="20" y="664" width="374" height="50"/>
+                                        <color key="backgroundColor" name="UP Blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ivn-4n-QHy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
+                                        <state key="normal" title="More Information">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" name="UP Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" name="UP Purple"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="buttonContinue"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BZ-Kf-Ofy" customClass="LineChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="291" width="414" height="275"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="275" id="VDh-7A-amE"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSz-li-7IQ">
+                                        <rect key="frame" x="0.0" y="291" width="414" height="275"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hYe-x8-hDP">
+                                                <rect key="frame" x="20" y="95.5" width="374" height="84"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not enough info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2D-7Y-fC2">
+                                                        <rect key="frame" x="100.5" y="0.0" width="173" height="22"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There isn't enough information to create a graph. Press the add button at the top right to add details." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Js-Kb-gSD">
+                                                        <rect key="frame" x="2.5" y="30" width="369" height="54"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="hYe-x8-hDP" firstAttribute="centerX" secondItem="GSz-li-7IQ" secondAttribute="centerX" id="2Wc-pd-0ID"/>
+                                            <constraint firstAttribute="trailing" secondItem="hYe-x8-hDP" secondAttribute="trailing" constant="20" id="HcZ-lb-pmu"/>
+                                            <constraint firstItem="hYe-x8-hDP" firstAttribute="leading" secondItem="GSz-li-7IQ" secondAttribute="leading" constant="20" id="NVD-Zc-NSp"/>
+                                            <constraint firstItem="hYe-x8-hDP" firstAttribute="centerY" secondItem="GSz-li-7IQ" secondAttribute="centerY" id="TQ6-Ug-ehm"/>
+                                            <constraint firstAttribute="height" constant="275" id="xw8-lI-yAJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0BZ-Kf-Ofy" secondAttribute="trailing" id="1U1-i6-tfX"/>
+                                    <constraint firstItem="GSz-li-7IQ" firstAttribute="leading" secondItem="jTD-Ci-Sc6" secondAttribute="leading" id="7x1-cZ-b1E"/>
+                                    <constraint firstItem="0BZ-Kf-Ofy" firstAttribute="top" secondItem="ndw-5L-TQE" secondAttribute="bottom" constant="45" id="ARQ-QC-XUc"/>
+                                    <constraint firstItem="0BZ-Kf-Ofy" firstAttribute="leading" secondItem="jTD-Ci-Sc6" secondAttribute="leading" id="GQu-U9-MHw"/>
+                                    <constraint firstItem="ndw-5L-TQE" firstAttribute="leading" secondItem="jTD-Ci-Sc6" secondAttribute="leading" id="O1k-E2-72G"/>
+                                    <constraint firstItem="ndw-5L-TQE" firstAttribute="top" secondItem="jTD-Ci-Sc6" secondAttribute="top" constant="8" id="T51-gu-bkh"/>
+                                    <constraint firstAttribute="height" constant="756" id="UGs-HW-JyO"/>
+                                    <constraint firstAttribute="trailing" secondItem="GSz-li-7IQ" secondAttribute="trailing" id="ZIx-qt-bgU"/>
+                                    <constraint firstAttribute="trailing" secondItem="ndw-5L-TQE" secondAttribute="trailing" id="aU7-Tl-0et"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sho-7Z-SGB" secondAttribute="bottom" constant="42" id="ngv-N4-KQ1"/>
+                                    <constraint firstItem="GSz-li-7IQ" firstAttribute="top" secondItem="ndw-5L-TQE" secondAttribute="bottom" constant="45" id="p8F-Hk-hMp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sho-7Z-SGB" secondAttribute="trailing" constant="20" id="tnQ-Dn-d01"/>
+                                    <constraint firstItem="Sho-7Z-SGB" firstAttribute="leading" secondItem="jTD-Ci-Sc6" secondAttribute="leading" constant="20" id="yar-Dx-cY5"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" name="UP Blue"/>
                         <constraints>
@@ -236,12 +343,16 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <outlet property="viewMain" destination="jTD-Ci-Sc6" id="Rxl-P3-pPX"/>
+                        <outlet property="buttonGetFeedback" destination="Sho-7Z-SGB" id="Glk-2m-q0F"/>
+                        <outlet property="chartLine" destination="0BZ-Kf-Ofy" id="C1p-3Q-w7V"/>
+                        <outlet property="viewInsufficient" destination="GSz-li-7IQ" id="IW9-Mk-TUL"/>
+                        <outlet property="viewMain" destination="jTD-Ci-Sc6" id="OXj-eG-62p"/>
+                        <outlet property="viewOverall" destination="ndw-5L-TQE" id="bVy-Pn-6BS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tq8-tK-bba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3784" y="21"/>
+            <point key="canvasLocation" x="3782.608695652174" y="20.758928571428569"/>
         </scene>
         <!--AddViewController-->
         <scene sceneID="rEK-fE-HRn">
@@ -258,6 +369,9 @@
         <image name="Menu" width="40" height="40"/>
         <namedColor name="UP Blue">
             <color red="0.36500000953674316" green="0.47499999403953552" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UP Purple">
+            <color red="0.55686274509803924" green="0.32549019607843138" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

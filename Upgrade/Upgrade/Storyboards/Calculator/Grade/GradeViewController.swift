@@ -189,6 +189,10 @@ class GradeViewController: UIViewController, UITextFieldDelegate {
         } else {
             let questionAlert = UIAlertController(title: "Huh?", message: "Your input wasn't correct somewhere. Please check it again.", preferredStyle: .alert)
             questionAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+                self.fieldMaxScore.text = ""
+                self.fieldUserScore.text = ""
+                self.labelOutputGrade.text = "Z0"
+                self.labelOutputScore.text = "0"
             }))
             present(questionAlert, animated: true)
             

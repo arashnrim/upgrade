@@ -85,7 +85,7 @@ class LevelViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     func configureSubject(subject: String, CA1: Float, SA1: Float, CA2: Float, SA2: Float, PT1: Float, PT2: Float) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
-        let data: [String: Any] = ["CA1": CA1, "SA1": SA1, "CA2": CA2, "SA2": SA2, "PT1": PT1, "PT2": PT2]
+        let data: [String: Any] = ["CA1": CA1, "SA1": SA1, "CA2": CA2, "SA2": SA2, "PT1": PT1, "PT2": PT2, "CA1Score": Int(), "SA1Score": Int(), "CA2Score": Int(), "SA2Score": Int(), "PT1Score": Int(), "PT2Score": Int()]
         
         reference = Firestore.firestore().document("users/\(uid)/subjects/\(subject)")
         reference.updateData(data)
