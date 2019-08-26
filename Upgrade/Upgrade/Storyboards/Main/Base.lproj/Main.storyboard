@@ -215,7 +215,7 @@
                                     <constraint firstItem="bd1-A2-Sgf" firstAttribute="top" secondItem="6Dm-AE-XgY" secondAttribute="bottom" constant="31" id="zG6-c4-XXJ"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="NQ9-VM-6Ar" appends="YES" id="g3X-XY-fOW"/>
+                                    <outletCollection property="gestureRecognizers" destination="Qua-gd-4sj" appends="YES" id="0GE-lc-d46"/>
                                 </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="06n-1i-dZg">
@@ -271,11 +271,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwF-cG-BMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="down" id="NQ9-VM-6Ar">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Qua-gd-4sj">
                     <connections>
-                        <action selector="swipedown:" destination="w96-w4-DH8" id="SAr-vt-FTt"/>
+                        <action selector="pannedView:" destination="w96-w4-DH8" id="Lnx-Pu-cTA"/>
                     </connections>
-                </swipeGestureRecognizer>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1228.985507246377" y="20.758928571428569"/>
         </scene>
@@ -428,8 +428,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IYC-9j-bbQ"/>
-        <segue reference="mbL-Rd-fam"/>
-        <segue reference="aKG-8t-LLp"/>
+        <segue reference="EwM-Yp-3Y0"/>
+        <segue reference="7dT-Hm-NyM"/>
     </inferredMetricsTieBreakers>
 </document>

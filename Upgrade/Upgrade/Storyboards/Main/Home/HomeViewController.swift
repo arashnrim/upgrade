@@ -46,15 +46,6 @@ class HomeViewController: UIViewController {
         /// Configures viewBar to have round corners.
         viewBar.layer.cornerRadius = viewBar.bounds.height/2
         
-        /// Adds gesture recognizers to move viewMain up and down.
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestures(gesture:)))
-        swipeDown.direction = UISwipeGestureRecognizer.Direction.down
-        viewMain.addGestureRecognizer(swipeDown)
-        
-        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestures(gesture:)))
-        swipeUp.direction = UISwipeGestureRecognizer.Direction.up
-        viewMain.addGestureRecognizer(swipeUp)
-        
         // Retrieves user name and shows it if available.
         guard let name = Auth.auth().currentUser?.displayName else { return }
         
@@ -116,20 +107,76 @@ class HomeViewController: UIViewController {
     }
     
     // MARK: - Functions
-    @objc func swipeGestures(gesture: UIGestureRecognizer) {
-        if let gesture = gesture as? UISwipeGestureRecognizer {
-            switch gesture.direction {
-            case UISwipeGestureRecognizer.Direction.down:
+    @IBAction func pannedView(_ sender: UIPanGestureRecognizer) {
+        switch sender.state {
+        case .began:
+            if sender.translation(in: self.view).y >= 0 {
+                self.viewMain.transform = CGAffineTransform(translationX: 0, y: sender.translation(in: self.view).y)
+            }
+        case .changed:
+            print(sender.translation(in: self.view).y)
+            print(self.viewMain.frame.height / 2)
+            
+            if sender.translation(in: self.view).y >= 0 {
+                self.viewMain.transform = CGAffineTransform(translationX: 0, y: sender.translation(in: self.view).y)
+            }
+            
+        case .ended:
+            if sender.direction == .down {
                 UIView.animate(withDuration: 0.5) {
                     self.viewMain.transform = CGAffineTransform(translationX: 0, y: 600)
                 }
-            case UISwipeGestureRecognizer.Direction.up:
+            } else {
                 UIView.animate(withDuration: 0.5) {
                     self.viewMain.transform = CGAffineTransform(translationX: 0, y: 0)
                 }
-            default:
-                break
             }
+            
+        case .cancelled:
+            if sender.direction == .down {
+                UIView.animate(withDuration: 0.5) {
+                    self.viewMain.transform = CGAffineTransform(translationX: 0, y: 600)
+                }
+            } else {
+                UIView.animate(withDuration: 0.5) {
+                    self.viewMain.transform = CGAffineTransform(translationX: 0, y: 0)
+                }
+            }
+        case .failed:
+            if sender.direction == .down {
+                UIView.animate(withDuration: 0.5) {
+                    self.viewMain.transform = CGAffineTransform(translationX: 0, y: 600)
+                }
+            } else {
+                UIView.animate(withDuration: 0.5) {
+                    self.viewMain.transform = CGAffineTransform(translationX: 0, y: 0)
+                }
+            }
+        case .possible:
+            break
+        @unknown default:
+            break
+        }
+    }
+    
+}
+
+public enum PanDirection: Int {
+    case up, down, left, right
+    public var isVertical: Bool { return [.up, .down].contains(self) }
+    public var isHorizontal: Bool { return !isVertical }
+}
+
+public extension UIPanGestureRecognizer {
+    var direction: PanDirection? {
+        let velocity = self.velocity(in: view)
+        let isVertical = abs(velocity.y) > abs(velocity.x)
+        switch (isVertical, velocity.x, velocity.y) {
+        case (true, _, let y) where y < 0: return .up
+        case (true, _, let y) where y > 0: return .down
+        case (false, let x, _) where x > 0: return .right
+        case (false, let x, _) where x < 0: return .left
+        default: return nil
         }
     }
     
