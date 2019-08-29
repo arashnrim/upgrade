@@ -7,9 +7,9 @@ class DetailViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet var viewMain: UIView!
     @IBOutlet var viewOverall: UIView!
+    @IBOutlet var labelOverall: UILabel!
     @IBOutlet var chartLine: LineChartView!
     @IBOutlet var buttonGetFeedback: UIButton!
-    @IBOutlet var viewInsufficient: UIView!
     
     // MARK: - Properties
     var subject = String()
@@ -80,10 +80,9 @@ class DetailViewController: UIViewController {
                     let pt2 = data["PT2"] as! Double
                     self.percentages.append(pt2)
                     
-                    if self.scores != [0.0, 0.0, 0.0, 0.0, 0.0, 0.0] {
-                        UIView.animate(withDuration: 0.1, animations: {
-                            self.viewInsufficient.alpha = 0
-                        })
+                    if self.scores.contains(0.0) {
+                        self.updateGraph()
+                    } else {
                         self.updateGraph()
                         self.updateOverall()
                     }
@@ -124,18 +123,23 @@ class DetailViewController: UIViewController {
                     let pt2 = data["PT2"] as! Double
                     self.percentages.append(pt2)
                     
-                    if self.scores != [0.0, 0.0, 0.0, 0.0, 0.0, 0.0] {
-                        UIView.animate(withDuration: 0.1, animations: {
-                            self.viewInsufficient.alpha = 0
-                        })
+                    if self.scores.contains(0.0) {
+                        self.updateGraph()
+                    } else {
                         self.updateGraph()
                         self.updateOverall()
                     }
                 }
             }
         }
-        
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "add" {
+            let destination = segue.destination as! AddViewController
+            destination.subject = subject
+        }
     }
     
     // MARK: - Functions
@@ -184,9 +188,30 @@ class DetailViewController: UIViewController {
     }
     
     func updateOverall() {
-        /// Retrieves individual values from the array using a for loop.
-        for i in 0 ..< percentages.count {
-            overall += scores[i]
+        /// Finds the average percentage scored.
+        let total = scores.reduce(0, +)
+        let overall = total / 6.0
+
+        if overall < 40.0 {
+            labelOverall.text = "F9"
+        } else if overall >= 40.0 && overall < 45.0 {
+            labelOverall.text = "E8"
+        } else if overall >= 45.0 && overall < 50.0 {
+            labelOverall.text = "D7"
+        } else if overall >= 50.0 && overall < 55.0 {
+            labelOverall.text = "C6"
+        } else if overall >= 55.0 && overall < 60.0 {
+            labelOverall.text = "C5"
+        } else if overall >= 60.0 && overall < 65.0 {
+            labelOverall.text = "B4"
+        } else if overall >= 65.0 && overall < 70.0 {
+            labelOverall.text = "B3"
+        } else if overall >= 70.0 && overall < 75.0 {
+            labelOverall.text = "A2"
+        } else if overall >= 75.0 {
+            labelOverall.text = "A1"
+        } else {
+            labelOverall.text = "Z0"
         }
         
     }
@@ -194,6 +219,10 @@ class DetailViewController: UIViewController {
     // MARK: - Actions
     @IBAction func buttonBack(_ sender: UIButton) {
         self.hero.dismissViewController()
+    }
+    
+    @IBAction func tapReload(_ sender: UITapGestureRecognizer) {
+        chartLine.reloadInputViews()
     }
     
 }
