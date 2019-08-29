@@ -10,7 +10,6 @@
 		4900A9CB2303B1A4004D39CE /* UIViewController+Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4900A9CA2303B1A4004D39CE /* UIViewController+Logic.swift */; };
 		49033A732301179600C013F4 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49033A722301179600C013F4 /* Add.storyboard */; };
 		49033A76230117A900C013F4 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49033A75230117A900C013F4 /* AddViewController.swift */; };
-		49033A7923011A0400C013F4 /* AddCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49033A7823011A0400C013F4 /* AddCalculatorViewController.swift */; };
 		490681BF22EC430D000FA279 /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490681BE22EC430D000FA279 /* Setup.storyboard */; };
 		490681C222EC432A000FA279 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490681C122EC432A000FA279 /* IntroductionViewController.swift */; };
 		491C598C22F67D6900A769E2 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491C598B22F67D6900A769E2 /* Calculator.storyboard */; };
@@ -73,7 +72,6 @@
 		4900A9CA2303B1A4004D39CE /* UIViewController+Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Logic.swift"; sourceTree = "<group>"; };
 		49033A722301179600C013F4 /* Add.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 		49033A75230117A900C013F4 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		49033A7823011A0400C013F4 /* AddCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCalculatorViewController.swift; sourceTree = "<group>"; };
 		490681BE22EC430D000FA279 /* Setup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setup.storyboard; sourceTree = "<group>"; };
 		490681C122EC432A000FA279 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		491C598B22F67D6900A769E2 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 			children = (
 				49033A722301179600C013F4 /* Add.storyboard */,
 				49033A742301179B00C013F4 /* Add */,
-				49033A77230119F000C013F4 /* Add Calculator */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -171,14 +168,6 @@
 				49033A75230117A900C013F4 /* AddViewController.swift */,
 			);
 			path = Add;
-			sourceTree = "<group>";
-		};
-		49033A77230119F000C013F4 /* Add Calculator */ = {
-			isa = PBXGroup;
-			children = (
-				49033A7823011A0400C013F4 /* AddCalculatorViewController.swift */,
-			);
-			path = "Add Calculator";
 			sourceTree = "<group>";
 		};
 		490681BD22EC42F0000FA279 /* Setup */ = {
@@ -704,7 +693,6 @@
 				4947A6D722F5EEA100F577C5 /* LanguageViewController.swift in Sources */,
 				49033A76230117A900C013F4 /* AddViewController.swift in Sources */,
 				49C5046822D19D26003C52A9 /* SettingsViewController.swift in Sources */,
-				49033A7923011A0400C013F4 /* AddCalculatorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
