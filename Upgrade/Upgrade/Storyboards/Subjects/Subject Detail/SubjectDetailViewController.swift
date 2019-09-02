@@ -1,8 +1,9 @@
 import UIKit
 import Charts
 import Firebase
+import Hero
 
-class DetailViewController: UIViewController {
+class SubjectDetailViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet var viewMain: UIView!
@@ -16,6 +17,7 @@ class DetailViewController: UIViewController {
     var scores = [Double]()
     var percentages = [Double]()
     var overall = Double()
+    
     let xAxisTitles = ["CA1", "SA1", "CA2", "SA2", "PT1", "PT2"]
     
     var reference: DocumentReference!
@@ -30,9 +32,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         /// Prints out to command line for better debugging purposes.
-        print("upgradeconsoleREDIRECT: Redirection to SubjectsViewController executed.")
+        print("upgradeconsoleREDIRECT: Redirection to SubjectDetailViewController executed.")
         
-        /// Calls extension function configureView() (see UIView+Design.swift) to configure background gradient color for SettingsViewController.
+        /// Calls extension function configureView() (see UIView+Design.swift) to configure background gradient color for SubjectDetailViewController.
         self.view.configureView(color1: "UP Purple", color2: "UP Blue")
         
         /// Configures viewMain to have a cornerRadius of 20; some corners are then masked to retain the original rectangle shape.
@@ -42,7 +44,7 @@ class DetailViewController: UIViewController {
         
         buttonGetFeedback.configureButton(color1: "UP Purple", color2: "UP Blue")
         
-        // Attemps to retrieve all the scores from the user's account.
+        /// Attemps to retrieve all the scores from the user's account.
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
         if subject == "Integrated Humanities" || subject == "Language Arts" || subject == "Mathematics" || subject == "Science" {
@@ -139,6 +141,10 @@ class DetailViewController: UIViewController {
         if segue.identifier == "add" {
             let destination = segue.destination as! AddViewController
             destination.subject = subject
+        } else if segue.identifier == "detail" {
+            let destination = segue.destination as! DetailViewController
+            destination.subject = subject
+            destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .left), dismissing: .uncover(direction: .right))
         }
     }
     
@@ -223,6 +229,17 @@ class DetailViewController: UIViewController {
     
     @IBAction func tapReload(_ sender: UITapGestureRecognizer) {
         chartLine.reloadInputViews()
+    }
+    
+    @IBAction func buttonDetails(_ sender: UIButton) {
+        if scores == [0.0, 0.0, 0.0, 0.0, 0.0, 0.0] {
+            let warningError = UIAlertController(title: "Not enough info", message: "There is not enough information to suggest. Please add some scores above and try again.", preferredStyle: .alert)
+            warningError.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+            }))
+            present(warningError, animated: true)
+        } else {
+            performSegue(withIdentifier: "detail", sender: nil)
+        }
     }
     
 }

@@ -155,34 +155,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9C-Y2-PhI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSb-mf-YrJ">
                                         <rect key="frame" x="20" y="664" width="374" height="50"/>
                                         <color key="backgroundColor" name="UP Blue"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Q7Z-u5-8Fu"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
-                                        <state key="normal" title="Grade">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
-                                                <color key="value" name="UP Blue"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
-                                                <color key="value" name="UP Purple"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="buttonContinue"/>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="buttonToggle:" destination="Sve-xp-IlZ" eventType="touchUpInside" id="iHb-Q2-dTJ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSb-mf-YrJ">
-                                        <rect key="frame" x="20" y="606" width="374" height="50"/>
-                                        <color key="backgroundColor" name="UP Blue"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="bjR-Gb-yQg"/>
+                                            <constraint firstAttribute="height" constant="50" id="zwR-P6-8UB"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
                                         <state key="normal" title="CA1">
@@ -207,20 +184,17 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="eeZ-rP-BP2" secondAttribute="trailing" constant="148" id="8jx-tK-yAB"/>
                                     <constraint firstItem="O88-Fw-MN0" firstAttribute="top" secondItem="eeZ-rP-BP2" secondAttribute="bottom" constant="25" id="AfG-xS-N8f"/>
-                                    <constraint firstItem="O9C-Y2-PhI" firstAttribute="leading" secondItem="fNr-gW-ap8" secondAttribute="leading" constant="20" id="CtB-Wu-QVM"/>
                                     <constraint firstItem="V6x-Mh-10i" firstAttribute="top" secondItem="fNr-gW-ap8" secondAttribute="top" constant="46" id="GHF-9W-O9r"/>
-                                    <constraint firstAttribute="bottom" secondItem="O9C-Y2-PhI" secondAttribute="bottom" constant="42" id="LzI-aE-oEN"/>
                                     <constraint firstItem="eeZ-rP-BP2" firstAttribute="leading" secondItem="fNr-gW-ap8" secondAttribute="leading" constant="148" id="aIl-MZ-Jyh"/>
                                     <constraint firstItem="ZD2-vv-eEf" firstAttribute="top" secondItem="fNr-gW-ap8" secondAttribute="top" constant="46" id="ah2-Jk-VYQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="XSb-mf-YrJ" secondAttribute="trailing" constant="20" id="bMZ-Aw-liA"/>
                                     <constraint firstAttribute="trailing" secondItem="O88-Fw-MN0" secondAttribute="trailing" constant="20" id="dJp-OP-Ojx"/>
                                     <constraint firstAttribute="trailing" secondItem="ZD2-vv-eEf" secondAttribute="trailing" constant="56" id="eSS-1A-NmT"/>
-                                    <constraint firstItem="O9C-Y2-PhI" firstAttribute="top" secondItem="XSb-mf-YrJ" secondAttribute="bottom" constant="8" id="eyV-i2-hNQ"/>
                                     <constraint firstItem="V6x-Mh-10i" firstAttribute="leading" secondItem="fNr-gW-ap8" secondAttribute="leading" constant="56" id="fFQ-bK-Zq6"/>
+                                    <constraint firstAttribute="bottom" secondItem="XSb-mf-YrJ" secondAttribute="bottom" constant="42" id="hm7-Cv-qla"/>
                                     <constraint firstAttribute="height" constant="756" id="kVp-NS-20M"/>
-                                    <constraint firstAttribute="trailing" secondItem="O9C-Y2-PhI" secondAttribute="trailing" constant="20" id="lLK-Qc-zwf"/>
                                     <constraint firstItem="O88-Fw-MN0" firstAttribute="leading" secondItem="fNr-gW-ap8" secondAttribute="leading" constant="20" id="o5D-md-CMh"/>
-                                    <constraint firstItem="XSb-mf-YrJ" firstAttribute="leading" secondItem="fNr-gW-ap8" secondAttribute="leading" constant="20" id="oh9-R9-aVt"/>
+                                    <constraint firstItem="XSb-mf-YrJ" firstAttribute="leading" secondItem="fNr-gW-ap8" secondAttribute="leading" constant="20" id="qHT-kh-Ifr"/>
+                                    <constraint firstAttribute="trailing" secondItem="XSb-mf-YrJ" secondAttribute="trailing" constant="20" id="vMb-lG-sfO"/>
                                     <constraint firstAttribute="bottom" secondItem="O88-Fw-MN0" secondAttribute="bottom" constant="249" id="yMv-8Q-2aM"/>
                                 </constraints>
                                 <connections>
@@ -242,7 +216,6 @@
                     </view>
                     <connections>
                         <outlet property="buttonLevel" destination="XSb-mf-YrJ" id="b4A-nz-0PV"/>
-                        <outlet property="buttonToggle" destination="O9C-Y2-PhI" id="MRL-74-z0Q"/>
                         <outlet property="fieldMaxScore" destination="FHe-lI-vkz" id="4bI-T2-SW0"/>
                         <outlet property="fieldUserScore" destination="Kxu-pW-90d" id="Kwy-ts-Pey"/>
                         <outlet property="labelOutputGrade" destination="7f1-hx-prx" id="RLH-R0-icz"/>

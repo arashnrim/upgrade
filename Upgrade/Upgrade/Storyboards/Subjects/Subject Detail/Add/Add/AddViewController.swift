@@ -11,7 +11,6 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var fieldUserScore: UITextField!
     @IBOutlet var labelOutputGrade: UILabel!
     @IBOutlet var labelOutputScore: UILabel!
-    @IBOutlet var buttonToggle: UIButton!
     
     // MARK: - Properties
     var level = String()
@@ -50,7 +49,6 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         
         /// Calls extension function configureButton() (see UIButton+Design.swift) to configure the overall design for buttonToggle.
         buttonLevel.configureButton(color1: "UP Purple", color2: "UP Blue")
-        buttonToggle.configureButton(color1: "UP Purple", color2: "UP Blue")
         
         /// Calls extension function viewShadow() (see UIView+Design.swift) to place a shadow on viewGrade.
         viewGrade.viewShadow()
@@ -208,16 +206,6 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         if maxScore != "" && userScore != "" {
             checkGrades(maxScore: Double(maxScore)!, userScore: Double(userScore)!)
         }
-    }
-    
-    @IBAction func buttonToggle(_ sender: UIButton) {
-        let toggle = UIAlertController(title: "Add", message: "Choose one of the types below.", preferredStyle: .actionSheet)
-        toggle.addAction(UIAlertAction(title: "Percentage", style: .default, handler: { (_) in
-            // performSegue(withIdentifier: percentageViewController, completion: nil)
-        }))
-        toggle.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
-        }))
-        present(toggle, animated: true)
     }
     
     @IBAction func buttonLevel(_ sender: UIButton) {
