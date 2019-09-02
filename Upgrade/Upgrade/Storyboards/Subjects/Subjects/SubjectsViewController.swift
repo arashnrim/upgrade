@@ -93,7 +93,7 @@ class SubjectsViewController: UIViewController, UITableViewDelegate, UITableView
             let destination = segue.destination
             destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .right), dismissing: .uncover(direction: .left))
         } else if segue.identifier == "detail" {
-            let destination = segue.destination as! DetailViewController
+            let destination = segue.destination as! SubjectDetailViewController
             destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .left), dismissing: .uncover(direction: .right))
             destination.subject = subject
         }

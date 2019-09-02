@@ -188,7 +188,7 @@
         <!--Detail View Controller-->
         <scene sceneID="fhI-Ov-k2x">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" title="Detail View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vxl-qb-Uux" customClass="DetailViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" title="Detail View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vxl-qb-Uux" customClass="SubjectDetailViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vuw-RQ-mff">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -265,7 +265,7 @@
                                             <constraint firstAttribute="height" constant="50" id="ivn-4n-QHy"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
-                                        <state key="normal" title="More Information">
+                                        <state key="normal" title="See Details">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -277,6 +277,9 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="buttonContinue"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonDetails:" destination="vxl-qb-Uux" eventType="touchUpInside" id="Et5-6N-aWE"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BZ-Kf-Ofy" customClass="LineChartView" customModule="Charts">
                                         <rect key="frame" x="0.0" y="291" width="414" height="275"/>
@@ -322,6 +325,7 @@
                         <outlet property="labelOverall" destination="gce-l4-ntV" id="r6b-RC-pF3"/>
                         <outlet property="viewMain" destination="jTD-Ci-Sc6" id="OXj-eG-62p"/>
                         <outlet property="viewOverall" destination="ndw-5L-TQE" id="bVy-Pn-6BS"/>
+                        <segue destination="mic-Wh-8Bh" kind="show" identifier="detail" id="hcH-N6-Aa1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tq8-tK-bba" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -340,6 +344,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9b-yr-euV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4415" y="21"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="Afg-hd-og0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Detail" id="mic-Wh-8Bh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPu-EA-z4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4428" y="71"/>
         </scene>
     </scenes>
     <resources>

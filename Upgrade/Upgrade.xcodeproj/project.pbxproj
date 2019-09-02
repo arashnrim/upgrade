@@ -12,10 +12,12 @@
 		49033A76230117A900C013F4 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49033A75230117A900C013F4 /* AddViewController.swift */; };
 		490681BF22EC430D000FA279 /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490681BE22EC430D000FA279 /* Setup.storyboard */; };
 		490681C222EC432A000FA279 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490681C122EC432A000FA279 /* IntroductionViewController.swift */; };
+		490BB895231A548A003AFDEF /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490BB894231A548A003AFDEF /* Detail.storyboard */; };
+		490BB898231A5732003AFDEF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BB897231A5732003AFDEF /* DetailViewController.swift */; };
 		491C598C22F67D6900A769E2 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491C598B22F67D6900A769E2 /* Calculator.storyboard */; };
 		491C598F22F67D8100A769E2 /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491C598E22F67D8100A769E2 /* GradeViewController.swift */; };
 		491C599222F67D9900A769E2 /* L1R5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491C599122F67D9900A769E2 /* L1R5ViewController.swift */; };
-		492F227922FE5BD20075D615 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F227822FE5BD20075D615 /* DetailViewController.swift */; };
+		492F227922FE5BD20075D615 /* SubjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F227822FE5BD20075D615 /* SubjectDetailViewController.swift */; };
 		49414C7C22F5144A00BD3F60 /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49414C7B22F5144A00BD3F60 /* LevelViewController.swift */; };
 		4947A6D722F5EEA100F577C5 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947A6D622F5EEA100F577C5 /* LanguageViewController.swift */; };
 		4947A6DA22F5F77D00F577C5 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947A6D922F5F77D00F577C5 /* FinishViewController.swift */; };
@@ -74,10 +76,12 @@
 		49033A75230117A900C013F4 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		490681BE22EC430D000FA279 /* Setup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setup.storyboard; sourceTree = "<group>"; };
 		490681C122EC432A000FA279 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
+		490BB894231A548A003AFDEF /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		490BB897231A5732003AFDEF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		491C598B22F67D6900A769E2 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		491C598E22F67D8100A769E2 /* GradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeViewController.swift; sourceTree = "<group>"; };
 		491C599122F67D9900A769E2 /* L1R5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L1R5ViewController.swift; sourceTree = "<group>"; };
-		492F227822FE5BD20075D615 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		492F227822FE5BD20075D615 /* SubjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDetailViewController.swift; sourceTree = "<group>"; };
 		49414C7B22F5144A00BD3F60 /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
 		4947A6D622F5EEA100F577C5 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		4947A6D922F5F77D00F577C5 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +194,23 @@
 			path = Introduction;
 			sourceTree = "<group>";
 		};
+		490BB893231A5463003AFDEF /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				490BB894231A548A003AFDEF /* Detail.storyboard */,
+				490BB896231A5729003AFDEF /* Detail */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		490BB896231A5729003AFDEF /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				490BB897231A5732003AFDEF /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		491C598A22F67D4A00A769E2 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,13 +246,14 @@
 			path = ELR2B2;
 			sourceTree = "<group>";
 		};
-		492F227722FE5BC70075D615 /* Detail */ = {
+		492F227722FE5BC70075D615 /* Subject Detail */ = {
 			isa = PBXGroup;
 			children = (
-				492F227822FE5BD20075D615 /* DetailViewController.swift */,
+				492F227822FE5BD20075D615 /* SubjectDetailViewController.swift */,
+				490BB893231A5463003AFDEF /* Detail */,
 				49033A712301178C00C013F4 /* Add */,
 			);
-			path = Detail;
+			path = "Subject Detail";
 			sourceTree = "<group>";
 		};
 		49414C7A22F5143500BD3F60 /* Level */ = {
@@ -495,7 +517,7 @@
 			children = (
 				49DF85D122FD271D00CD1A84 /* Subjects.storyboard */,
 				49DF85D322FD297E00CD1A84 /* Subjects */,
-				492F227722FE5BC70075D615 /* Detail */,
+				492F227722FE5BC70075D615 /* Subject Detail */,
 			);
 			path = Subjects;
 			sourceTree = "<group>";
@@ -589,6 +611,7 @@
 				49C9EDA022CF78DD00605D6F /* Metropolis-SemiBoldItalic.otf in Resources */,
 				490681BF22EC430D000FA279 /* Setup.storyboard in Resources */,
 				4970827E22DAFC2200C47353 /* Settings.storyboard in Resources */,
+				490BB895231A548A003AFDEF /* Detail.storyboard in Resources */,
 				49C9EDA722CF78DD00605D6F /* Metropolis-LightItalic.otf in Resources */,
 				491C598C22F67D6900A769E2 /* Calculator.storyboard in Resources */,
 				49DF85D222FD271D00CD1A84 /* Subjects.storyboard in Resources */,
@@ -669,7 +692,7 @@
 				49C9EDB222CF8A4200605D6F /* WelcomeViewController.swift in Sources */,
 				4900A9CB2303B1A4004D39CE /* UIViewController+Logic.swift in Sources */,
 				491C598F22F67D8100A769E2 /* GradeViewController.swift in Sources */,
-				492F227922FE5BD20075D615 /* DetailViewController.swift in Sources */,
+				492F227922FE5BD20075D615 /* SubjectDetailViewController.swift in Sources */,
 				49F9025222F6B6EB008AD566 /* ELR2B2ViewController.swift in Sources */,
 				49F1C0C522D058B70028E16C /* SignUpViewController.swift in Sources */,
 				4970828122DAFD7900C47353 /* AccountViewController.swift in Sources */,
@@ -693,6 +716,7 @@
 				4947A6D722F5EEA100F577C5 /* LanguageViewController.swift in Sources */,
 				49033A76230117A900C013F4 /* AddViewController.swift in Sources */,
 				49C5046822D19D26003C52A9 /* SettingsViewController.swift in Sources */,
+				490BB898231A5732003AFDEF /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
