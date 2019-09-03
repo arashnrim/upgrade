@@ -17,6 +17,7 @@ class ELR2B2ViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Properties
     var currentTextField = UITextField()
     var totalGrade = Int()
+    var calculated = false
     
     // MARK: - Overrides
     /// Overrides preferred status bar style (color) from black (default) to white.
@@ -65,6 +66,8 @@ class ELR2B2ViewController: UIViewController, UITextFieldDelegate {
         
         if segue.identifier == "menu" {
             destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .right), dismissing: .uncover(direction: .left))
+        } else if segue.identifier == "help" {
+            destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .left), dismissing: .uncover(direction: .right))
         }
     }
     
@@ -82,7 +85,13 @@ class ELR2B2ViewController: UIViewController, UITextFieldDelegate {
                 self.fieldR2.text = ""
                 self.fieldB1.text = ""
                 self.fieldB2.text = ""
+                self.fieldEnglish.configureTextField()
+                self.fieldR1.configureTextField()
+                self.fieldR2.configureTextField()
+                self.fieldB1.configureTextField()
+                self.fieldB2.configureTextField()
                 self.labelOutput.text = "00"
+                self.totalGrade = 0
             }))
             present(gradeAlert, animated: true)
             self.labelOutput.text = "??"
@@ -150,8 +159,9 @@ class ELR2B2ViewController: UIViewController, UITextFieldDelegate {
         guard let b1 = fieldB1.text else { return }
         guard let b2 = fieldB2.text else { return }
         
-        if english != "" && r1 != "" && r2 != "" && b1 != "" && b2 != "" {
+        if english != "" && r1 != "" && r2 != "" && b1 != "" && b2 != "" && calculated == false {
             checkGrades(grades: [Int(english) ?? 0, Int(r1) ?? 0, Int(r2) ?? 0, Int(b1) ?? 0, Int(b2) ?? 0])
+            calculated = true
         }
         
     }

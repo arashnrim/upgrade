@@ -26,6 +26,7 @@
 		4968B55222C8B25A00F457EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4968B55122C8B25A00F457EB /* GoogleService-Info.plist */; };
 		4970827E22DAFC2200C47353 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4970827D22DAFC2200C47353 /* Settings.storyboard */; };
 		4970828122DAFD7900C47353 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970828022DAFD7900C47353 /* AccountViewController.swift */; };
+		49841319231E29E000E2F378 /* ELR2B2DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49841318231E29E000E2F378 /* ELR2B2DetailsViewController.swift */; };
 		498E535422E9BC0900D8D40D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E535322E9BC0900D8D40D /* AboutViewController.swift */; };
 		49B936E622D0F2840034329A /* UIView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B936E522D0F2840034329A /* UIView+Design.swift */; };
 		49B936E922D0F3330034329A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B936E822D0F3330034329A /* HomeViewController.swift */; };
@@ -62,6 +63,7 @@
 		49CDC37322E987EF003DF2C1 /* ReauthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDC37222E987EF003DF2C1 /* ReauthenticationViewController.swift */; };
 		49CDC37622E99540003DF2C1 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CDC37522E99540003DF2C1 /* Account.storyboard */; };
 		49CDC37922E995BE003DF2C1 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CDC37822E995BE003DF2C1 /* About.storyboard */; };
+		49DA2A95231CD6A300E77662 /* L1R5DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA2A94231CD6A300E77662 /* L1R5DetailsViewController.swift */; };
 		49DF85D222FD271D00CD1A84 /* Subjects.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DF85D122FD271D00CD1A84 /* Subjects.storyboard */; };
 		49DF85D522FD299400CD1A84 /* SubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF85D422FD299400CD1A84 /* SubjectsViewController.swift */; };
 		49F1C0C522D058B70028E16C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F1C0C422D058B70028E16C /* SignUpViewController.swift */; };
@@ -90,6 +92,7 @@
 		4968B55122C8B25A00F457EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4970827D22DAFC2200C47353 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		4970828022DAFD7900C47353 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		49841318231E29E000E2F378 /* ELR2B2DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELR2B2DetailsViewController.swift; sourceTree = "<group>"; };
 		498E535322E9BC0900D8D40D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		49B936E522D0F2840034329A /* UIView+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Design.swift"; sourceTree = "<group>"; };
 		49B936E822D0F3330034329A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 		49CDC37222E987EF003DF2C1 /* ReauthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReauthenticationViewController.swift; sourceTree = "<group>"; };
 		49CDC37522E99540003DF2C1 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		49CDC37822E995BE003DF2C1 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		49DA2A94231CD6A300E77662 /* L1R5DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L1R5DetailsViewController.swift; sourceTree = "<group>"; };
 		49DF85D122FD271D00CD1A84 /* Subjects.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subjects.storyboard; sourceTree = "<group>"; };
 		49DF85D422FD299400CD1A84 /* SubjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsViewController.swift; sourceTree = "<group>"; };
 		49F1C0C422D058B70028E16C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 				491C598D22F67D7200A769E2 /* Grade */,
 				491C599022F67D8500A769E2 /* L1R5 */,
 				491C599322F67DB500A769E2 /* ELR2B2 */,
+				49DA2A96231CD6B100E77662 /* L1R5 Details */,
+				49841317231E29C400E2F378 /* ELR2B2 Details */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -308,6 +314,14 @@
 				49CDC37122E987DE003DF2C1 /* Reauthentication */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		49841317231E29C400E2F378 /* ELR2B2 Details */ = {
+			isa = PBXGroup;
+			children = (
+				49841318231E29E000E2F378 /* ELR2B2DetailsViewController.swift */,
+			);
+			path = "ELR2B2 Details";
 			sourceTree = "<group>";
 		};
 		498E535222E9BBFC00D8D40D /* About */ = {
@@ -512,6 +526,15 @@
 			path = Account;
 			sourceTree = "<group>";
 		};
+		49DA2A96231CD6B100E77662 /* L1R5 Details */ = {
+			isa = PBXGroup;
+			children = (
+				49DA2A94231CD6A300E77662 /* L1R5DetailsViewController.swift */,
+			);
+			name = "L1R5 Details";
+			path = ../../..;
+			sourceTree = "<group>";
+		};
 		49DF85D022FD270D00CD1A84 /* Subjects */ = {
 			isa = PBXGroup;
 			children = (
@@ -707,8 +730,10 @@
 				49CCAE6222C861DB00E8E2D5 /* InitialViewController.swift in Sources */,
 				49B936E922D0F3330034329A /* HomeViewController.swift in Sources */,
 				49CCAE6022C861DB00E8E2D5 /* AppDelegate.swift in Sources */,
+				49841319231E29E000E2F378 /* ELR2B2DetailsViewController.swift in Sources */,
 				49C19C8F22E96BDD004D0536 /* DeleteViewController.swift in Sources */,
 				49DF85D522FD299400CD1A84 /* SubjectsViewController.swift in Sources */,
+				49DA2A95231CD6A300E77662 /* L1R5DetailsViewController.swift in Sources */,
 				49B936EB22D0F7830034329A /* Quotes+Logic.swift in Sources */,
 				496280F322D035E3004A5E72 /* SignInViewController.swift in Sources */,
 				49C9EDB522CF8D0E00605D6F /* UIButton+Design.swift in Sources */,
