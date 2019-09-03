@@ -14,6 +14,9 @@
         <array key="Metropolis-Bold.otf">
             <string>Metropolis-Bold</string>
         </array>
+        <array key="Metropolis-LightItalic.otf">
+            <string>Metropolis-LightItalic</string>
+        </array>
         <array key="Metropolis-Medium.otf">
             <string>Metropolis-Medium</string>
         </array>
@@ -249,8 +252,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="q09-r7-fJj">
-                                <rect key="frame" x="20" y="70" width="280" height="40"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="q09-r7-fJj">
+                                <rect key="frame" x="20" y="70" width="375" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg4-Py-GV9">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -263,14 +266,24 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxU-a8-vIY">
-                                        <rect key="frame" x="107" y="0.0" width="173" height="40"/>
+                                        <rect key="frame" x="101" y="0.0" width="173" height="40"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPQ-Xi-PKt">
+                                        <rect key="frame" x="335" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="GKL-fq-Wej"/>
+                                        </constraints>
+                                        <state key="normal" image="Help"/>
+                                        <connections>
+                                            <segue destination="ASo-MF-XhF" kind="show" identifier="help" id="wD4-kq-Qc3"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="Gl6-nq-Tdd"/>
+                                    <constraint firstAttribute="width" constant="375" id="eum-ts-HHA"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8NR-lz-jE6">
@@ -299,16 +312,16 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3nk-Wv-syE">
-                                        <rect key="frame" x="44" y="50" width="92" height="108"/>
+                                        <rect key="frame" x="44" y="50" width="92" height="110.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bo-P9-O7S">
-                                                <rect key="frame" x="10" y="0.0" width="72.5" height="15"/>
+                                                <rect key="frame" x="13" y="0.0" width="66.5" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKz-TO-JU1">
-                                                <rect key="frame" x="0.0" y="16" width="92" height="92"/>
+                                                <rect key="frame" x="0.0" y="18.5" width="92" height="92"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="92" id="VFx-xb-dyc"/>
                                                     <constraint firstAttribute="height" constant="92" id="VSb-DU-K1x"/>
@@ -326,7 +339,7 @@
                                         <rect key="frame" x="161" y="50" width="92" height="108"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCk-qM-zYF">
-                                                <rect key="frame" x="9" y="0.0" width="74" height="15"/>
+                                                <rect key="frame" x="10.5" y="0.0" width="71" height="15"/>
                                                 <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -350,7 +363,7 @@
                                         <rect key="frame" x="278" y="50" width="92" height="108"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6k-8U-Q8c">
-                                                <rect key="frame" x="7.5" y="0.0" width="77" height="15"/>
+                                                <rect key="frame" x="10.5" y="0.0" width="71" height="15"/>
                                                 <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -371,10 +384,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ofq-h8-Mlh">
-                                        <rect key="frame" x="44" y="183" width="92" height="108"/>
+                                        <rect key="frame" x="44" y="185.5" width="92" height="108"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoO-RN-bzv">
-                                                <rect key="frame" x="7.5" y="0.0" width="77" height="15"/>
+                                                <rect key="frame" x="10.5" y="0.0" width="71" height="15"/>
                                                 <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -398,7 +411,7 @@
                                         <rect key="frame" x="161" y="183" width="92" height="108"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkQ-Vs-ueG">
-                                                <rect key="frame" x="7.5" y="0.0" width="77.5" height="15"/>
+                                                <rect key="frame" x="10.5" y="0.0" width="71" height="15"/>
                                                 <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -422,7 +435,7 @@
                                         <rect key="frame" x="278" y="183" width="92" height="108"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EID-Ru-dtv">
-                                                <rect key="frame" x="7.5" y="0.0" width="77.5" height="15"/>
+                                                <rect key="frame" x="10.5" y="0.0" width="71" height="15"/>
                                                 <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -446,7 +459,7 @@
                                         <rect key="frame" x="20" y="358" width="374" height="118"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGn-x4-EgE">
-                                                <rect key="frame" x="138.5" y="24" width="97.5" height="70"/>
+                                                <rect key="frame" x="148" y="24" width="78" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="4Zu-WU-sEN"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="ot1-zx-MZn"/>
@@ -472,12 +485,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-K0-y28">
-                                        <rect key="frame" x="20" y="496" width="374" height="148"/>
-                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="22"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
@@ -485,12 +492,10 @@
                                     <constraint firstItem="wUu-kp-1IO" firstAttribute="leading" secondItem="Gi9-Bu-3hq" secondAttribute="trailing" constant="25" id="35g-wS-Hn6"/>
                                     <constraint firstAttribute="bottom" secondItem="hB9-K2-W5O" secondAttribute="bottom" constant="42" id="6IH-VE-aXf"/>
                                     <constraint firstItem="73A-b1-Pwc" firstAttribute="leading" secondItem="3nk-Wv-syE" secondAttribute="trailing" constant="25" id="6ys-k3-owQ"/>
-                                    <constraint firstItem="hB9-K2-W5O" firstAttribute="top" secondItem="Oxa-K0-y28" secondAttribute="bottom" constant="20" id="8OT-qC-GhS"/>
                                     <constraint firstItem="JV0-Y1-nXo" firstAttribute="top" secondItem="8NR-lz-jE6" secondAttribute="top" constant="50" id="8lc-2z-md0"/>
                                     <constraint firstAttribute="height" constant="756" id="BOi-eA-vBL"/>
                                     <constraint firstItem="Gi9-Bu-3hq" firstAttribute="leading" secondItem="Ofq-h8-Mlh" secondAttribute="trailing" constant="25" id="HZC-Zd-JFF"/>
                                     <constraint firstItem="73A-b1-Pwc" firstAttribute="top" secondItem="8NR-lz-jE6" secondAttribute="top" constant="50" id="Ppn-CY-YVg"/>
-                                    <constraint firstItem="Oxa-K0-y28" firstAttribute="top" secondItem="CX4-Sd-GGU" secondAttribute="bottom" constant="20" id="SL6-lG-LP0"/>
                                     <constraint firstItem="hB9-K2-W5O" firstAttribute="leading" secondItem="8NR-lz-jE6" secondAttribute="leading" constant="20" id="XzR-xt-jfM"/>
                                     <constraint firstItem="Qqm-sh-tUY" firstAttribute="top" secondItem="Gi9-Bu-3hq" secondAttribute="bottom" constant="22" id="Y0T-VI-REL"/>
                                     <constraint firstAttribute="trailing" secondItem="Qqm-sh-tUY" secondAttribute="trailing" constant="148" id="YiF-Gp-AGu"/>
@@ -502,10 +507,8 @@
                                     <constraint firstItem="Ofq-h8-Mlh" firstAttribute="top" secondItem="3nk-Wv-syE" secondAttribute="bottom" constant="25" id="huP-07-8v9"/>
                                     <constraint firstItem="CX4-Sd-GGU" firstAttribute="leading" secondItem="8NR-lz-jE6" secondAttribute="leading" constant="20" id="kLg-ul-ORR"/>
                                     <constraint firstAttribute="trailing" secondItem="hB9-K2-W5O" secondAttribute="trailing" constant="20" id="rpq-cx-UFe"/>
-                                    <constraint firstItem="Oxa-K0-y28" firstAttribute="leading" secondItem="8NR-lz-jE6" secondAttribute="leading" constant="20" id="thT-0d-nz7"/>
                                     <constraint firstItem="Ofq-h8-Mlh" firstAttribute="leading" secondItem="8NR-lz-jE6" secondAttribute="leading" constant="44" id="unO-zd-mVn"/>
                                     <constraint firstItem="CX4-Sd-GGU" firstAttribute="top" secondItem="Qqm-sh-tUY" secondAttribute="bottom" constant="25" id="vGu-8Z-ALP"/>
-                                    <constraint firstAttribute="trailing" secondItem="Oxa-K0-y28" secondAttribute="trailing" constant="20" id="wJS-0e-9H1"/>
                                     <constraint firstItem="3nk-Wv-syE" firstAttribute="top" secondItem="8NR-lz-jE6" secondAttribute="top" constant="50" id="wOq-Jt-ndG"/>
                                     <constraint firstItem="JV0-Y1-nXo" firstAttribute="leading" secondItem="73A-b1-Pwc" secondAttribute="trailing" constant="25" id="wc0-3J-QPz"/>
                                     <constraint firstItem="wUu-kp-1IO" firstAttribute="top" secondItem="JV0-Y1-nXo" secondAttribute="bottom" constant="25" id="y0y-p2-PRX"/>
@@ -518,12 +521,12 @@
                         </subviews>
                         <color key="backgroundColor" name="UP Blue"/>
                         <constraints>
-                            <constraint firstItem="q09-r7-fJj" firstAttribute="leading" secondItem="Mlp-TQ-mP1" secondAttribute="leading" constant="20" id="8bZ-HS-Qsv"/>
+                            <constraint firstItem="q09-r7-fJj" firstAttribute="top" secondItem="Mlp-TQ-mP1" secondAttribute="top" constant="26" id="70o-4P-A0h"/>
                             <constraint firstAttribute="bottom" secondItem="8NR-lz-jE6" secondAttribute="bottom" id="FFN-0r-Fic"/>
-                            <constraint firstItem="8NR-lz-jE6" firstAttribute="top" secondItem="q09-r7-fJj" secondAttribute="bottom" constant="30" id="OOW-oU-FhY"/>
                             <constraint firstItem="8NR-lz-jE6" firstAttribute="trailing" secondItem="Mlp-TQ-mP1" secondAttribute="trailing" id="azY-lG-R3h"/>
                             <constraint firstItem="8NR-lz-jE6" firstAttribute="leading" secondItem="Mlp-TQ-mP1" secondAttribute="leading" id="d7k-L9-03v"/>
-                            <constraint firstItem="q09-r7-fJj" firstAttribute="top" secondItem="Mlp-TQ-mP1" secondAttribute="top" constant="26" id="v1q-07-blp"/>
+                            <constraint firstItem="q09-r7-fJj" firstAttribute="leading" secondItem="Mlp-TQ-mP1" secondAttribute="leading" constant="20" id="f2a-A4-fZk"/>
+                            <constraint firstItem="8NR-lz-jE6" firstAttribute="top" secondItem="q09-r7-fJj" secondAttribute="bottom" constant="30" id="mRj-rK-co0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mlp-TQ-mP1"/>
                     </view>
@@ -539,7 +542,6 @@
                         <outlet property="fieldR4" destination="vhO-Ui-SI1" id="N4b-vl-OSW"/>
                         <outlet property="fieldR5" destination="SI1-Zk-Ih7" id="bJC-a7-SMR"/>
                         <outlet property="labelOutput" destination="fGn-x4-EgE" id="04R-7D-P7h"/>
-                        <outlet property="labelResult" destination="Oxa-K0-y28" id="ejv-77-e4O"/>
                         <outlet property="viewGrade" destination="CX4-Sd-GGU" id="6lo-ZN-nzz"/>
                         <outlet property="viewMain" destination="8NR-lz-jE6" id="lcM-wk-Rd8"/>
                         <segue destination="6GT-cM-ent" kind="show" identifier="grade" id="aEC-Ld-e7p"/>
@@ -553,7 +555,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3713" y="21"/>
+            <point key="canvasLocation" x="3711.594202898551" y="20.758928571428569"/>
         </scene>
         <!--ELR2B2 View Controller-->
         <scene sceneID="SDI-fk-aR2">
@@ -563,8 +565,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="0CP-1D-nOn">
-                                <rect key="frame" x="20" y="70" width="280" height="40"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="0CP-1D-nOn">
+                                <rect key="frame" x="20" y="70" width="375" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTS-5n-mlv">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -577,14 +579,24 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2L-9e-9Se">
-                                        <rect key="frame" x="107" y="0.0" width="173" height="40"/>
+                                        <rect key="frame" x="101" y="0.0" width="173" height="40"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pph-h2-z9Q">
+                                        <rect key="frame" x="335" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="xwV-5Y-g15"/>
+                                        </constraints>
+                                        <state key="normal" image="Help"/>
+                                        <connections>
+                                            <segue destination="ell-XA-B0v" kind="show" identifier="help" id="mww-bC-nGA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="9Ps-Ja-Sh9"/>
+                                    <constraint firstAttribute="width" constant="375" id="zuW-we-kYx"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxk-yA-fzT">
@@ -796,12 +808,12 @@
                         </subviews>
                         <color key="backgroundColor" name="UP Blue"/>
                         <constraints>
-                            <constraint firstItem="0CP-1D-nOn" firstAttribute="top" secondItem="wZf-Wd-DO3" secondAttribute="top" constant="26" id="CCH-fJ-pG8"/>
+                            <constraint firstItem="sxk-yA-fzT" firstAttribute="top" secondItem="0CP-1D-nOn" secondAttribute="bottom" constant="30" id="DZ8-xd-tbq"/>
                             <constraint firstItem="sxk-yA-fzT" firstAttribute="trailing" secondItem="wZf-Wd-DO3" secondAttribute="trailing" id="FWB-cK-tgZ"/>
-                            <constraint firstItem="sxk-yA-fzT" firstAttribute="top" secondItem="0CP-1D-nOn" secondAttribute="bottom" constant="30" id="Ffz-rO-mW9"/>
-                            <constraint firstItem="0CP-1D-nOn" firstAttribute="leading" secondItem="wZf-Wd-DO3" secondAttribute="leading" constant="20" id="dnd-a6-o9F"/>
+                            <constraint firstItem="0CP-1D-nOn" firstAttribute="leading" secondItem="wZf-Wd-DO3" secondAttribute="leading" constant="20" id="iCP-mf-9Qm"/>
                             <constraint firstItem="sxk-yA-fzT" firstAttribute="leading" secondItem="wZf-Wd-DO3" secondAttribute="leading" id="nhd-Gu-A1W"/>
                             <constraint firstAttribute="bottom" secondItem="sxk-yA-fzT" secondAttribute="bottom" id="sjV-gJ-Cxy"/>
+                            <constraint firstItem="0CP-1D-nOn" firstAttribute="top" secondItem="wZf-Wd-DO3" secondAttribute="top" constant="26" id="xKY-8O-Bpx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wZf-Wd-DO3"/>
                     </view>
@@ -831,9 +843,320 @@
             </objects>
             <point key="canvasLocation" x="4515.9420289855079" y="20.758928571428569"/>
         </scene>
+        <!--L1R5 Details View Controller-->
+        <scene sceneID="Cgc-35-waG">
+            <objects>
+                <viewController storyboardIdentifier="L1R5DetailsViewController" title="L1R5 Details View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ASo-MF-XhF" customClass="L1R5DetailsViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2js-J4-SfV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="108" translatesAutoresizingMaskIntoConstraints="NO" id="66t-Ce-M2d">
+                                <rect key="frame" x="20" y="70" width="227" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsT-Gg-dSi">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <state key="normal" image="Back"/>
+                                        <connections>
+                                            <action selector="buttonBack:" destination="ASo-MF-XhF" eventType="touchUpInside" id="8No-xi-ch8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L1R5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOG-CP-9Lx">
+                                        <rect key="frame" x="148" y="0.0" width="79" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="227" id="rbK-G0-Ynh"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFw-NO-qoO">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkZ-PH-yCA">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Tv-cv-r7E">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1077"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeA-jt-tHP">
+                                                        <rect key="frame" x="30" y="38" width="355" height="190"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">L1R5 stands for Language 1 Relevant 5. Your main language subject and 5 relevant subjects will be used for the computation of your O-level aggregate for entrance to your desired Junior College.
+
+To be eligible for admission to a JC course, applicants must satisfy the criteria specified in Table 1.</string>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TABLE 1: ELIGIBILITY CRITERIA FOR ADMISSION TO JUNIOR COLLEGES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0U-Pg-GBI">
+                                                        <rect key="frame" x="30" y="248" width="355" height="36"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TABLE 2: REQUIREMENTS ON CORE SUBJECTS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRG-vK-a93">
+                                                        <rect key="frame" x="30" y="472" width="355" height="36"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TABLE 3: COMPUTATION OF AGGREGATE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jd-XB-nHX">
+                                                        <rect key="frame" x="30" y="784" width="355" height="36"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Table 1" translatesAutoresizingMaskIntoConstraints="NO" id="X3V-d2-RKp">
+                                                        <rect key="frame" x="30" y="283" width="355" height="131"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Table 2" translatesAutoresizingMaskIntoConstraints="NO" id="qua-rG-ZTE">
+                                                        <rect key="frame" x="30" y="508" width="355" height="218"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Table 3" translatesAutoresizingMaskIntoConstraints="NO" id="m1L-rr-BPw">
+                                                        <rect key="frame" x="30" y="820" width="355" height="183"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCl-AU-jo7">
+                                                        <rect key="frame" x="30" y="414" width="355" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-LightItalic" family="Metropolis" pointSize="11"/>
+                                                        <state key="normal" title="Taken from Ministry of Education">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonWeb:" destination="ASo-MF-XhF" eventType="touchUpInside" id="sru-4Y-hnH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuN-5W-hT1">
+                                                        <rect key="frame" x="30" y="726" width="355" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-LightItalic" family="Metropolis" pointSize="11"/>
+                                                        <state key="normal" title="Taken from Ministry of Education">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonWeb:" destination="ASo-MF-XhF" eventType="touchUpInside" id="fyp-ti-ENH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pw-HY-VkR">
+                                                        <rect key="frame" x="30" y="1003" width="355" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-LightItalic" family="Metropolis" pointSize="11"/>
+                                                        <state key="normal" title="Taken from Ministry of Education">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonWeb:" destination="ASo-MF-XhF" eventType="touchUpInside" id="eig-V3-C9f"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1077" id="b1a-8D-fIM"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="3Tv-cv-r7E" secondAttribute="trailing" id="0L5-2l-bAa"/>
+                                            <constraint firstItem="3Tv-cv-r7E" firstAttribute="leading" secondItem="KkZ-PH-yCA" secondAttribute="leading" id="Rnu-gN-EHd"/>
+                                            <constraint firstItem="3Tv-cv-r7E" firstAttribute="top" secondItem="KkZ-PH-yCA" secondAttribute="top" id="SL5-Uf-UpT"/>
+                                            <constraint firstAttribute="bottom" secondItem="3Tv-cv-r7E" secondAttribute="bottom" id="aq5-im-6Y9"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="KkZ-PH-yCA" firstAttribute="top" secondItem="vFw-NO-qoO" secondAttribute="top" id="6df-si-4fl"/>
+                                    <constraint firstAttribute="height" constant="756" id="JxU-CR-iPk"/>
+                                    <constraint firstAttribute="trailing" secondItem="KkZ-PH-yCA" secondAttribute="trailing" id="Wpd-cn-a4H"/>
+                                    <constraint firstItem="3Tv-cv-r7E" firstAttribute="width" secondItem="vFw-NO-qoO" secondAttribute="width" id="cf6-w4-U59"/>
+                                    <constraint firstAttribute="bottom" secondItem="KkZ-PH-yCA" secondAttribute="bottom" id="h9U-vY-VZr"/>
+                                    <constraint firstItem="KkZ-PH-yCA" firstAttribute="leading" secondItem="vFw-NO-qoO" secondAttribute="leading" id="sZz-dJ-iH5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Blue"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="vFw-NO-qoO" firstAttribute="top" secondItem="66t-Ce-M2d" secondAttribute="bottom" constant="30" id="38Y-As-UTb"/>
+                            <constraint firstAttribute="bottom" secondItem="vFw-NO-qoO" secondAttribute="bottom" id="78j-3P-dAi"/>
+                            <constraint firstItem="vFw-NO-qoO" firstAttribute="leading" secondItem="8Sq-MZ-py7" secondAttribute="leading" id="bXK-Yb-NCm"/>
+                            <constraint firstItem="66t-Ce-M2d" firstAttribute="leading" secondItem="8Sq-MZ-py7" secondAttribute="leading" constant="20" id="fSg-ew-VAb"/>
+                            <constraint firstItem="vFw-NO-qoO" firstAttribute="trailing" secondItem="8Sq-MZ-py7" secondAttribute="trailing" id="klE-Js-kY3"/>
+                            <constraint firstItem="66t-Ce-M2d" firstAttribute="top" secondItem="8Sq-MZ-py7" secondAttribute="top" constant="26" id="pzj-Ir-Tw4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Sq-MZ-py7"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nXc-1r-wcf" appends="YES" id="NWz-Ab-txR"/>
+                        </connections>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="viewDisplay" destination="3Tv-cv-r7E" id="1Nh-5P-Sq3"/>
+                        <outlet property="viewMain" destination="vFw-NO-qoO" id="68E-Q0-ydi"/>
+                        <outlet property="viewScroll" destination="KkZ-PH-yCA" id="183-A3-YfU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zus-OC-9kP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nXc-1r-wcf"/>
+            </objects>
+            <point key="canvasLocation" x="3712" y="684"/>
+        </scene>
+        <!--ELR2B2 Details View Controller-->
+        <scene sceneID="S5c-0c-qaF">
+            <objects>
+                <viewController storyboardIdentifier="ELR2B2DetailsViewController" title="ELR2B2 Details View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ell-XA-B0v" customClass="ELR2B2DetailsViewController" customModule="Upgrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HPn-yr-Zaq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="nDb-ef-Qb3">
+                                <rect key="frame" x="20" y="70" width="258.5" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmW-x6-0Gl">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <state key="normal" image="Back"/>
+                                        <connections>
+                                            <action selector="buttonBack:" destination="ell-XA-B0v" eventType="touchUpInside" id="ryn-An-MsJ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELR2B2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8G-AI-Ym9">
+                                        <rect key="frame" x="126" y="0.0" width="132.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="258.5" id="Ybd-BC-pjb"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0M-6r-pC5">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQx-2r-StG">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7g-T4-7tS">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="850"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TABLE 1: ELIGIBILITY CRITERIA FOR ADMISSION TO JUNIOR COLLEGES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkR-RO-PYh">
+                                                        <rect key="frame" x="30" y="504" width="355" height="36"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Table 4" translatesAutoresizingMaskIntoConstraints="NO" id="q9d-LU-s61">
+                                                        <rect key="frame" x="11" y="539" width="393" height="247"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmZ-Qr-beY">
+                                                        <rect key="frame" x="30" y="38" width="355" height="435"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <mutableString key="text">ELR2B2 stands for English Language, Relevant 2, Best 2. The English subject, subjects relevant to your aggregate type and your two best subjects will be used for the computation of your O-level aggregate for entrance to your desired Polytechnic.
+
+There are four aggregate types for ELR2B2 that are standardised throughout all polytechnics:
+ELR2B2 - A
+ELR2B2 - B
+ELR2B2 - C
+ELR2B2 - D
+
+There will be different aggregate types for every course. To check your course’s aggregate type, check the course page on the polytechnic’s website.
+
+These aggregate types will have differing relevant subjects to choose from as shown in Table 1.</mutableString>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ns3-Np-UlG">
+                                                        <rect key="frame" x="30" y="786" width="355" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-LightItalic" family="Metropolis" pointSize="11"/>
+                                                        <state key="normal" title="Tap here to see from Ministry of Education">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonWeb:" destination="ell-XA-B0v" eventType="touchUpInside" id="Irr-bI-64u"/>
+                                                            <action selector="buttonWeb:" destination="ASo-MF-XhF" eventType="touchUpInside" id="WeZ-C9-0De"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="850" id="ieL-Kc-MDK"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="c7g-T4-7tS" firstAttribute="top" secondItem="RQx-2r-StG" secondAttribute="top" id="1nY-Oe-cIy"/>
+                                            <constraint firstAttribute="trailing" secondItem="c7g-T4-7tS" secondAttribute="trailing" id="Cdl-H9-ix1"/>
+                                            <constraint firstAttribute="bottom" secondItem="c7g-T4-7tS" secondAttribute="bottom" id="G9n-Fr-anU"/>
+                                            <constraint firstItem="c7g-T4-7tS" firstAttribute="leading" secondItem="RQx-2r-StG" secondAttribute="leading" id="Jt5-d6-U5C"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="756" id="OLF-oH-dj3"/>
+                                    <constraint firstItem="RQx-2r-StG" firstAttribute="leading" secondItem="q0M-6r-pC5" secondAttribute="leading" id="SIW-4V-r5V"/>
+                                    <constraint firstAttribute="trailing" secondItem="RQx-2r-StG" secondAttribute="trailing" id="aci-f6-ZJm"/>
+                                    <constraint firstAttribute="bottom" secondItem="RQx-2r-StG" secondAttribute="bottom" id="bxW-Co-hig"/>
+                                    <constraint firstItem="RQx-2r-StG" firstAttribute="top" secondItem="q0M-6r-pC5" secondAttribute="top" id="rch-bN-rNG"/>
+                                    <constraint firstItem="c7g-T4-7tS" firstAttribute="width" secondItem="q0M-6r-pC5" secondAttribute="width" id="zue-uT-rSL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="UP Blue"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="nDb-ef-Qb3" firstAttribute="top" secondItem="57M-0F-PYF" secondAttribute="top" constant="26" id="4wP-FZ-g1y"/>
+                            <constraint firstItem="q0M-6r-pC5" firstAttribute="trailing" secondItem="57M-0F-PYF" secondAttribute="trailing" id="5RT-7y-khI"/>
+                            <constraint firstItem="q0M-6r-pC5" firstAttribute="top" secondItem="nDb-ef-Qb3" secondAttribute="bottom" constant="30" id="LbJ-Wy-kl9"/>
+                            <constraint firstItem="nDb-ef-Qb3" firstAttribute="leading" secondItem="57M-0F-PYF" secondAttribute="leading" constant="20" id="Uhs-WM-Rne"/>
+                            <constraint firstItem="q0M-6r-pC5" firstAttribute="leading" secondItem="57M-0F-PYF" secondAttribute="leading" id="WOR-4M-NbA"/>
+                            <constraint firstAttribute="bottom" secondItem="q0M-6r-pC5" secondAttribute="bottom" id="XYV-x1-5wX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="57M-0F-PYF"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="46G-Rx-iuc" appends="YES" id="DEa-ey-4NF"/>
+                        </connections>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="viewDisplay" destination="c7g-T4-7tS" id="j2u-27-lG1"/>
+                        <outlet property="viewMain" destination="q0M-6r-pC5" id="Cjh-4D-d75"/>
+                        <outlet property="viewScroll" destination="RQx-2r-StG" id="pWb-6i-SNT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgi-CS-j4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="46G-Rx-iuc"/>
+            </objects>
+            <point key="canvasLocation" x="4515.9420289855079" y="683.70535714285711"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Back" width="40" height="40"/>
+        <image name="Help" width="40" height="40"/>
         <image name="Menu" width="40" height="40"/>
+        <image name="Table 1" width="359" height="131"/>
+        <image name="Table 2" width="356" height="218"/>
+        <image name="Table 3" width="357" height="183"/>
+        <image name="Table 4" width="393" height="247"/>
         <namedColor name="UP Blue">
             <color red="0.36500000953674316" green="0.47499999403953552" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -842,9 +1165,9 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CFi-zd-s83"/>
-        <segue reference="fXS-hF-c06"/>
+        <segue reference="lMt-aN-SV2"/>
+        <segue reference="8wb-nB-GKZ"/>
         <segue reference="aEC-Ld-e7p"/>
-        <segue reference="u7F-wg-HOf"/>
+        <segue reference="iu3-05-hVQ"/>
     </inferredMetricsTieBreakers>
 </document>

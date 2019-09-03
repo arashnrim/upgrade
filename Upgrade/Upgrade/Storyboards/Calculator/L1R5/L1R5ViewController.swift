@@ -14,11 +14,11 @@ class L1R5ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var fieldR5: UITextField!
     @IBOutlet var labelOutput: UILabel!
     @IBOutlet var buttonToggle: UIButton!
-    @IBOutlet var labelResult: UILabel!
     
     // MARK: - Properties
     var currentTextField = UITextField()
     var totalGrade = Int()
+    var calculated = false
     
     // MARK: - Overrides
     /// Overrides preferred status bar style (color) from black (default) to white.
@@ -69,6 +69,8 @@ class L1R5ViewController: UIViewController, UITextFieldDelegate {
         
         if segue.identifier == "menu" {
             destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .right), dismissing: .uncover(direction: .left))
+        } else if segue.identifier == "help" {
+            destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .left), dismissing: .uncover(direction: .right))
         }
     }
     
@@ -94,19 +96,6 @@ class L1R5ViewController: UIViewController, UITextFieldDelegate {
             self.labelOutput.text = "??"
         } else {
             labelOutput.text = "\(totalGrade)"
-            
-            if totalGrade <= 15 {
-                labelResult.text = "You should be able to apply for Junior Colleges with this score."
-            } else if totalGrade > 15 && totalGrade <= 20 {
-                if fieldR1.text == "1" && fieldR2.text == "1" && fieldR3.text == "1" && fieldR4.text == "1" && fieldR5.text == "1" {
-                    self.labelResult.text = "You should be able to apply for Junior Colleges through Conditional Admission with this score."
-                } else {
-                    self.labelResult.text = "You may be able to apply for Junior Colleges."
-                }
-            } else {
-                labelResult.text = "You should be able to apply for Polytechnics with this score."
-            }
-            
         }
     }
     
@@ -173,8 +162,9 @@ class L1R5ViewController: UIViewController, UITextFieldDelegate {
         guard let r4 = fieldR4.text else { return }
         guard let r5 = fieldR5.text else { return }
         
-        if language != "" && r1 != "" && r2 != "" && r3 != "" && r4 != "" && r5 != "" {
+        if language != "" && r1 != "" && r2 != "" && r3 != "" && r4 != "" && r5 != "" && calculated == false {
             checkGrades(grades: [Int(language) ?? 0, Int(r1) ?? 0, Int(r2) ?? 0, Int(r3) ?? 0, Int(r4) ?? 0, Int(r5) ?? 0])
+            calculated = true
         }
         
     }
