@@ -1,6 +1,13 @@
 # Upgrade
 
 ## Table of Contents
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Support](#support)
+- [What's Ahead](#whats-ahead)
+- [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
 
 ## Introduction
 Welcome to **Upgrade**, the app for students to better understand their academic accomplishments.
