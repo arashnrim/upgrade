@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) [2020] [Ora]
+Copyright (c) [2020] [ArashNrIm-Ora]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
