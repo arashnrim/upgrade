@@ -19,7 +19,24 @@ For designers, stay tuned for details coming soon!
 ## Getting Started
 First, thanks for your interest in the project! I'm glad that you'd like to contribute to the project. To begin, check out the [Contributing Guide](CONTRIBUTING.md) to see what you have to do, including structuring your commit message(s) and general rules-of-thumb that I recommended you to follow.
 
-```print("We're working on installation instructions now; check back later!")```
+If you'd like to try out this project on your end, let's get started!
+
+### Setting Up
+1. Clone or download this project and save it somewhere accessible. If downloaded, unzip the file before you continue.
+
+*Optional, but just in case:*
+
+2. Install Cocoapods on your device by using `sudo gem install cocoapods` in Terminal.
+3. Navigate to the Xcode folder of Upgrade (`Upgrade/Upgrade/`).
+4. Enter `pod install` in Terminal.
+
+### Using the Xcode Project
+
+- Always use `Upgrade.xcworkspace` instead of `Upgrade.xcodeproj`. The `xcworkspace` files has all the Cocoapods libraries installed.
+
+### Contributing After
+
+ - Ensure that your personal files (e.g., secrets, personal information, individual files) are ignored as much as possible.
 
 ## Support
 If you need help with anything related to the project, I recommend opening a new issue in the Issue Tracker page. Following GitHub's [Open Source Guide](https://www.opensource.guide), I strongly advise against privately communicating.
