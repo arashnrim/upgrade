@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E74889C26CD5B567C36C416 /* Pods_Upgrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2C67AEE0037114368CD1D5 /* Pods_Upgrade.framework */; };
+		492DFC3924B8568500D9D862 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492DFC3824B8568500D9D862 /* Onboarding.storyboard */; };
 		494FBF2D2413FA7800A5F857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FBF2C2413FA7800A5F857 /* AppDelegate.swift */; };
 		494FBF2F2413FA7800A5F857 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FBF2E2413FA7800A5F857 /* SceneDelegate.swift */; };
 		494FBF312413FA7800A5F857 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FBF302413FA7800A5F857 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		492DFC3824B8568500D9D862 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		494FBF292413FA7800A5F857 /* Upgrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Upgrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		494FBF2C2413FA7800A5F857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		494FBF2E2413FA7800A5F857 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		492DFC3724B8567800D9D862 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				492DFC3824B8568500D9D862 /* Onboarding.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		494FBF202413FA7800A5F857 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				492DFC3324B8553E00D9D862 /* Main */,
+				492DFC3724B8567800D9D862 /* Onboarding */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -186,6 +197,7 @@
 				494FBF392413FA7900A5F857 /* LaunchScreen.storyboard in Resources */,
 				494FBF362413FA7900A5F857 /* Assets.xcassets in Resources */,
 				494FBF342413FA7800A5F857 /* Main.storyboard in Resources */,
+				492DFC3924B8568500D9D862 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
