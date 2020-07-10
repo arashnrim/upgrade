@@ -42,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		492DFC3324B8553E00D9D862 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				494FBF322413FA7800A5F857 /* Main.storyboard */,
+				494FBF302413FA7800A5F857 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		494FBF202413FA7800A5F857 = {
 			isa = PBXGroup;
 			children = (
@@ -73,18 +82,9 @@
 		494FBF402413FAAF00A5F857 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				494FBF322413FA7800A5F857 /* Main.storyboard */,
-				494FBF412413FAB700A5F857 /* View Controller */,
+				492DFC3324B8553E00D9D862 /* Main */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		494FBF412413FAB700A5F857 /* View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				494FBF302413FA7800A5F857 /* ViewController.swift */,
-			);
-			path = "View Controller";
 			sourceTree = "<group>";
 		};
 		494FBF422413FAC500A5F857 /* Supporting Files */ = {
