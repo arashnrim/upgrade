@@ -22,6 +22,11 @@ First, thanks for your interest in the project! I'm glad that you'd like to cont
 If you'd like to try out this project on your end, let's get started!
 
 ### Setting Up
+
+- [Direct clone/download](#direct-clone/download)
+- [Cloning via Xcode](#cloning-via-xcode)
+
+## Direct clone/download
 1. Clone or download this project and save it somewhere accessible. If downloaded, unzip the file before you continue.
 
 *Optional, but just in case:*
@@ -29,6 +34,18 @@ If you'd like to try out this project on your end, let's get started!
 2. Install Cocoapods on your device by using `sudo gem install cocoapods` in Terminal.
 3. Navigate to the Xcode folder of Upgrade (`Upgrade/Upgrade/`).
 4. Enter `pod install` in Terminal.
+
+## Cloning via Xcode
+1. Open Xcode and select "Clone an existing project".
+2. Enter `https://github.com/arashnrim/Upgrade.git` in the text field.
+3. Select Clone and choose the branch `dev` to checkout to.
+4. Save the project somewhere accessible.
+
+*Optional, but just in case:*
+
+5. Install Cocoapods on your device by using `sudo gem install cocoapods` in Terminal.
+6. Navigate to the Xcode folder of Upgrade (`Upgrade/Upgrade/`).
+7. Enter `pod install` in Terminal.
 
 ### Using the Xcode Project
 
