@@ -5,5 +5,6 @@ target 'Upgrade' do
   inhibit_all_warnings!
 
   pod 'Hero'
+  pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '5.1.10-beta.0'
 
 end
