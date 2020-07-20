@@ -60,7 +60,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-[this email address](mailto:9394603f-ea7c-4b94-a405-5e145e2e4463@arashnrim.anonaddy.me).
+[this email address](hello@arashnrim.me).
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
