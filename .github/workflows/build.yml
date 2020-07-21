@@ -11,9 +11,7 @@ jobs:
           sudo gem install cocoapods
       - name: Install dependencies
         run: |
-          cd Upgrade
           pod install
       - name: Build project
         run: |
-          cd Upgrade
           xcodebuild -workspace "Upgrade.xcworkspace" -scheme "Upgrade"
