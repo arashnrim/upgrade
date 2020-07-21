@@ -12,7 +12,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd ../..
-          cd Upgrade/
+          cd Upgrade/Upgrade/
           ls
           pod install
       - name: Build project
