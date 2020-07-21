@@ -12,5 +12,6 @@ jobs:
           ls
       - name: Step in once
         run: |
+          cd ../../
           cd Upgrade/
     
