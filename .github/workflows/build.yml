@@ -13,6 +13,7 @@ jobs:
         run: |
           cd ../..
           cd Upgrade/
+          ls
           pod install
       - name: Build project
         run: |
