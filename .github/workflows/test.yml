@@ -10,9 +10,9 @@ jobs:
         run: |
           cd ../../
           ls
-      - name: Step in once
+      - name: Step twice
         run: |
           cd ../../
-          cd Upgrade/
+          cd Upgrade/Upgrade/
           ls
     
