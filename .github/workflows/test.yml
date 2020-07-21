@@ -1,0 +1,14 @@
+name: Test workflow
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Step out
+        run: |
+          cd ../../
+          ls
+          
+    
