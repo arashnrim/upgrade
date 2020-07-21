@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C4R-zu-odP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C4R-zu-odP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -15,7 +15,18 @@
                     <view key="view" contentMode="scaleToFill" id="zhP-aF-q2a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcF-XL-erv" customClass="UpgradeHeaderView" customModule="Upgrade" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gtu-FO-r9k" firstAttribute="trailing" secondItem="DcF-XL-erv" secondAttribute="trailing" id="3ev-8Y-nLJ"/>
+                            <constraint firstItem="DcF-XL-erv" firstAttribute="height" secondItem="zhP-aF-q2a" secondAttribute="height" multiplier="0.25" id="6aH-T9-1oP"/>
+                            <constraint firstItem="DcF-XL-erv" firstAttribute="top" secondItem="zhP-aF-q2a" secondAttribute="top" id="GDf-8n-zY6"/>
+                            <constraint firstItem="DcF-XL-erv" firstAttribute="leading" secondItem="Gtu-FO-r9k" secondAttribute="leading" id="kKO-ip-dud"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Gtu-FO-r9k"/>
                     </view>
                 </viewController>
