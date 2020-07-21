@@ -6,9 +6,11 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-      - name: Step out
+      - name: Step out twice
         run: |
           cd ../../
           ls
-          
+      - name: Step in once
+        run: |
+          cd Upgrade/
     
