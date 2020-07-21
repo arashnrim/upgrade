@@ -11,9 +11,7 @@ jobs:
           sudo gem install cocoapods
       - name: Install dependencies
         run: |
-          cd ../..
-          cd Upgrade/Upgrade/
-          ls
+          cd Upgrade/
           pod install
       - name: Build project
         run: |
