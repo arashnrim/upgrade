@@ -12,12 +12,12 @@
 ## Introduction
 Welcome to **Upgrade**, the app for students to better understand their academic accomplishments.
 
-Whether you're a beginner app developer or a student, I'd love adding on the number of users in this project. We plan to cater to all; however, I'm only focusing on developing the app in this current point in time. If you're a developer and wish to contribute, check out the [Getting Started](#getting-started) section below.
+Whether you're a student or someone just interested in FOSS projects, I'd love adding on the number of users in this project. I plan to cater to all; however, I'm only focusing on developing the app in this current point in time. If you're a developer and wish to contribute, check out the [Getting Started](#getting-started) section below.
 
 For designers, stay tuned for details coming soon!
 
 ## Getting Started
-First, thanks for your interest in the project! I'm glad that you'd like to contribute to the project. To begin, check out the [Contributing Guide](CONTRIBUTING.md) to see what you have to do, including structuring your commit message(s) and general rules-of-thumb that I recommended you to follow.
+First, thanks for your interest in the project! I'm glad that you'd like to contribute to the project. To begin, check out the [Contributing Guide](CONTRIBUTING.md) to see what you have to do, including structuring your commit message(s) and general rules-of-thumb that I recommend you to follow.
 
 If you'd like to try out this project on your end, let's get started!
 
