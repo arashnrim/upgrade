@@ -20,4 +20,4 @@ jobs:
       - name: Build project
         run: |
           cd Upgrade/
-          xcodebuild -workspace "Upgrade.xcworkspace" -scheme "Upgrade" -allowProvisioningUpdates
+          xcodebuild -workspace "Upgrade.xcworkspace" -scheme "Upgrade" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
