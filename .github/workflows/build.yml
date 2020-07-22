@@ -20,4 +20,4 @@ jobs:
       - name: Build project
         run: |
           cd Upgrade/
-          xcodebuild -workspace "Upgrade.xcworkspace" -scheme "Upgrade"
+          xcodebuild -workspace "Upgrade.xcworkspace" -scheme "Upgrade" -allowProvisioningUpdates
