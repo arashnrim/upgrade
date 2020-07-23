@@ -1,5 +1,7 @@
 # Upgrade
 
+<img align="center" src="https://github.com/arashnrim/Upgrade/workflows/Build%20Xcode%20project/badge.svg">
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
