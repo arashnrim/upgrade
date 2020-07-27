@@ -121,13 +121,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgD-TK-91k" customClass="UpgradeHeaderView" customModule="Upgrade" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDC-fw-8Bd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="started!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDC-fw-8Bd">
                                         <rect key="frame" x="20" y="133" width="335" height="30"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRW-Pv-Ym2">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRW-Pv-Ym2">
                                         <rect key="frame" x="20" y="101" width="335" height="24"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -144,14 +144,8 @@
                                     <constraint firstAttribute="bottom" secondItem="nDC-fw-8Bd" secondAttribute="bottom" constant="40" id="ulV-fY-y9E"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade helps you view your academic achievements in insightful ways." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24Z-Yw-7Q5">
-                                <rect key="frame" x="20" y="242.99999999999997" width="335" height="71.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready to begin?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwD-mZ-26E">
-                                <rect key="frame" x="20" y="664" width="335" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What name can we address you by?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24Z-Yw-7Q5">
+                                <rect key="frame" x="20" y="243" width="335" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -167,31 +161,30 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="score" translatesAutoresizingMaskIntoConstraints="NO" id="Yjd-cE-csK">
-                                <rect key="frame" x="62" y="354.66666666666669" width="251" height="177.00000000000006"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YVy-we-OV2">
+                                <rect key="frame" x="20" y="287" width="335" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="177" id="0pY-nM-vze"/>
-                                    <constraint firstAttribute="width" constant="251" id="wzn-qN-SQp"/>
+                                    <constraint firstAttribute="height" constant="50" id="qnl-kO-Ab5"/>
                                 </constraints>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="20I-2f-bR4" firstAttribute="trailing" secondItem="DgD-TK-91k" secondAttribute="trailing" id="3YD-Bx-Jhj"/>
+                            <constraint firstItem="YVy-we-OV2" firstAttribute="top" secondItem="24Z-Yw-7Q5" secondAttribute="bottom" constant="20" id="9Th-HM-0NH"/>
                             <constraint firstItem="20I-2f-bR4" firstAttribute="trailing" secondItem="syg-Dm-0YS" secondAttribute="trailing" constant="20" id="B5a-9Y-dq7"/>
                             <constraint firstItem="24Z-Yw-7Q5" firstAttribute="leading" secondItem="20I-2f-bR4" secondAttribute="leading" constant="20" id="Bji-0f-1J6"/>
-                            <constraint firstItem="Yjd-cE-csK" firstAttribute="centerX" secondItem="uN3-Na-RW0" secondAttribute="centerX" id="NaM-Nl-9an"/>
+                            <constraint firstItem="20I-2f-bR4" firstAttribute="trailing" secondItem="YVy-we-OV2" secondAttribute="trailing" constant="20" id="Fgm-ap-uh6"/>
+                            <constraint firstItem="YVy-we-OV2" firstAttribute="leading" secondItem="20I-2f-bR4" secondAttribute="leading" constant="20" id="LrK-cS-Qfs"/>
                             <constraint firstItem="syg-Dm-0YS" firstAttribute="leading" secondItem="20I-2f-bR4" secondAttribute="leading" constant="20" id="Suh-wv-DiW"/>
                             <constraint firstItem="DgD-TK-91k" firstAttribute="height" secondItem="uN3-Na-RW0" secondAttribute="height" multiplier="0.25" id="Vn7-2Z-FrP"/>
                             <constraint firstItem="20I-2f-bR4" firstAttribute="bottom" secondItem="syg-Dm-0YS" secondAttribute="bottom" constant="20" id="aNG-FB-E1K"/>
-                            <constraint firstItem="Yjd-cE-csK" firstAttribute="top" secondItem="24Z-Yw-7Q5" secondAttribute="bottom" constant="40" id="h3q-qg-HlP"/>
                             <constraint firstItem="DgD-TK-91k" firstAttribute="leading" secondItem="20I-2f-bR4" secondAttribute="leading" id="jOV-9m-crL"/>
                             <constraint firstItem="DgD-TK-91k" firstAttribute="top" secondItem="uN3-Na-RW0" secondAttribute="top" id="jRf-IJ-S6F"/>
                             <constraint firstItem="20I-2f-bR4" firstAttribute="trailing" secondItem="24Z-Yw-7Q5" secondAttribute="trailing" constant="20" id="jcT-Dx-XbZ"/>
                             <constraint firstItem="24Z-Yw-7Q5" firstAttribute="top" secondItem="DgD-TK-91k" secondAttribute="bottom" constant="40" id="kUP-mD-3Sq"/>
-                            <constraint firstItem="syg-Dm-0YS" firstAttribute="top" secondItem="mwD-mZ-26E" secondAttribute="bottom" constant="20" id="lLM-ZV-GPt"/>
-                            <constraint firstItem="mwD-mZ-26E" firstAttribute="leading" secondItem="20I-2f-bR4" secondAttribute="leading" constant="20" id="pRm-AP-5qC"/>
-                            <constraint firstItem="20I-2f-bR4" firstAttribute="trailing" secondItem="mwD-mZ-26E" secondAttribute="trailing" constant="20" id="xzH-kX-QOT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="20I-2f-bR4"/>
                     </view>
