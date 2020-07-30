@@ -14,6 +14,13 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     
     // MARK: Functions
+    /**
+     * Verifies if the name in `nameTextField` is valid.
+     *
+     * If the name is not empty and therefore is valid, this function will return `true`. Otherwise, the function returns `false`.
+     *
+     * - Returns: A boolean value of the outcome of the check.
+     */
     func isNameValid() -> Bool {
         guard let name = nameTextField.text else {
             print("Warning: An error occurred while fetching the text value of nameTextField. Following functions may fail.")
