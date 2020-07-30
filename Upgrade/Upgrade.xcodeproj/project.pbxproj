@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E74889C26CD5B567C36C416 /* Pods_Upgrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2C67AEE0037114368CD1D5 /* Pods_Upgrade.framework */; };
+		491ABF0024CF95A4001A05B5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491ABEFF24CF95A4001A05B5 /* OnboardingViewController.swift */; };
 		492DFC3924B8568500D9D862 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492DFC3824B8568500D9D862 /* Onboarding.storyboard */; };
 		49432B5624C7DA97003AB302 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49432B5424C7DA97003AB302 /* Metropolis-Bold.otf */; };
 		49432B5724C7DA97003AB302 /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49432B5524C7DA97003AB302 /* Metropolis-SemiBold.otf */; };
@@ -19,9 +20,11 @@
 		494FBF362413FA7900A5F857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494FBF352413FA7900A5F857 /* Assets.xcassets */; };
 		494FBF392413FA7900A5F857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494FBF372413FA7900A5F857 /* LaunchScreen.storyboard */; };
 		4961FBF624C6BAD400B97917 /* UpgradeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961FBF524C6BAD400B97917 /* UpgradeHeaderView.swift */; };
+		49FF4E4D24D266AF006651B6 /* UIViewController+Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF4E4C24D266AF006651B6 /* UIViewController+Functionality.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491ABEFF24CF95A4001A05B5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		492DFC3824B8568500D9D862 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		49432B5424C7DA97003AB302 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
 		49432B5524C7DA97003AB302 /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBold.otf"; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		494FBF382413FA7900A5F857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		494FBF3A2413FA7900A5F857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4961FBF524C6BAD400B97917 /* UpgradeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeHeaderView.swift; sourceTree = "<group>"; };
+		49FF4E4C24D266AF006651B6 /* UIViewController+Functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Functionality.swift"; sourceTree = "<group>"; };
 		C85170C84CE1D23BE070F1B9 /* Pods-Upgrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upgrade.debug.xcconfig"; path = "Target Support Files/Pods-Upgrade/Pods-Upgrade.debug.xcconfig"; sourceTree = "<group>"; };
 		D950097425D8067B3DF8966F /* Pods-Upgrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upgrade.release.xcconfig"; path = "Target Support Files/Pods-Upgrade/Pods-Upgrade.release.xcconfig"; sourceTree = "<group>"; };
 		DB2C67AEE0037114368CD1D5 /* Pods_Upgrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Upgrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				492DFC3824B8568500D9D862 /* Onboarding.storyboard */,
+				491ABEFF24CF95A4001A05B5 /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			children = (
 				4961FBF524C6BAD400B97917 /* UpgradeHeaderView.swift */,
 				49432B5824C7DC6B003AB302 /* UpgradeButton.swift */,
+				49FF4E4C24D266AF006651B6 /* UIViewController+Functionality.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				494FBF312413FA7800A5F857 /* ViewController.swift in Sources */,
+				491ABF0024CF95A4001A05B5 /* OnboardingViewController.swift in Sources */,
 				494FBF2D2413FA7800A5F857 /* AppDelegate.swift in Sources */,
+				49FF4E4D24D266AF006651B6 /* UIViewController+Functionality.swift in Sources */,
 				49432B5924C7DC6B003AB302 /* UpgradeButton.swift in Sources */,
 				4961FBF624C6BAD400B97917 /* UpgradeHeaderView.swift in Sources */,
 				494FBF2F2413FA7800A5F857 /* SceneDelegate.swift in Sources */,
