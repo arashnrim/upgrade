@@ -30,6 +30,17 @@ class OnboardingViewController: UIViewController {
         return !(name.isEmpty || name == "")
     }
     
+    func saveName(completion: () -> Void) {
+        guard let name = nameTextField.text else {
+            print("Warning: An error occurred while fetching the text value of nameTextField. Following functions may fail.")
+            return
+        }
+        let defaults = UserDefaults.standard
+        
+        defaults.set(name, forKey: "name")
+        completion()
+    }
+    
     // MARK: Actions
     @IBAction func continueButton(_ sender: Any) {
         // Verifies if the user name is valid before continuing.
@@ -38,7 +49,9 @@ class OnboardingViewController: UIViewController {
         let nameValid = isNameValid()
         
         if nameValid {
-            // TODO: Save the data here and add the segue. Please amend later on.
+            saveName {
+                self.performSegue(withIdentifier: "complete", sender: nil)
+            }
         } else {
             self.displayAlert(title: "Wait a second!", message: "You've not given us a name to address you by. You can override this decision and use the app without a name or dismiss this alert to enter your name again.") { (alert) in
                 alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))

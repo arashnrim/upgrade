@@ -29,13 +29,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acm-l9-Jc4">
-                                        <rect key="frame" x="20" y="128" width="335" height="35"/>
+                                        <rect key="frame" x="20" y="133" width="335" height="30"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFR-PN-wTr">
-                                        <rect key="frame" x="20" y="92" width="335" height="28"/>
+                                        <rect key="frame" x="20" y="101" width="335" height="24"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -122,13 +122,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="started!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDC-fw-8Bd">
-                                        <rect key="frame" x="20" y="128" width="335" height="35"/>
+                                        <rect key="frame" x="20" y="133" width="335" height="30"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRW-Pv-Ym2">
-                                        <rect key="frame" x="20" y="92" width="335" height="28"/>
+                                        <rect key="frame" x="20" y="101" width="335" height="24"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -157,7 +157,7 @@
                                     <constraint firstAttribute="height" constant="50" id="ELe-E6-zVq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="22"/>
-                                <state key="normal" title="Let's go!">
+                                <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -170,7 +170,7 @@
                                     <constraint firstAttribute="height" constant="50" id="qnl-kO-Ab5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -192,13 +192,28 @@
                         <viewLayoutGuide key="safeArea" id="20I-2f-bR4"/>
                     </view>
                     <navigationItem key="navigationItem" id="o19-mg-hbF"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="slide(left)"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="nameTextField" destination="YVy-we-OV2" id="0FC-3z-c1f"/>
+                        <segue destination="GfM-YN-KWT" kind="show" identifier="complete" id="lZ1-P6-egq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wec-AP-1cG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="617" y="132"/>
+            <point key="canvasLocation" x="622" y="132"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="lcz-iM-rry">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="GfM-YN-KWT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mqu-cV-OVs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DzQ-To-Jp3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="132"/>
         </scene>
     </scenes>
     <resources>
