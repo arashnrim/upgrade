@@ -8,10 +8,27 @@
 
 import UIKit
 
-class OnboardingViewController: UIViewController {
+class OnboardingViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Outlets
     @IBOutlet weak var nameTextField: UITextField!
+    
+    // MARK: Overrides
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Sets the delegate of the text field as OnboardingViewController.
+        self.nameTextField.delegate = self
+        
+        // Allows editing to end when any part of the screen is tapped outside the keyboard area.
+        self.dismissKeyboardOnTap(completion: nil)
+    }
+    
+    // MARK: Text Field Protocols
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(false)
+        return false
+    }
     
     // MARK: Functions
     /**

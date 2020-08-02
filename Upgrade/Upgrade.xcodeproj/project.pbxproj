@@ -20,6 +20,7 @@
 		494FBF362413FA7900A5F857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494FBF352413FA7900A5F857 /* Assets.xcassets */; };
 		494FBF392413FA7900A5F857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494FBF372413FA7900A5F857 /* LaunchScreen.storyboard */; };
 		4961FBF624C6BAD400B97917 /* UpgradeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961FBF524C6BAD400B97917 /* UpgradeHeaderView.swift */; };
+		49FA925324D7029200F849B0 /* UITextField+Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA925224D7029200F849B0 /* UITextField+Functionality.swift */; };
 		49FF4E4D24D266AF006651B6 /* UIViewController+Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF4E4C24D266AF006651B6 /* UIViewController+Functionality.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		494FBF382413FA7900A5F857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		494FBF3A2413FA7900A5F857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4961FBF524C6BAD400B97917 /* UpgradeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeHeaderView.swift; sourceTree = "<group>"; };
+		49FA925224D7029200F849B0 /* UITextField+Functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Functionality.swift"; sourceTree = "<group>"; };
 		49FF4E4C24D266AF006651B6 /* UIViewController+Functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Functionality.swift"; sourceTree = "<group>"; };
 		C85170C84CE1D23BE070F1B9 /* Pods-Upgrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upgrade.debug.xcconfig"; path = "Target Support Files/Pods-Upgrade/Pods-Upgrade.debug.xcconfig"; sourceTree = "<group>"; };
 		D950097425D8067B3DF8966F /* Pods-Upgrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upgrade.release.xcconfig"; path = "Target Support Files/Pods-Upgrade/Pods-Upgrade.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				4961FBF524C6BAD400B97917 /* UpgradeHeaderView.swift */,
 				49432B5824C7DC6B003AB302 /* UpgradeButton.swift */,
 				49FF4E4C24D266AF006651B6 /* UIViewController+Functionality.swift */,
+				49FA925224D7029200F849B0 /* UITextField+Functionality.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				494FBF2D2413FA7800A5F857 /* AppDelegate.swift in Sources */,
 				49FF4E4D24D266AF006651B6 /* UIViewController+Functionality.swift in Sources */,
 				49432B5924C7DC6B003AB302 /* UpgradeButton.swift in Sources */,
+				49FA925324D7029200F849B0 /* UITextField+Functionality.swift in Sources */,
 				4961FBF624C6BAD400B97917 /* UpgradeHeaderView.swift in Sources */,
 				494FBF2F2413FA7800A5F857 /* SceneDelegate.swift in Sources */,
 			);
