@@ -55,6 +55,7 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
         let defaults = UserDefaults.standard
         
         defaults.set(name, forKey: "name")
+        defaults.set(true, forKey: "configured")
         completion()
     }
     
