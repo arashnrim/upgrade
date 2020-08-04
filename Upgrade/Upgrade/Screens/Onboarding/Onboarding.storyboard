@@ -194,7 +194,6 @@
                     <navigationItem key="navigationItem" id="o19-mg-hbF"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="slide(left)"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="nameTextField" destination="YVy-we-OV2" id="0FC-3z-c1f"/>

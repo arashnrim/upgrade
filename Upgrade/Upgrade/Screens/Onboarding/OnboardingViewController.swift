@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 class OnboardingViewController: UIViewController, UITextFieldDelegate {
 
@@ -22,6 +23,13 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
         
         // Allows editing to end when any part of the screen is tapped outside the keyboard area.
         self.dismissKeyboardOnTap(completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "complete" {
+            let destination = segue.destination
+            destination.hero.modalAnimationType = .zoom
+        }
     }
     
     // MARK: Text Field Protocols
@@ -75,7 +83,14 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
                 alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
                 
                 // TODO: This is pre-defined and not the expected behaviour. Please amend later on.
-                alert.addAction(UIAlertAction(title: "Proceed without Name", style: .destructive, handler: nil))
+                alert.addAction(UIAlertAction(title: "Proceed without Name", style: .destructive, handler: { (_) in
+                    let defaults = UserDefaults.standard
+                    defaults.set(true, forKey: "configured")
+                    
+                    self.performSegue(withIdentifier: "complete", sender: nil)
+                }))
+                
+                self.show(alert, sender: nil)
             }
         }
     }
