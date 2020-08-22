@@ -11,17 +11,17 @@ import Sentry
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+
         // Configures the Sentry library.
         SentrySDK.start { options in
             options.dsn = "https://3a2b9aa769aa4a4190cef08ea8d6f770@o419985.ingest.sentry.io/5337392"
             options.debug = true // Enabled debug when first installing is always helpful
         }
-        
+
         // Performs conditional navigation based on whether the user has configured the app for use.
         let configured = UserDefaults.standard.bool(forKey: "configured")
         let rootViewController: UIViewController
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
-        
+
         return true
     }
 
@@ -52,4 +52,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-

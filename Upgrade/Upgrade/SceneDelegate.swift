@@ -14,8 +14,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        // swiftlint:disable:next unused_optional_binding
         guard let _ = (scene as? UIWindowScene) else { return }
-        
+
         // Performs conditional navigation based on whether the user has configured the app for use.
         let configured = UserDefaults.standard.bool(forKey: "configured")
         let rootViewController: UIViewController
@@ -31,4 +32,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 }
-

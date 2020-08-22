@@ -9,12 +9,12 @@
 import UIKit
 
 class UpgradeHeaderView: UIView {
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupView()
     }
-    
+
     /**
      * Initialises the View with a rounded corner (bottom-right) and a gradient.
      *
@@ -24,7 +24,7 @@ class UpgradeHeaderView: UIView {
         roundCorners()
         addGradient()
     }
-    
+
     /**
      * Rounds the bottom-right corner of the View.
      */
@@ -34,7 +34,7 @@ class UpgradeHeaderView: UIView {
         mask.path = path.cgPath
         layer.mask = mask
     }
-    
+
     /**
      * Adds Upgrade's blue-purple gradient across the View.
      *
@@ -48,5 +48,5 @@ class UpgradeHeaderView: UIView {
         gradient.frame = self.bounds
         self.layer.insertSublayer(gradient, at: 0)
     }
-    
+
 }

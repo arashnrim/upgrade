@@ -9,13 +9,13 @@
 import UIKit
 
 class UpgradeButton: UIButton {
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
+
         // Adds a cornered radius around the sides of the button.
         self.layer.cornerRadius = 10.0
-        
+
         // Applies a gradient using Upgrade's UP Blue and UP Purple colours.
         // The gradient locations are amended to have a diagonal gradient.
         let gradient = CAGradientLayer()
@@ -27,5 +27,5 @@ class UpgradeButton: UIButton {
         self.layer.insertSublayer(gradient, at: 0)
         self.clipsToBounds = true
     }
-    
+
 }
