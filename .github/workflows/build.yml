@@ -1,0 +1,22 @@
+name: Build Xcode project
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Install Cocoapods
+        run: sudo gem install cocoapods
+
+      - name: Checkout project
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          cd Upgrade/
+          pod install
+      - name: Build project
+        run: |
+          cd Upgrade/
+          xcodebuild -workspace "Upgrade.xcworkspace" -scheme "Upgrade" -allowProvisioningUpdates CODE_SIGNING_ALLOWED="NO"
