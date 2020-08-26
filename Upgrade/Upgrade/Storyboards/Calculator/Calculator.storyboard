@@ -106,12 +106,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
-                                                <color key="value" name="UP Blue"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
-                                                <color key="value" name="UP Purple"/>
-                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="buttonToggle:" destination="6GT-cM-ent" eventType="touchUpInside" id="cN6-zn-gnJ"/>
@@ -300,12 +294,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
-                                                <color key="value" name="UP Blue"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
-                                                <color key="value" name="UP Purple"/>
-                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="buttonToggle:" destination="Sph-FO-k70" eventType="touchUpInside" id="TFP-6X-PzA"/>
@@ -613,12 +601,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
-                                                <color key="value" name="UP Blue"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
-                                                <color key="value" name="UP Purple"/>
-                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="buttonToggle:" destination="ZxH-rN-sOF" eventType="touchUpInside" id="cEu-bP-z9S"/>
