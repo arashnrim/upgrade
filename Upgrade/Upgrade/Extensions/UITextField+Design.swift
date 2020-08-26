@@ -1,7 +1,7 @@
 import UIKit
 
 extension UITextField {
-    
+
     /// Uses an image to set it as the icon of the textField.
     /// This improves user understanding of the textFields and provides better design for the application.
     func setIcon(_ image: UIImage) {
@@ -13,19 +13,19 @@ extension UITextField {
         iconContainerView.addSubview(iconView)
         leftView = iconContainerView
         leftViewMode = .always
-        
+
     }
-    
+
     /// Configures UITextField to
     /// a. maintain regular bordered rectangle shape.
     /// b. add a shadow.
     func configureTextField() {
         self.borderStyle = UITextField.BorderStyle.roundedRect
-        
+
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.layer.shadowRadius = 50
         self.layer.shadowOpacity = 0.2
     }
-    
+
 }

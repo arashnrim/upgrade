@@ -2,7 +2,7 @@ import UIKit
 import Hero
 
 class GradeViewController: UIViewController, UITextFieldDelegate {
-    
+
     // MARK: - Outlets
     @IBOutlet var viewMain: UIView!
     @IBOutlet var viewGrade: UIView!
@@ -11,56 +11,56 @@ class GradeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var labelOutputGrade: UILabel!
     @IBOutlet var labelOutputScore: UILabel!
     @IBOutlet var buttonToggle: UIButton!
-    
+
     // MARK: - Properties
     var currentTextField = UITextField()
     var grade = String()
     var score = Double()
-    
+
     // MARK: - Overrides
     /// Overrides preferred status bar style (color) from black (default) to white.
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         /// Prints out to command line for better debugging purposes.
         print("upgradeconsoleREDIRECT: Redirection to SignInViewController executed.")
-        
+
         /// Calls extension function configureView() (see UIView+Design.swift) to configure the background gradient color for GradeViewController.
         self.view.configureView(color1: "UP Purple", color2: "UP Blue")
-        
+
         /// Configures viewMain to have a cornerRadius of 20; some corners are then masked to retain the original rectangle shape.
         viewMain.layer.cornerRadius = 20
         viewMain.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        
+
         /// Assigns the delegates to the textFields to manage keyboard first responders.
         fieldMaxScore.delegate = self
         fieldUserScore.delegate = self
-        
+
         /// Calls extension function configureTextField() (see UITextField+Design.swift) to configure the overall design for the textFields.
         fieldMaxScore.configureTextField()
         fieldUserScore.configureTextField()
-        
+
         /// Calls extension function configureButton() (see UIButton+Design.swift) to configure the overall design for buttonToggle.
         buttonToggle.configureButton(color1: "UP Purple", color2: "UP Blue")
-        
+
         /// Calls extension function viewShadow() (see UIView+Design.swift) to place a shadow on viewGrade.
         viewGrade.viewShadow()
         viewGrade.layer.cornerRadius = 10
-        
+
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination
-        
+
         if segue.identifier == "menu" {
             destination.hero.modalAnimationType = .selectBy(presenting: .cover(direction: .right), dismissing: .uncover(direction: .left))
         }
     }
-    
+
     // MARK: - Functions
     // This function is a protocol for UITextFieldDelegate; it is executed when the textField is being interacted with and highlighted.
     /// Retrieves the current, highlighted textField (that is being interacted with) and brings it to the front in viewCredentials.
@@ -68,7 +68,7 @@ class GradeViewController: UIViewController, UITextFieldDelegate {
         currentTextField = textField
         viewMain.bringSubviewToFront(currentTextField)
     }
-    
+
     // This function is a protocol for UITextFieldDelegate; it is executed when the return key of the keyboard is pressed.
     /// Evaluates the current active text field.
     /* If the current textField is fieldEmail, the keyboard will be resigned and the focus is switched over to fieldPassword.
@@ -84,7 +84,7 @@ class GradeViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
-    
+
     // This function is a protocol for UITextField Delegate; it is executed when the textField is done editing and proceeds to the next textField.
     /// Evaluates the text in the fields.
     /* If the text is not empty (""), then the shadow is removed, prompting to the user design-wise that their input is no longer needed.
@@ -101,90 +101,90 @@ class GradeViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
-    
+
     func checkGrades(maxScore: Double, userScore: Double) {
         self.score = (userScore / maxScore) * 100
-        
+
         if self.score < 40 {
             grade = "F9"
             labelOutputGrade.text = grade
-            
+
             let formatter = NumberFormatter()
             formatter.maximumFractionDigits = 2
             let roundedScore = formatter.string(from: NSNumber(value: score))!
-            
+
             labelOutputScore.text = "\(String(roundedScore))%"
         } else if self.score >= 40 && self.score < 45 {
             grade = "E8"
             labelOutputGrade.text = grade
-            
+
             let formatter = NumberFormatter()
             formatter.maximumFractionDigits = 2
             let roundedScore = formatter.string(from: NSNumber(value: score))!
-            
+
             labelOutputScore.text = "\(String(roundedScore))%"
         } else if self.score >= 45 && self.score < 50 {
             grade = "D7"
             labelOutputGrade.text = grade
-            
+
             let formatter = NumberFormatter()
             formatter.maximumFractionDigits = 2
             let roundedScore = formatter.string(from: NSNumber(value: score))!
-            
+
             labelOutputScore.text = "\(String(roundedScore))%"
         } else if self.score >= 50 && self.score < 55 {
             grade = "C6"
             labelOutputGrade.text = grade
-            
+
             let formatter = NumberFormatter()
             formatter.maximumFractionDigits = 2
             let roundedScore = formatter.string(from: NSNumber(value: score))!
-            
+
             labelOutputScore.text = "\(String(roundedScore))%"
         } else if self.score >= 55 && self.score < 60 {
             grade = "C5"
             labelOutputGrade.text = grade
-            
+
             let formatter = NumberFormatter()
             formatter.maximumFractionDigits = 2
             let roundedScore = formatter.string(from: NSNumber(value: score))!
-            
+
             labelOutputScore.text = "\(String(roundedScore))%"
         } else if self.score >= 60 && self.score < 65 {
             grade = "B4"
             labelOutputGrade.text = grade
-            
+
             let formatter = NumberFormatter()
             formatter.maximumFractionDigits = 2
             let roundedScore = formatter.string(from: NSNumber(value: score))!
-            
+
             labelOutputScore.text = "\(String(roundedScore))%"
         } else if self.score >= 65 && self.score < 70 {
             grade = "B3"
             labelOutputGrade.text = grade
-            
+
             let formatter = NumberFormatter()
             formatter.maximumFractionDigits = 2
             let roundedScore = formatter.string(from: NSNumber(value: score))!
-            
+
             labelOutputScore.text = "\(String(roundedScore))%"
         } else if self.score >= 70 && self.score < 75 {
             grade = "A2"
             labelOutputGrade.text = grade
-            
+
             let formatter = NumberFormatter()
             formatter.maximumFractionDigits = 2
             let roundedScore = formatter.string(from: NSNumber(value: score))!
-            
+
             labelOutputScore.text = "\(String(roundedScore))%"
         } else if self.score >= 75 && self.score <= 100 {
             grade = "A1"
             labelOutputGrade.text = grade
-            
+
             let formatter = NumberFormatter()
             formatter.maximumFractionDigits = 2
             let roundedScore = formatter.string(from: NSNumber(value: score))!
-            
+
             labelOutputScore.text = "\(String(roundedScore))%"
         } else {
             let questionAlert = UIAlertController(title: "Huh?", message: "Your input wasn't correct somewhere. Please check it again.", preferredStyle: .alert)
@@ -195,24 +195,24 @@ class GradeViewController: UIViewController, UITextFieldDelegate {
                 self.labelOutputScore.text = "0"
             }))
             present(questionAlert, animated: true)
-            
+
             labelOutputGrade.text = "??"
             labelOutputScore.text = "??"
         }
     }
-    
+
     // MARK: - Actions
     @IBAction func tapDismiss(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
-        
+
         guard let maxScore = fieldMaxScore.text else { return }
         guard let userScore = fieldUserScore.text else { return }
-        
+
         if maxScore != "" && userScore != "" {
             checkGrades(maxScore: Double(maxScore)!, userScore: Double(userScore)!)
         }
     }
-    
+
     @IBAction func buttonToggle(_ sender: UIButton) {
         let toggle = UIAlertController(title: "Calculator", message: "Choose one of the types below.", preferredStyle: .actionSheet)
         toggle.addAction(UIAlertAction(title: "L1R5", style: .default, handler: { (_) in
@@ -226,5 +226,5 @@ class GradeViewController: UIViewController, UITextFieldDelegate {
         }))
         present(toggle, animated: true)
     }
-    
+
 }

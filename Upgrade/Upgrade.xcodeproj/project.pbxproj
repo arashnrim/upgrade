@@ -581,6 +581,7 @@
 				49CCAE5922C861DB00E8E2D5 /* Frameworks */,
 				49CCAE5A22C861DB00E8E2D5 /* Resources */,
 				0E80EDDB9C7F519C4141852C /* [CP] Embed Pods Frameworks */,
+				49DC48BB24F65A89007BA295 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -682,6 +683,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Upgrade/Pods-Upgrade-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		49DC48BB24F65A89007BA295 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		DE1178708E2BEDE2A48F2DD8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
