@@ -1,31 +1,16 @@
 PODS:
   - Hero (1.5.0)
-  - Sentry (5.1.10-beta.0):
-    - Sentry/Core (= 5.1.10-beta.0)
-  - Sentry/Core (5.1.10-beta.0)
 
 DEPENDENCIES:
   - Hero
-  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `5.1.10-beta.0`)
 
 SPEC REPOS:
   trunk:
     - Hero
 
-EXTERNAL SOURCES:
-  Sentry:
-    :git: https://github.com/getsentry/sentry-cocoa.git
-    :tag: 5.1.10-beta.0
-
-CHECKOUT OPTIONS:
-  Sentry:
-    :git: https://github.com/getsentry/sentry-cocoa.git
-    :tag: 5.1.10-beta.0
-
 SPEC CHECKSUMS:
   Hero: b7385b75e7259da62f4f85462f59a5082d66b058
-  Sentry: 1575d5a673f425c2a2d83d9b6a52f5b6f0f4a253
 
-PODFILE CHECKSUM: 5ba798cda83a019ccbe0fcebd8cf842ac2146853
+PODFILE CHECKSUM: b487462c60c660936ffeb2cd6ba093c151f82288
 
 COCOAPODS: 1.9.1
