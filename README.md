@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Branch `v2.0`](#branch-v2.0)
 - [Getting Started](#getting-started)
 - [Support](#support)
 - [What's Ahead](#whats-ahead)
@@ -17,6 +18,13 @@ Welcome to **Upgrade**, the app for students to better understand their academic
 Whether you're a student or someone just interested in FOSS projects, I'd love adding on the number of users in this project. I plan to cater to all; however, I'm only focusing on developing the app in this current point in time. If you're a developer and wish to contribute, check out the [Getting Started](#getting-started) section below.
 
 For designers, stay tuned for details coming soon!
+
+## Branch `v2.0`
+
+The branch you are currently in is the **`v2.0` branch**; all code related to the re-write of Upgrade is included here and kept separate from the `v1.0` branch to avoid conflicts.
+
+- To view the source code for version 1.0, jump over to the [`v1.0` branch](https://github.com/arashnrim/Upgrade/tree/v1.0).
+- To view the branch with a release history, jump over to the [`releases` branch](https://github.com/arashnrim/Upgrade/tree/releases).
 
 ## Getting Started
 First, thanks for your interest in the project! I'm glad that you'd like to contribute to the project. To begin, check out the [Contributing Guide](CONTRIBUTING.md) to see what you have to do, including structuring your commit message(s) and general rules-of-thumb that I recommend you to follow.
