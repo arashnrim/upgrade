@@ -55,6 +55,14 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
         return !(name.isEmpty || name == "")
     }
 
+    /**
+     * Saves the user's name to User Defaults.
+     *
+     * The name is stored locally, and will never leave the phone. This function contains a `completion` closure to execute code after the task has asynchronously concluded.
+     *
+     * - Parameters:
+     *      - completion: A closure to run code after the task has asynchronously concluded.
+     */
     func saveName(completion: () -> Void) {
         guard let name = nameTextField.text else {
             print("Warning: An error occurred while fetching the text value of nameTextField. Following functions may fail.")
@@ -70,7 +78,7 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
     // MARK: Actions
     @IBAction func continueButton(_ sender: Any) {
         // Verifies if the user name is valid before continuing.
-        // If no user name is provided, the app will prompt via a UIAlert.
+        // If no user name is provided, the app will display a UIAlert; the Alert asks if the user really wants to proceed without a name saved.
         // Else, the name is saved locally.
         let nameValid = isNameValid()
 
