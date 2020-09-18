@@ -1,16 +1,20 @@
 PODS:
   - Hero (1.5.0)
+  - SwiftLint (0.40.2)
 
 DEPENDENCIES:
   - Hero
+  - SwiftLint
 
 SPEC REPOS:
   trunk:
     - Hero
+    - SwiftLint
 
 SPEC CHECKSUMS:
   Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  SwiftLint: 1216c910d27c2633ade33b4f071bb6b930982e62
 
-PODFILE CHECKSUM: b487462c60c660936ffeb2cd6ba093c151f82288
+PODFILE CHECKSUM: 047f3ff7e7818f7e59dbcc7a0fa0c1a020858b4e
 
 COCOAPODS: 1.9.1
