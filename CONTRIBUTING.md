@@ -105,8 +105,14 @@ Limit lines to 72 characters or less.
 The devs here use [WordCounter](wordcounter.net) to check our line lengths.
 
 ### Swift Styleguide
-I'm not using any methods of linting at the moment. However, I'm having my eyes on [SwiftLint](https://github.com/realm/swiftlint).
-
+I have implemented the [SwiftLint](https://github.com/realm/swiftlint) styleguide system to ensure that the code quality remains standardised and neat at the same time. I highly encourage everyone to obey all warnings and errors raised by SwiftLint except for the following, which have already been excluded in the project's SwiftLint configuration:
+- `closure_body_length`
+- `file_length`
+- `function_body_length`
+- `line_length`
+- `type_body_length`
+- `force_cast`
+- `multiple_closures_with_trailing_closure`
 
 ## Additional Notes
 I'd like to thank you for your hard effort reading this guide, and I hope that you're not as tired as I am while writing this. Have fun contributing to the project!
