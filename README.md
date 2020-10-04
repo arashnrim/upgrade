@@ -6,7 +6,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Branch `v1.0`](#branch-v1.0)
+- [Branch `v1.0`](#branch-v10)
 - [Getting Started](#getting-started)
 - [Support](#support)
 - [What's Ahead](#whats-ahead)
