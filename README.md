@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./upgrade.svg">
+</p>
+
 # Upgrade
 
 ![Build Xcode project](https://github.com/arashnrim/Upgrade/workflows/Build%20Xcode%20project/badge.svg)
@@ -27,7 +31,7 @@ The branch you are currently in is the **`v2.0` branch**; all code related to th
 - To view the branch with a release history, jump over to the [`releases` branch](https://github.com/arashnrim/Upgrade/tree/releases).
 
 ## Getting Started
-Thanks for your interest in trying out this project! The explanation on how to get started is fairly long, so I've moved it to [the wiki](https://github.com/arashnrim/Upgrade/wiki/Building-Upgrades). Check it out to get started!
+Thanks for your interest in trying out this project! The explanation on how to get started is fairly long, so I've moved it to [the wiki](https://github.com/arashnrim/Upgrade/wiki/Building-Upgrade). Check it out to get started!
 
 ## Support
 If you need help with anything related to the project, I recommend opening a new issue in the Issue Tracker page. Following GitHub's [Open Source Guide](https://www.opensource.guide), I strongly advise against privately communicating.
