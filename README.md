@@ -25,9 +25,7 @@ The branch you are currently in is the **`v1.0` branch**; all code related to th
 - To view the branch with a release history, jump over to the [`releases` branch](https://github.com/arashnrim/Upgrade/tree/releases).
 
 ## Getting Started
-First, thanks for your interest in the project! I'm glad that you'd like to contribute to the project. To begin, check out the [Contributing Guide](CONTRIBUTING.md) to see what you have to do, including structuring your commit message(s) and general rules-of-thumb that I recommended you to follow.
-
-```print("We're working on installation instructions now; check back later!")```
+Thanks for your interest in trying out this project! The explanation on how to get started is fairly long, so I've moved it to [the wiki](https://github.com/arashnrim/Upgrade/wiki/Building-Upgrade). Check it out to get started!
 
 ## Support
 If you need help with anything related to the project, I recommend opening a new issue in the Issue Tracker page. Following GitHub's [Open Source Guide](https://www.opensource.guide), I strongly advise against privately communicating.
