@@ -8,7 +8,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Branch `v2.0`](#branch-v2.0)
+- [Branch `v2.0`](#branch-v20)
 - [Getting Started](#getting-started)
 - [Support](#support)
 - [What's Ahead](#whats-ahead)
