@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./upgrade.svg">
+</p>
+
 # Upgrade
 
 ## Table of Contents
