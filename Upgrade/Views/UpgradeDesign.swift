@@ -10,20 +10,18 @@ import UIKit
 
 extension UIButton {
 
-    func applyButtonDesign() {
-        // Adds a cornered radius around the sides of the button.
+    func applyButtonDesign(_ gradientLayer: CAGradientLayer) {
         self.layer.cornerRadius = 10.0
-
-        // Applies the "UP Purple" colour.
-        self.backgroundColor = UIColor(named: "UP Purple")!
+        self.layer.masksToBounds = true
+        self.layer.addSublayer(gradientLayer)
     }
 
 }
 
 extension UIView {
 
-    @objc func applyHeaderDesign() {
-        self.backgroundColor = UIColor(named: "UP Purple")!
+    func applyHeaderDesign(_ gradientLayer: CAGradientLayer) {
+        self.layer.addSublayer(gradientLayer)
     }
 
 }
