@@ -12,14 +12,11 @@
 		492DFC3924B8568500D9D862 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492DFC3824B8568500D9D862 /* Onboarding.storyboard */; };
 		49432B5624C7DA97003AB302 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49432B5424C7DA97003AB302 /* Metropolis-Bold.otf */; };
 		49432B5724C7DA97003AB302 /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49432B5524C7DA97003AB302 /* Metropolis-SemiBold.otf */; };
-		49432B5924C7DC6B003AB302 /* UpgradeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49432B5824C7DC6B003AB302 /* UpgradeButton.swift */; };
 		494FBF2D2413FA7800A5F857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FBF2C2413FA7800A5F857 /* AppDelegate.swift */; };
 		494FBF2F2413FA7800A5F857 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FBF2E2413FA7800A5F857 /* SceneDelegate.swift */; };
-		494FBF312413FA7800A5F857 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FBF302413FA7800A5F857 /* ViewController.swift */; };
-		494FBF342413FA7800A5F857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494FBF322413FA7800A5F857 /* Main.storyboard */; };
 		494FBF362413FA7900A5F857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494FBF352413FA7900A5F857 /* Assets.xcassets */; };
 		494FBF392413FA7900A5F857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494FBF372413FA7900A5F857 /* LaunchScreen.storyboard */; };
-		4961FBF624C6BAD400B97917 /* UpgradeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961FBF524C6BAD400B97917 /* UpgradeHeaderView.swift */; };
+		4961FBF624C6BAD400B97917 /* UpgradeDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961FBF524C6BAD400B97917 /* UpgradeDesign.swift */; };
 		49CDBEBC258C8AE20083EAD1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDBEBB258C8AE20083EAD1 /* WelcomeViewController.swift */; };
 		49FA925324D7029200F849B0 /* UITextField+Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA925224D7029200F849B0 /* UITextField+Functionality.swift */; };
 		49FF4E4D24D266AF006651B6 /* UIViewController+Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF4E4C24D266AF006651B6 /* UIViewController+Functionality.swift */; };
@@ -30,16 +27,13 @@
 		492DFC3824B8568500D9D862 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		49432B5424C7DA97003AB302 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
 		49432B5524C7DA97003AB302 /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBold.otf"; sourceTree = "<group>"; };
-		49432B5824C7DC6B003AB302 /* UpgradeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeButton.swift; sourceTree = "<group>"; };
 		494FBF292413FA7800A5F857 /* Upgrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Upgrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		494FBF2C2413FA7800A5F857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		494FBF2E2413FA7800A5F857 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		494FBF302413FA7800A5F857 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		494FBF332413FA7800A5F857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		494FBF352413FA7900A5F857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		494FBF382413FA7900A5F857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		494FBF3A2413FA7900A5F857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4961FBF524C6BAD400B97917 /* UpgradeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeHeaderView.swift; sourceTree = "<group>"; };
+		494FBF3A2413FA7900A5F857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Upgrade/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
+		4961FBF524C6BAD400B97917 /* UpgradeDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeDesign.swift; sourceTree = "<group>"; };
 		49CDBEBB258C8AE20083EAD1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		49FA925224D7029200F849B0 /* UITextField+Functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Functionality.swift"; sourceTree = "<group>"; };
 		49FF4E4C24D266AF006651B6 /* UIViewController+Functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Functionality.swift"; sourceTree = "<group>"; };
@@ -60,15 +54,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		492DFC3324B8553E00D9D862 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				494FBF322413FA7800A5F857 /* Main.storyboard */,
-				494FBF302413FA7800A5F857 /* ViewController.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		492DFC3724B8567800D9D862 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,24 +94,25 @@
 		494FBF2B2413FA7800A5F857 /* Upgrade */ = {
 			isa = PBXGroup;
 			children = (
-				494FBF402413FAAF00A5F857 /* Screens */,
+				49CDBEC8258CC5DA0083EAD1 /* Screens */,
+				49CDBEC7258CC5BF0083EAD1 /* Views */,
 				4961FBF424C6BA9500B97917 /* Extensions */,
-				494FBF432413FAD600A5F857 /* Resources */,
-				494FBF422413FAC500A5F857 /* Supporting Files */,
+				49CDBEC6258CC57B0083EAD1 /* Resources */,
+				49CDBEC5258CC55C0083EAD1 /* Supporting Files */,
 			);
 			path = Upgrade;
 			sourceTree = "<group>";
 		};
-		494FBF402413FAAF00A5F857 /* Screens */ = {
+		4961FBF424C6BA9500B97917 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				492DFC3324B8553E00D9D862 /* Main */,
-				492DFC3724B8567800D9D862 /* Onboarding */,
+				49FF4E4C24D266AF006651B6 /* UIViewController+Functionality.swift */,
+				49FA925224D7029200F849B0 /* UITextField+Functionality.swift */,
 			);
-			path = Screens;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		494FBF422413FAC500A5F857 /* Supporting Files */ = {
+		49CDBEC5258CC55C0083EAD1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				494FBF2C2413FA7800A5F857 /* AppDelegate.swift */,
@@ -134,27 +120,32 @@
 				494FBF372413FA7900A5F857 /* LaunchScreen.storyboard */,
 				494FBF3A2413FA7900A5F857 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		494FBF432413FAD600A5F857 /* Resources */ = {
+		49CDBEC6258CC57B0083EAD1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				49432B5324C7DA61003AB302 /* Fonts */,
 				494FBF352413FA7900A5F857 /* Assets.xcassets */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		4961FBF424C6BA9500B97917 /* Extensions */ = {
+		49CDBEC7258CC5BF0083EAD1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4961FBF524C6BAD400B97917 /* UpgradeHeaderView.swift */,
-				49432B5824C7DC6B003AB302 /* UpgradeButton.swift */,
-				49FF4E4C24D266AF006651B6 /* UIViewController+Functionality.swift */,
-				49FA925224D7029200F849B0 /* UITextField+Functionality.swift */,
+				4961FBF524C6BAD400B97917 /* UpgradeDesign.swift */,
 			);
-			path = Extensions;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49CDBEC8258CC5DA0083EAD1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				492DFC3724B8567800D9D862 /* Onboarding */,
+			);
+			name = Screens;
 			sourceTree = "<group>";
 		};
 		E78F6481DF1C64A4BD1D4F6F /* Pods */ = {
@@ -238,7 +229,6 @@
 				49432B5624C7DA97003AB302 /* Metropolis-Bold.otf in Resources */,
 				494FBF392413FA7900A5F857 /* LaunchScreen.storyboard in Resources */,
 				494FBF362413FA7900A5F857 /* Assets.xcassets in Resources */,
-				494FBF342413FA7800A5F857 /* Main.storyboard in Resources */,
 				49432B5724C7DA97003AB302 /* Metropolis-SemiBold.otf in Resources */,
 				492DFC3924B8568500D9D862 /* Onboarding.storyboard in Resources */,
 			);
@@ -311,13 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				49CDBEBC258C8AE20083EAD1 /* WelcomeViewController.swift in Sources */,
-				494FBF312413FA7800A5F857 /* ViewController.swift in Sources */,
 				491ABF0024CF95A4001A05B5 /* OnboardingViewController.swift in Sources */,
 				494FBF2D2413FA7800A5F857 /* AppDelegate.swift in Sources */,
 				49FF4E4D24D266AF006651B6 /* UIViewController+Functionality.swift in Sources */,
-				49432B5924C7DC6B003AB302 /* UpgradeButton.swift in Sources */,
 				49FA925324D7029200F849B0 /* UITextField+Functionality.swift in Sources */,
-				4961FBF624C6BAD400B97917 /* UpgradeHeaderView.swift in Sources */,
+				4961FBF624C6BAD400B97917 /* UpgradeDesign.swift in Sources */,
 				494FBF2F2413FA7800A5F857 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,14 +313,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		494FBF322413FA7800A5F857 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				494FBF332413FA7800A5F857 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		494FBF372413FA7900A5F857 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -395,6 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Upgrade/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -450,6 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Upgrade/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -467,7 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HFYWW8ST8C;
-				INFOPLIST_FILE = Upgrade/Info.plist;
+				INFOPLIST_FILE = "Upgrade/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,7 +469,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HFYWW8ST8C;
-				INFOPLIST_FILE = Upgrade/Info.plist;
+				INFOPLIST_FILE = "Upgrade/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

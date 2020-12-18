@@ -222,22 +222,11 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="nameTextField" destination="YVy-we-OV2" id="0FC-3z-c1f"/>
-                        <segue destination="GfM-YN-KWT" kind="show" identifier="complete" id="lZ1-P6-egq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wec-AP-1cG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="622" y="132"/>
-        </scene>
-        <!--Main-->
-        <scene sceneID="lcz-iM-rry">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="GfM-YN-KWT" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="mqu-cV-OVs"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DzQ-To-Jp3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1170" y="132"/>
         </scene>
     </scenes>
     <resources>
