@@ -14,19 +14,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // swiftlint:disable:next unused_optional_binding
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: windowScene)
+        (UIApplication.shared.delegate as! AppDelegate).window = window
+        window?.windowScene = windowScene
 
-        // Performs conditional navigation based on whether the user has configured the app for use.
-        let configured = UserDefaults.standard.bool(forKey: "configured")
-        let rootViewController: UIViewController
-        if configured {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            rootViewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
-        } else {
-            let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
-            rootViewController = storyboard.instantiateViewController(withIdentifier: "Welcome")
-        }
+        let rootViewController = WelcomeViewController()
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
     }

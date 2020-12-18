@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C4R-zu-odP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C4R-zu-odP">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -29,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acm-l9-Jc4">
-                                        <rect key="frame" x="20" y="133" width="335" height="30"/>
+                                        <rect key="frame" x="20" y="128" width="335" height="35"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -38,7 +39,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFR-PN-wTr">
-                                        <rect key="frame" x="20" y="101" width="335" height="24"/>
+                                        <rect key="frame" x="20" y="92" width="335" height="28"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -72,7 +73,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x83-lJ-Clv" customClass="UpgradeButton" customModule="Upgrade" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x83-lJ-Clv" customClass="UpgradeButton" customModule="Upgrade" customModuleProvider="target">
                                 <rect key="frame" x="20" y="708" width="335" height="50"/>
                                 <color key="backgroundColor" name="UP Blue"/>
                                 <constraints>
@@ -97,7 +98,8 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Gtu-FO-r9k"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Gtu-FO-r9k" firstAttribute="trailing" secondItem="DcF-XL-erv" secondAttribute="trailing" id="3ev-8Y-nLJ"/>
                             <constraint firstItem="Gtu-FO-r9k" firstAttribute="trailing" secondItem="2Az-Os-MdL" secondAttribute="trailing" constant="20" id="4dK-8k-SeQ"/>
@@ -115,7 +117,6 @@
                             <constraint firstItem="GIs-8K-Xmg" firstAttribute="leading" secondItem="Gtu-FO-r9k" secondAttribute="leading" constant="20" id="uGi-Sg-1jn"/>
                             <constraint firstItem="2Az-Os-MdL" firstAttribute="leading" secondItem="Gtu-FO-r9k" secondAttribute="leading" constant="20" id="uzH-ZD-Iuz"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Gtu-FO-r9k"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i95-h6-zVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -134,7 +135,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="started!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDC-fw-8Bd">
-                                        <rect key="frame" x="20" y="133" width="335" height="30"/>
+                                        <rect key="frame" x="20" y="128" width="335" height="35"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -143,7 +144,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRW-Pv-Ym2">
-                                        <rect key="frame" x="20" y="101" width="335" height="24"/>
+                                        <rect key="frame" x="20" y="92" width="335" height="28"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -171,7 +172,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="body"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syg-Dm-0YS" customClass="UpgradeButton" customModule="Upgrade" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syg-Dm-0YS" customClass="UpgradeButton" customModule="Upgrade" customModuleProvider="target">
                                 <rect key="frame" x="20" y="708" width="335" height="50"/>
                                 <color key="backgroundColor" name="UP Blue"/>
                                 <constraints>
@@ -197,7 +198,8 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="20I-2f-bR4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="20I-2f-bR4" firstAttribute="trailing" secondItem="DgD-TK-91k" secondAttribute="trailing" id="3YD-Bx-Jhj"/>
                             <constraint firstItem="YVy-we-OV2" firstAttribute="top" secondItem="24Z-Yw-7Q5" secondAttribute="bottom" constant="20" id="9Th-HM-0NH"/>
@@ -213,7 +215,6 @@
                             <constraint firstItem="20I-2f-bR4" firstAttribute="trailing" secondItem="24Z-Yw-7Q5" secondAttribute="trailing" constant="20" id="jcT-Dx-XbZ"/>
                             <constraint firstItem="24Z-Yw-7Q5" firstAttribute="top" secondItem="DgD-TK-91k" secondAttribute="bottom" constant="40" id="kUP-mD-3Sq"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="20I-2f-bR4"/>
                     </view>
                     <navigationItem key="navigationItem" id="o19-mg-hbF"/>
                     <userDefinedRuntimeAttributes>
@@ -247,5 +248,8 @@
         <namedColor name="UP Purple">
             <color red="0.55686274509803924" green="0.32941176470588235" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
