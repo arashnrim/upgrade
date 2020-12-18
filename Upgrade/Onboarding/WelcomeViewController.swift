@@ -33,6 +33,7 @@ class WelcomeViewController: UIViewController {
         headerView.translatesAutoresizingMaskIntoConstraints = false
         // FIXME: Header View design
         headerView.applyHeaderDesign(headerGradientLayer)
+        headerView.backgroundColor = K.Design.upPurple
         headerGradientLayer.frame = headerView.bounds
         view.addSubview(headerView)
         NSLayoutConstraint.activate([
