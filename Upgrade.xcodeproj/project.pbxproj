@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E74889C26CD5B567C36C416 /* Pods_Upgrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2C67AEE0037114368CD1D5 /* Pods_Upgrade.framework */; };
-		491ABF0024CF95A4001A05B5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491ABEFF24CF95A4001A05B5 /* OnboardingViewController.swift */; };
-		492DFC3924B8568500D9D862 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492DFC3824B8568500D9D862 /* Onboarding.storyboard */; };
 		49432B5624C7DA97003AB302 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49432B5424C7DA97003AB302 /* Metropolis-Bold.otf */; };
 		49432B5724C7DA97003AB302 /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49432B5524C7DA97003AB302 /* Metropolis-SemiBold.otf */; };
 		494FBF2D2413FA7800A5F857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FBF2C2413FA7800A5F857 /* AppDelegate.swift */; };
@@ -26,8 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		491ABEFF24CF95A4001A05B5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		492DFC3824B8568500D9D862 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		49432B5424C7DA97003AB302 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
 		49432B5524C7DA97003AB302 /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBold.otf"; sourceTree = "<group>"; };
 		494FBF292413FA7800A5F857 /* Upgrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Upgrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +59,6 @@
 		492DFC3724B8567800D9D862 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				492DFC3824B8568500D9D862 /* Onboarding.storyboard */,
-				491ABEFF24CF95A4001A05B5 /* OnboardingViewController.swift */,
 				49CDBEBB258C8AE20083EAD1 /* WelcomeViewController.swift */,
 				49EA3DF7258CD2440088A02C /* NameViewController.swift */,
 			);
@@ -247,7 +241,6 @@
 				494FBF392413FA7900A5F857 /* LaunchScreen.storyboard in Resources */,
 				494FBF362413FA7900A5F857 /* Assets.xcassets in Resources */,
 				49432B5724C7DA97003AB302 /* Metropolis-SemiBold.otf in Resources */,
-				492DFC3924B8568500D9D862 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +311,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				49CDBEBC258C8AE20083EAD1 /* WelcomeViewController.swift in Sources */,
-				491ABF0024CF95A4001A05B5 /* OnboardingViewController.swift in Sources */,
 				494FBF2D2413FA7800A5F857 /* AppDelegate.swift in Sources */,
 				49FF4E4D24D266AF006651B6 /* UIViewController+Functionality.swift in Sources */,
 				49FA925324D7029200F849B0 /* UITextField+Functionality.swift in Sources */,
