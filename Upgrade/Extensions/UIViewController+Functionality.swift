@@ -10,6 +10,7 @@ import UIKit
 
 extension UIViewController {
 
+    // MARK: - Alerts
     /**
      * Creates an alert that will be displayed to the user.
      *
@@ -29,6 +30,21 @@ extension UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.show(alert, sender: nil)
         }
+    }
+
+    // MARK: - User Defaults
+    func saveToUserDefaults(value: Any, key: String, completion: (() -> Void)?) {
+        let defaults = UserDefaults.standard
+        defaults.set(value, forKey: key)
+        if let completion = completion {
+            completion()
+        }
+    }
+
+    func readFromUserDefaults(key: String) -> Any? {
+        let defaults = UserDefaults.standard
+        let value = defaults.object(forKey: key)
+        return value
     }
 
 }

@@ -1,5 +1,5 @@
 //
-//  WelcomeViewController.swift
+//  NameViewController.swift
 //  Upgrade
 //
 //  Created by Arash on 18/12/20.
@@ -7,14 +7,14 @@
 //
 
 import UIKit
+import Hero
 
-class WelcomeViewController: UIViewController {
+class NameViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - Views
     var headerView: UIView!
-    var descriptionLabel: UILabel!
-    var focusImageView: UIImageView!
     var promptLabel: UILabel!
+    var nameTextField: UITextField!
     var continueButton: UIButton!
 
     // MARK: - Properties
@@ -25,6 +25,8 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+
+        self.hero.isEnabled = true
 
         let guide = view.safeAreaLayoutGuide
 
@@ -48,10 +50,10 @@ class WelcomeViewController: UIViewController {
         let titleLabel = UILabel()
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        subtitleLabel.text = "Welcome to"
+        subtitleLabel.text = "Let's get"
         subtitleLabel.font = UIFont(name: "Metropolis Semi Bold", size: 24.0)
         subtitleLabel.textColor = .white
-        titleLabel.text = "Upgrade!"
+        titleLabel.text = "started!"
         titleLabel.font = UIFont(name: "Metropolis Bold", size: 30.0)
         titleLabel.textColor = .white
         headerView.addSubview(subtitleLabel)
@@ -65,42 +67,34 @@ class WelcomeViewController: UIViewController {
             titleLabel.leftAnchor.constraint(equalTo: headerView.leftAnchor, constant: K.Layout.someSpaceBetween)
         ])
 
-        // MARK: Description Label
-        descriptionLabel = UILabel()
-        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-        descriptionLabel.text = "Upgrade helps you view your academic achievements in insightful ways."
-        descriptionLabel.textAlignment = .center
-        descriptionLabel.numberOfLines = 0
-        descriptionLabel.font = UIFont.systemFont(ofSize: 20.0)
-        view.addSubview(descriptionLabel)
-        NSLayoutConstraint.activate([
-            descriptionLabel.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: K.Layout.moreSpaceBetween),
-            descriptionLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -K.Layout.someSpaceBetween),
-            descriptionLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: K.Layout.someSpaceBetween)
-        ])
-
-        // MARK: Focus Image View
-        focusImageView = UIImageView()
-        focusImageView.translatesAutoresizingMaskIntoConstraints = false
-        focusImageView.image = UIImage(named: "score")
-        view.addSubview(focusImageView)
-        NSLayoutConstraint.activate([
-            focusImageView.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: K.Layout.moreSpaceBetween),
-            focusImageView.heightAnchor.constraint(equalToConstant: 177.0),
-            focusImageView.widthAnchor.constraint(equalToConstant: 251.0),
-            focusImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        ])
-
         // MARK: Prompt Label
         promptLabel = UILabel()
         promptLabel.translatesAutoresizingMaskIntoConstraints = false
-        promptLabel.text = "Ready to begin?"
-        promptLabel.textAlignment = .center
-        promptLabel.font = UIFont.systemFont(ofSize: 20.0)
+        promptLabel.text = "What name can we address you by?"
+        promptLabel.textColor = .darkText
+        promptLabel.font = .systemFont(ofSize: 20.0)
         view.addSubview(promptLabel)
         NSLayoutConstraint.activate([
+            promptLabel.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: K.Layout.moreSpaceBetween),
             promptLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -K.Layout.someSpaceBetween),
             promptLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: K.Layout.someSpaceBetween)
+        ])
+
+        // MARK: Name Text Field
+        nameTextField = UITextField()
+        nameTextField.translatesAutoresizingMaskIntoConstraints = false
+        nameTextField.placeholder = "Name"
+        nameTextField.font = .systemFont(ofSize: 18.0)
+        nameTextField.borderStyle = .roundedRect
+        nameTextField.autocorrectionType = .no
+        nameTextField.delegate = self
+        self.dismissKeyboardOnTap(completion: nil)
+        view.addSubview(nameTextField)
+        NSLayoutConstraint.activate([
+            nameTextField.topAnchor.constraint(equalTo: promptLabel.bottomAnchor, constant: K.Layout.someSpaceBetween),
+            nameTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: K.Layout.someSpaceBetween),
+            nameTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: K.Layout.someSpaceBetween),
+            nameTextField.heightAnchor.constraint(equalToConstant: K.Layout.buttonHeight)
         ])
 
         // MARK: Continue Button
@@ -108,13 +102,15 @@ class WelcomeViewController: UIViewController {
         continueButton.translatesAutoresizingMaskIntoConstraints = false
         continueButton.applyButtonDesign(buttonGradientLayer)
         buttonGradientLayer.frame = continueButton.bounds
-        continueButton.setTitle("Let's go!", for: .normal)
+        continueButton.setTitle("Continue", for: .normal)
+        continueButton.setTitle("Type a name...", for: .disabled)
+        continueButton.isEnabled = false
+        continueButton.alpha = 0.5
         continueButton.titleLabel?.font = UIFont(name: "Metropolis Bold", size: 22.0)
         continueButton.titleLabel?.textColor = .white
         continueButton.addTarget(nil, action: #selector(continueButtonPressed), for: .touchUpInside)
         view.addSubview(continueButton)
         NSLayoutConstraint.activate([
-            continueButton.topAnchor.constraint(equalTo: promptLabel.bottomAnchor, constant: K.Layout.someSpaceBetween),
             continueButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -K.Layout.someSpaceBetween),
             continueButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: K.Layout.someSpaceBetween),
             continueButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor),
@@ -128,12 +124,36 @@ class WelcomeViewController: UIViewController {
         buttonGradientLayer.frame = continueButton.bounds
     }
 
-    // MARK: - Functions
+    // MARK: - Text Field Protocols
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return false
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        // Checks if the name is empty; otherwise, the user cannot proceed.
+        guard let name = textField.text else { return }
+        if !(name.isEmpty) {
+            continueButton.isEnabled = true
+            UIView.animate(withDuration: 0.5) {
+                self.continueButton.alpha = 1.0
+            }
+        } else {
+            continueButton.isEnabled = false
+            UIView.animate(withDuration: 0.5) {
+                self.continueButton.alpha = 0.5
+            }
+        }
+    }
+
     @objc func continueButtonPressed() {
-        let newViewController = NameViewController()
-        newViewController.modalPresentationStyle = .fullScreen
-        newViewController.hero.modalAnimationType = .slide(direction: .left)
-        self.present(newViewController, animated: true, completion: nil)
+        guard let name = nameTextField.text else { return }
+        saveToUserDefaults(value: name, key: "name") {
+            guard var viewControllers = self.navigationController?.viewControllers else { return }
+            _ = viewControllers.popLast()
+            viewControllers.append(HomeViewController())
+            self.navigationController?.setViewControllers(viewControllers, animated: true)
+        }
     }
 
 }

@@ -16,9 +16,11 @@
 		494FBF2F2413FA7800A5F857 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FBF2E2413FA7800A5F857 /* SceneDelegate.swift */; };
 		494FBF362413FA7900A5F857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494FBF352413FA7900A5F857 /* Assets.xcassets */; };
 		494FBF392413FA7900A5F857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494FBF372413FA7900A5F857 /* LaunchScreen.storyboard */; };
+		4960B5BD258DA4C800687E44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960B5BC258DA4C800687E44 /* HomeViewController.swift */; };
 		4961FBF624C6BAD400B97917 /* UpgradeDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961FBF524C6BAD400B97917 /* UpgradeDesign.swift */; };
 		49CDBEBC258C8AE20083EAD1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDBEBB258C8AE20083EAD1 /* WelcomeViewController.swift */; };
 		49EA3DF5258CC9B20088A02C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA3DF4258CC9B20088A02C /* Constants.swift */; };
+		49EA3DF8258CD2440088A02C /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA3DF7258CD2440088A02C /* NameViewController.swift */; };
 		49FA925324D7029200F849B0 /* UITextField+Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA925224D7029200F849B0 /* UITextField+Functionality.swift */; };
 		49FF4E4D24D266AF006651B6 /* UIViewController+Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF4E4C24D266AF006651B6 /* UIViewController+Functionality.swift */; };
 /* End PBXBuildFile section */
@@ -34,9 +36,11 @@
 		494FBF352413FA7900A5F857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		494FBF382413FA7900A5F857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		494FBF3A2413FA7900A5F857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Upgrade/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
+		4960B5BC258DA4C800687E44 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4961FBF524C6BAD400B97917 /* UpgradeDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeDesign.swift; sourceTree = "<group>"; };
 		49CDBEBB258C8AE20083EAD1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		49EA3DF4258CC9B20088A02C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		49EA3DF7258CD2440088A02C /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		49FA925224D7029200F849B0 /* UITextField+Functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Functionality.swift"; sourceTree = "<group>"; };
 		49FF4E4C24D266AF006651B6 /* UIViewController+Functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Functionality.swift"; sourceTree = "<group>"; };
 		C85170C84CE1D23BE070F1B9 /* Pods-Upgrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upgrade.debug.xcconfig"; path = "Target Support Files/Pods-Upgrade/Pods-Upgrade.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 				492DFC3824B8568500D9D862 /* Onboarding.storyboard */,
 				491ABEFF24CF95A4001A05B5 /* OnboardingViewController.swift */,
 				49CDBEBB258C8AE20083EAD1 /* WelcomeViewController.swift */,
+				49EA3DF7258CD2440088A02C /* NameViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -105,6 +110,14 @@
 			path = Upgrade;
 			sourceTree = "<group>";
 		};
+		4960B5BF258DA4FC00687E44 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4960B5BC258DA4C800687E44 /* HomeViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		4961FBF424C6BA9500B97917 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +159,7 @@
 		49CDBEC8258CC5DA0083EAD1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4960B5BF258DA4FC00687E44 /* Main */,
 				492DFC3724B8567800D9D862 /* Onboarding */,
 			);
 			name = Screens;
@@ -308,6 +322,8 @@
 				494FBF2D2413FA7800A5F857 /* AppDelegate.swift in Sources */,
 				49FF4E4D24D266AF006651B6 /* UIViewController+Functionality.swift in Sources */,
 				49FA925324D7029200F849B0 /* UITextField+Functionality.swift in Sources */,
+				4960B5BD258DA4C800687E44 /* HomeViewController.swift in Sources */,
+				49EA3DF8258CD2440088A02C /* NameViewController.swift in Sources */,
 				4961FBF624C6BAD400B97917 /* UpgradeDesign.swift in Sources */,
 				494FBF2F2413FA7800A5F857 /* SceneDelegate.swift in Sources */,
 				49EA3DF5258CC9B20088A02C /* Constants.swift in Sources */,
