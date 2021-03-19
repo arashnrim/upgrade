@@ -4,9 +4,7 @@
 
 # Upgrade
 
-## Table of Contents
 - [Introduction](#introduction)
-- [Branch `v1.0`](#branch-v10)
 - [Getting Started](#getting-started)
 - [Support](#support)
 - [What's Ahead](#whats-ahead)
@@ -20,13 +18,6 @@ Welcome to **Upgrade**, the app for students to better understand their academic
 Whether you're a beginner app developer or a student, I'd love adding on the number of users in this project. We plan to cater to all; however, I'm only focusing on developing the app in this current point in time. If you're a developer and wish to contribute, check out the [Getting Started](#getting-started) section below.
 
 For designers, stay tuned for details coming soon!
-
-## Branch `v1.0`
-
-The branch you are currently in is the **`v1.0` branch**; all code related to the re-write of Upgrade is included here and kept separate from the `v2.0` branch to avoid conflicts.
-
-- To view the source code for version 2.0, jump over to the [`v2.0` branch](https://github.com/arashnrim/Upgrade/).
-- To view the branch with a release history, jump over to the [`releases` branch](https://github.com/arashnrim/Upgrade/tree/releases).
 
 ## Getting Started
 Thanks for your interest in trying out this project! The explanation on how to get started is fairly long, so I've moved it to [the wiki](https://github.com/arashnrim/Upgrade/wiki/Building-Upgrade). Check it out to get started!
